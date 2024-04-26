@@ -12,8 +12,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class _4$_NumberOfOccurences {
     @Test
-    @Disabled()
-    public void numberOfOccurences() {
+    @Disabled("Remove This Once you Complete The Exercise")
+    public void numberOfOccurencesOfEachWord() {
         String input = "the quick brown fox jumps right over the little lazy dog little";
         final Map<String, Long> expectedOutput = Map.ofEntries(Map.entry("over", 1L),
                 Map.entry("the", 2L),
