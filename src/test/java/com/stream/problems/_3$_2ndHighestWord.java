@@ -22,6 +22,6 @@ public class _3$_2ndHighestWord {
     }
 
     private void solution1() {
-        Arrays.stream(s.split("")).sorted(Comparator.comparing(String::length).reversed()).skip(1).findFirst().get();
+        Arrays.stream("somevalues".split("")).sorted(Comparator.comparing(String::length).reversed()).skip(1).findFirst().get();
     }
 }
