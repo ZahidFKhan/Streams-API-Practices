@@ -1,51 +1,8 @@
 1) Remove duplicates from string and return in same order".
-
-   String s = "dabfcadef"; -> dabfce
-
-
-s.chars().distinct().mapToObj( c-> (char)  c ).forEach(System.out::println);
-
-Arrays.stream(s.split("")).distinct().forEach(System.out::print);
-
-
 2)  Given a sentence find the word that has the highest length. The solution is:
-
-String s = "I am interested123455 to grow in my organization";
-
-     String maxString = Arrays.stream(s.split(" ")).max(Comparator.comparing(String::length)).get();
-    System.out.println("The maxString is: " + maxString);
-
 3) Given a sentence find the word that has the 2nd (Nth) highest length.
-
-   Answer is below: skip(N). N =0 (highest) N =1 (2nd Highest) N =2 (3rd Highest...)
-
-String a =  Arrays.stream(s.split("")).sorted(Comparator.comparing(String::length).reversed()).skip(1).findFirst().get();
-
-System.out.println(a);
-
-This question asked in SNP. They will tweak the same question with list of Employee Objects. But this is the base logic.
-
-
-Q4) Find the length of the longest word
-
-Solution : Arrays.stream(s.split(" ")).mapToInt(l -> l.length()).max().getAsInt();
-
-Q5). Find the 2nd highest length word in the given sentence
-
-Solution : Arrays.stream(s.split(" ")).map(l -> l.length()).sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
-
-
 Q6) Given a sentence, find the number of occurrence of each word.
-
-
-
-String input = "the quick brown fox jumps right over the little lazy dog little";
-Map<String, Long> collect = Arrays.stream(input.split(" "))
-.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-System.out.println(collect);
-
 Q7) Given a word, find the occurrence of Each Character
-
 Q8) There is a list of Employees and Employee object has a field called e-mail. Find the list of domains ( gmail.com, yahoo.com..) and the no of occurrences for each domain.
 
 Q9) Given a string, find the words with the maximum number of vowels.
