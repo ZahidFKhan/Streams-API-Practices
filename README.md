@@ -248,7 +248,6 @@ student b maths 90 (hightest for student b)
 
 Left Rotate array :
 
-[28-07 04:44 pm] Anurag Prajapati
 input : 1 2 3 4 5 6
 number: 3 -
 output: 4 5 6 1 2 3
@@ -293,10 +292,8 @@ Given 2 numbers as list, add the numbers and store the result in a new list.
 8->2->7->NULL
 Output : 3->1->8->4->NULL
 
-2) [04-08 02:08 pm] Damodara Gottipalli
    Input Array is: {15, 10, 16, 20, 8, 9, 7, 50 }
 
-[04-08 02:08 pm] Damodara Gottipalli
 15 -16
    10 -16
    16-20
@@ -306,7 +303,6 @@ Output : 3->1->8->4->NULL
    7-50
    50 -1
 
-[04-08 02:13 pm] Damodara Gottipalli
 Find the next greatest element for each element in the Array.
 
 
