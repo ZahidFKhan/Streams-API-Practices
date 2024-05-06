@@ -8,21 +8,20 @@ import java.util.Comparator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class _2$_HighestWord {
+public class Ac_2ndHighestWord {
     @Test
     @Disabled()
-    public void findHighestWord() {
+    public void find2ndHighestWord() {
         final String input = "I am interested123455 to grow in my organization";
-        final String expectedOutput = "interested123455";
+        final String expectedOutput = "organization";
 
-        String actualOutput = "<PUT YOUR LOGIC HERE>";
+        String actualOutput = "<PUT YOUR LOGIC HERE>";;
 
         // Assert that the actual output matches the expected output
         assertEquals(expectedOutput, actualOutput);
     }
 
     private void solution1() {
-        String maxString = Arrays.stream("dabfcadef".split(" ")).max(Comparator.comparing(String::length)).get();
-        System.out.println("The maxString is: " + maxString);
+        Arrays.stream("somevalues".split("")).sorted(Comparator.comparing(String::length).reversed()).skip(1).findFirst().get();
     }
 }

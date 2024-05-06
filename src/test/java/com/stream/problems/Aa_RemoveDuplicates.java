@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class _1$_RemoveDuplicates {
+public class Aa_RemoveDuplicates {
     @Test
     @Disabled()
     public void testRemoveDuplicates() {
@@ -15,7 +15,9 @@ public class _1$_RemoveDuplicates {
         final String expectedOutput = "dabfce";
 
         // Implement the logic to remove duplicates from the string
-        String actualOutput = "";
+        String actualOutput = input.chars().distinct()
+                .mapToObj(x->(char)x)
+                .reduce("",(x, y)->x +  y,(a, b)-> a + b);
 
         // Assert that the actual output matches the expected output
         assertEquals(expectedOutput, actualOutput);
