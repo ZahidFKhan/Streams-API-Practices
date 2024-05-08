@@ -1,7 +1,3 @@
-1) Remove duplicates from string and return in same order".
-2)  Given a sentence find the word that has the highest length. The solution is:
-3) Given a sentence find the word that has the 2nd (Nth) highest length.
-Q6) Given a sentence, find the number of occurrence of each word.
 Q7) Given a word, find the occurrence of Each Character
 Q8) There is a list of Employees and Employee object has a field called e-mail. Find the list of domains ( gmail.com, yahoo.com..) and the no of occurrences for each domain.
 Q9) Given a string, find the words with the maximum number of vowels.
