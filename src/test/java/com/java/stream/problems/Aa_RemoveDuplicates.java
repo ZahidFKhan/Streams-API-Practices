@@ -1,4 +1,4 @@
-package com.stream.problems;
+package com.java.stream.problems;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
