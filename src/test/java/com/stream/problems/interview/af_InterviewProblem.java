@@ -1,4 +1,4 @@
-package com.stream.problems;
+package com.stream.problems.interview;
 
 /**
  * You are given a list of employees.
