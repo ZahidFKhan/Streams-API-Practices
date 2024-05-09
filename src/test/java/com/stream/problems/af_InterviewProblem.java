@@ -1,17 +1,16 @@
 package com.stream.problems;
 
-/*
- *
+/**
  * You are given a list of employees.
  * Each employee has an id, name, and a list of projects they have worked on.
- *
  * Each project has a name and duration in months.
- *
+ * <p>
  * Write a Java program to find the employee who has worked on the most projects.
- *
+ * <p>
  * If there are multiple employees with the same maximum number of projects,
- *
- * return the employee with the longest total duration of projects. If there are still ties, return any one of the tied employees.*/
+ * <p>
+ * return the employee with the longest total duration of projects. If there are still ties, return any one of the tied employees.
+ */
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -20,25 +19,23 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 
 public class af_InterviewProblem {
     @Test
     @Disabled("Remove This Once you Complete The Exercise")
     public void numberOfOccurencesOfEachCharacter() {
         final List<Project> projects1 = List.of(
-                new Project("EPAM1", 2),
-                new Project("EPAM2", 1),
-                new Project("EPAM3", 2),
-                new Project("EPAM4", 2)
+                new Project("E1", 2),
+                new Project("E2", 1),
+                new Project("E3", 2),
+                new Project("E4", 2)
         );
 
         final List<Project> projects2 = List.of(
-                new Project("EPAM1", 2),
-                new Project("EPAM2", 2),
-                new Project("EPAM3", 2),
-                new Project("EPAM4", 2)
+                new Project("E1", 2),
+                new Project("E2", 2),
+                new Project("E3", 2),
+                new Project("E4", 2)
         );
 
         List<Employee> employees = new ArrayList<>();
@@ -59,17 +56,17 @@ public class af_InterviewProblem {
 
     void solution() {
         final List<Project> projects1 = List.of(
-                new Project("EPAM1", 2),
-                new Project("EPAM2", 1),
-                new Project("EPAM3", 2),
-                new Project("EPAM4", 2)
+                new Project("E1", 2),
+                new Project("E2", 1),
+                new Project("E3", 2),
+                new Project("E4", 2)
         );
 
         final List<Project> projects2 = List.of(
-                new Project("EPAM1", 2),
-                new Project("EPAM2", 2),
-                new Project("EPAM3", 2),
-                new Project("EPAM4", 2)
+                new Project("E1", 2),
+                new Project("E2", 2),
+                new Project("E3", 2),
+                new Project("E4", 2)
         );
 
         List<Employee> employees = new ArrayList<>();
