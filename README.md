@@ -1,19 +1,43 @@
+### This repository has challenges to help you learn and practice code.  
+
+### Each challenge includes:
+
+## What to Start With (Input): 
+This is the information you'll use to solve the problem.
+
+
+## The Answer (Expected Output): 
+
+This is what your code should give as the answer.
+
+### Hint: 
+We won't show you the code right away, but you can look at the challenges and see if you can write code to get the answer we expect.  
+
+### Good luck!
+
 Q7) Given a word, find the occurrence of Each Character
-Q8) There is a list of Employees and Employee object has a field called e-mail. Find the list of domains ( gmail.com, yahoo.com..) and the no of occurrences for each domain.
+
+Q8) There is a list of Employees and Employee object has a field called e-mail.
+Find the list of domains ( gmail.com, yahoo.com..) and the no of occurrences for each domain?
+
 Q9) Given a string, find the words with the maximum number of vowels.
+
+<details>
+  <summary>Solution</summary>
+
 
        "The quick brown fox jumps right over the little lazy dog."
         Maximum Number of Vowels: 2
         output Words: quick, over, little  ( because each word has maximum of 2 vowels)
 
-
+</details>
 
 Solution is:
 
-String s = "The quick brown fox jumps right over the little lazy dog.";
+`String s = "The quick brown fox jumps right over the little lazy dog.";
 Arrays.stream(s.split(" "))
 .filter(e -> e.replaceAll("[^aeiouAEIOU]", "").length() == 2)
-.forEach(System.out::println);
+.forEach(System.out::println);`
 
 
 
