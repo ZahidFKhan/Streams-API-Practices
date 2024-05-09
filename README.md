@@ -16,14 +16,8 @@ We won't show you the code right away, but you can look at the challenges and se
 ### Good luck!
 
 
-Q13) Given a List of Strings  ["as", "123", "32", "2as"], create another Integer list that contains only integers. The output shoul be: List<Integer> iList = [123,32]
-Solution:
-listOfStrings.stream().filter( ss -> ss.matches("[0-9]*")).map(Integer::valueOf).collect(Collectors.toList());
 
 
-Q14) Given an array of integers arr = {5,6,7,8,5,5,8,8,7) find the sum of the unique elements. The output should be in this case is: 26.
-
-Solution : Arrays.stream(arr).distinct().sum();
 
 
 Q15 ) Given a numeric array , re arrange the elements to form a smallest possible value.
