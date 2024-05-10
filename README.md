@@ -1,30 +1,21 @@
-### This repository has challenges to help you learn and practice code.  
+#  Repository to practice STREAM Problems.  
 
 ### Each challenge includes:
+1. What to Start With (Input): 
 
-## What to Start With (Input): 
-This is the information you'll use to solve the problem.
-
-
-## The Answer (Expected Output): 
-
-This is what your code should give as the answer.
-
-### Hint: 
-We won't show you the code right away, but you can look at the challenges and see if you can write code to get the answer we expect.  
-
-### Good luck!
+   This is the information you'll use to solve the problem.
 
 
+2. The Answer (Expected Output):
 
+    This is what your code should give as the answer.
 
-Q17)  Given a String = The quick brown fox jumps over the lazy dog, find the first non repeated character. (Google interview)
+2. ##### Hint: 
 
+   We won't show you the code right away, but you can look at the challenges and see if you can write code to get the answer we expect.  
 
-	Solution with java 8 :
+# Good luck!
 
-	String res = Arrays.stream(str.split("")).filter(c -> str.indexOf(c) == str.lastIndexOf(c)).findFirst().get();
-	System.out.println(res);
 
 
 
