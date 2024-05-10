@@ -19,22 +19,6 @@
 
 
 
-______________________________________________________________________________________________________________________________________________________________________________
-1) Find the longest word in a sentence?
-
-   Input: I am interested to grow in my organization
-   output is: organization
-
-2) Find the lenght of the longest word.
-
-   Input: I am interested to grow in my organization
-   output is: 	12
-
-3) Find the 2nd highest length in the sentence.
-
-4) FInd the length of the 2nd longest word.
-
-
 5) List of cities
 
    "Mumbai"
