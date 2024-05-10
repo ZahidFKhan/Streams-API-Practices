@@ -1,16 +1,11 @@
 #  Repository to practice STREAM Problems.  
 
-### Each challenge includes:
-1. What to Start With (Input): 
+1. Clone this repository.
+2. Remove the @Disabled Tags.
+3. Solve the problems
+4. Raise a PR request to review your code. :)
 
-   This is the information you'll use to solve the problem.
-
-
-2. The Answer (Expected Output):
-
-    This is what your code should give as the answer.
-
-2. ##### Hint: 
+### Hint: 
 
    We won't show you the code right away, but you can look at the challenges and see if you can write code to get the answer we expect.  
 
