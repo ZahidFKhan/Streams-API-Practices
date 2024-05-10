@@ -70,33 +70,6 @@ Can you  write a program to create another list that contains the cities start w
 
     	output Words: quick, over, little  ( because each word has maximum of 2 vowels)
 
-8)  I have an array.  Find the next greatest element for each element in a given array.
-
-{15, 10, 16, 20, 8, 9, 7, 50}
-
-OutPut:
-
-15 -16
-10 -16
-16-20
-20-50
-8-9
-9-50
-7-50
-50 - Max Integer
-
-Solution :
-int[] intArray = {15, 10, 16, 20, 8, 9, 7, 50};
-
-           for (int i = 0; i < intArray.length; i++) {
-            for (int j = i + 1; j < intArray.length; j++) {
-                if (intArray[j] > intArray[i]) {
-                    System.out.println(intArray[i] + " - " + intArray[j]);
-                    break;
-                }
-            }
-        }
-        System.out.println(intArray[intArray.length - 1] + " - Max Integer");
 
 9) I have two sorted arrays. Need to merge those.
 
