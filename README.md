@@ -18,30 +18,6 @@ We won't show you the code right away, but you can look at the challenges and se
 
 
 
-
-
-Q15 ) Given a numeric array , re arrange the elements to form a smallest possible value.
-
-input is: int arr[] = {1, 34, 3, 98, 9, 76, 45, 4};
-
-output is: 133444576998
-
-Solution is: Arrays.stream(arr).mapToObj(i-> i+"").sorted().forEach(System.out::print);
-
-
-Q16) Given a numeric array , re arrange the elements to form a highest possible value.
-
-input is: int arr[] = {1, 34, 3, 98, 9, 76, 45, 4};
-
-output is: 998764543431
-
-
-Solution is: Arrays.stream(arr).mapToObj(i-> i+"").sorted((o1,o2) -> (o2+o1).compareTo(o1+o2)).forEach(System.out::print)
-
-
-	2) Arrays.stream(arr12).mapToObj(i-> i+"").sorted(Collections.reverseOrder()).forEach(System.out::print); ( solution is wrong. Associates need to fix it).
-
-
 Q17)  Given a String = The quick brown fox jumps over the lazy dog, find the first non repeated character. (Google interview)
 
 
@@ -170,36 +146,6 @@ input : 1 2 3 4 5 6
 number: 3 -
 output: 4 5 6 1 2 3
 
-
-
-				Work on recursion problems.
-
-15. Fibonacci series.
-
-    Input: N = 10
-    Output: 0 1 1 2 3 5 8 13 21 34
-
-    Input: N = 15
-    Output: 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
-
-
-
-16. Permutations from a string.
-
-    Input is: ABC
-    Output is:
-    ABC ACB
-    BAC BCA
-    CBA CAB
-
-17. Reversal program with special characters.
-
-    	Input : Zw$pn&il
-    	Output : lin$p&wZ
-
-
-
-	98413211 47
 
 
 
