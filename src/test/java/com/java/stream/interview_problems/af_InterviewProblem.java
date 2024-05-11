@@ -80,16 +80,16 @@ public class af_InterviewProblem {
         ;
 
     }
-}
+    record Employee(int id, String name, List<Project> project) {
+        public long sumOfProjectDurations() {
+            return project.stream().mapToInt(Project::duration).sum();
+        }
 
-record Employee(int id, String name, List<Project> project) {
-    public long sumOfProjectDurations() {
-        return project.stream().mapToInt(Project::duration).sum();
+        public long projectSize() {
+            return this.project().size();
+        }
     }
 
-    public long projectSize() {
-        return this.project().size();
-    }
 }
 
 record Project(String name, int duration) {

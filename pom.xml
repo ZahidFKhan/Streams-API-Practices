@@ -8,7 +8,7 @@
         <version>3.2.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.java.stream.problems</groupId>
+    <groupId>com.java.stream</groupId>
     <artifactId>Stream-Problems</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Stream-Problems</name>
