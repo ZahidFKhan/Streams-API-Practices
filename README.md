@@ -14,24 +14,6 @@
 
 
 
-
-9) I have two sorted arrays. Need to merge those.
-
-
-10) A List<String> contains alpha, numeric and alpha numeric values as strings. Write a program to create a List<Integer>s from the original List.
-
-    	input :  List <String> ls =  ["as", "123", "32", "2as"]
-    	output : List<Integer> iList = [123,32]
-
-
-11) How to remove duplicates from an arrayList?
-
-
-12)	I have a passenger Object. that has an e-mail.  So given the list of passenger Objects
-       I need to find the list of domains and the no of times each domain occured.
-
-
-
 13)
 
 Student class
@@ -53,32 +35,6 @@ student a maths 90 (hightest for student A)
 student b scice 70 (least for student b)
 student b maths 90 (hightest for student b)
 
-
-
-
-1)
-
-Given 2 numbers as list, add the numbers and store the result in a new list.
-2->3->5->7->NULL
-8->2->7->NULL
-Output : 3->1->8->4->NULL
-
-   Input Array is: {15, 10, 16, 20, 8, 9, 7, 50 }
-
-15 -16
- 10 -16
- 16-20
- 20-50
- 8-9
- 9-50
- 7-50
-  50 -1
-
-Find the next greatest element for each element in the Array.
-
-
-
-3)
 
 
 Given two arrays of integers, compute the pair of values (one value in each array) with the smallest (non-negative) difference. Return the difference.
