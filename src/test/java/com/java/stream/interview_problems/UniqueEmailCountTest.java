@@ -4,7 +4,6 @@ import com.github.javafaker.Faker;
 import com.java.stream.interview_problems.domain.Employee;
 import com.java.stream.solutions.InterviewProblemSolutions;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import org.junit.jupiter.api.Assertions;
@@ -16,7 +15,7 @@ import org.junit.jupiter.api.Test;
  *
  * Find the list of domains ( gmail.com, yahoo.com..) and the no of occurrences for each domain?
  * */
-public class UniqueDomainsTest {
+public class UniqueEmailCountTest {
   @Test
   @Disabled
   void findUniqueDomainsWithCount() {
