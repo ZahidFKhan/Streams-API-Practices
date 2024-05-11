@@ -12,27 +12,6 @@
 # Good luck!
 
 
-
-
-5) List of cities
-
-   "Mumbai"
-   "Munnar"
-   "chennai"
-   "Hyderabad"
-
-   Calcullate the lenght of each city where the city name starts with 'm' or 'M' and create a list.
-
-
-Can you  write a program to create another list that contains the cities start with "m"?
-
-
-6)  I have to arrays
-    int arr1[] = {21,6,8,9,10,5};
-    int arr2[] = {10,21,5,8,6,9};
-
-    write a program to check whether both arrays are equal or not.
-
 7)  Given a string, find the words with the maximum number of vowels.
 
     	"The quick brown fox jumps right over the little lazy dog."
@@ -60,7 +39,7 @@ Can you  write a program to create another list that contains the cities start w
 
 13)
 
-Student class 
+Student class
 sting name
 string subject
 int marks
@@ -72,22 +51,12 @@ student - A - science - 70
 student - B - hindi - 80
 student - B - maths - 90
 student - B - science - 70
-output - 
+output -
 student a hindi 50 (least for student A)
 student a maths 90 (hightest for student A)
 
 student b scice 70 (least for student b)
 student b maths 90 (hightest for student b)
-
-
-
-14)
-
-Left Rotate array :
-
-input : 1 2 3 4 5 6
-number: 3 -
-output: 4 5 6 1 2 3
 
 
 
@@ -102,13 +71,13 @@ Output : 3->1->8->4->NULL
    Input Array is: {15, 10, 16, 20, 8, 9, 7, 50 }
 
 15 -16
-   10 -16
-   16-20
-   20-50
-   8-9
-   9-50
-   7-50
-   50 -1
+ 10 -16
+ 16-20
+ 20-50
+ 8-9
+ 9-50
+ 7-50
+  50 -1
 
 Find the next greatest element for each element in the Array.
 
@@ -120,23 +89,11 @@ Find the next greatest element for each element in the Array.
 Given two arrays of integers, compute the pair of values (one value in each array) with the smallest (non-negative) difference. Return the difference.
 
 Input : A[] = {l, 3, 15, 11, 2}
-        B[] = {23, 127, 235, 19, 8}
+B[] = {23, 127, 235, 19, 8}
 
 Output : 3
 the pair is: 11, 8
 
-
-
-
-
-
-
-
-insertion sort.
-quick sort
-selection sort
-merge sort
-bubble sort.
 
 
 
