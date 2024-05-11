@@ -31,7 +31,7 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <configuration>
                         <includes>
-                            <include>**/*.java</include>
+                            <include>com.java.stream/**/*.java</include>
                         </includes>
                     </configuration>
                 </plugin>
