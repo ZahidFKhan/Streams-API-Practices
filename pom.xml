@@ -12,7 +12,14 @@
     <artifactId>Stream-Problems</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Stream-Problems</name>
-    <description>Demo project for Spring Boot</description>
+    <description>Stream Problems</description>
+    <contributors>
+        <contributor>
+            <name>
+                Zahid Khan
+            </name>
+        </contributor>
+    </contributors>
     <properties>
         <java.version>17</java.version>
     </properties>
