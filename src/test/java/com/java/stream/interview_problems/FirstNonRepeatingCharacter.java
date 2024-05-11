@@ -1,4 +1,4 @@
-package com.java.stream.problems.interview;
+package com.java.stream.interview_problems;
 
 /*
 *
@@ -12,5 +12,4 @@ Q17)  Given a String = The quick brown fox jumps over the lazy dog, find the fir
 
 
 */
-public class FirstNonRepeatingCharacter {
-}
+public class FirstNonRepeatingCharacter {}

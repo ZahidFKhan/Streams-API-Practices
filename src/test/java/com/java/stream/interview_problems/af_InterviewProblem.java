@@ -1,4 +1,4 @@
-package com.java.stream.problems.interview;
+package com.java.stream.interview_problems;
 
 /**
  * You are given a list of employees.
@@ -12,13 +12,11 @@ package com.java.stream.problems.interview;
  * return the employee with the longest total duration of projects. If there are still ties, return any one of the tied employees.
  */
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
-
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 public class af_InterviewProblem {
     @Test

@@ -1,7 +1,5 @@
-package com.java.stream.problems;
+package com.java.stream.general_problems;
 
-
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 /*
@@ -14,7 +12,6 @@ output is: 133444576998
 Solution is: Arrays.stream(arr).mapToObj(i-> i+"").sorted().forEach(System.out::print);*/
 public class Ak_ReArrangeElementInAscendingOrderTest {
 
-    @Test
-    public void test(){
-    }
+  @Test
+  public void test() {}
 }

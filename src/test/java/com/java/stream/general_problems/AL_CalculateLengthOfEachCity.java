@@ -1,4 +1,4 @@
-package com.java.stream.problems;
+package com.java.stream.general_problems;
 
 /*
 * 5) List of cities
@@ -11,5 +11,4 @@ package com.java.stream.problems;
    Calcullate the lenght of each city where the city name starts with 'm' or 'M' and create a list.
 
 */
-public class AL_CalculateLengthOfEachCity {
-}
+public class AL_CalculateLengthOfEachCity {}

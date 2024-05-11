@@ -1,5 +1,4 @@
-package com.java.stream.problems;
-
+package com.java.stream.general_problems;
 
 /*
 Q16) Given a numeric array , re arrange the elements to form a highest possible value.
@@ -14,5 +13,4 @@ Solution is: Arrays.stream(arr).mapToObj(i-> i+"").sorted((o1,o2) -> (o2+o1).com
 
 
 * */
-public class Al_ReArrangeElementInDecendingOrder {
-}
+public class Al_ReArrangeElementInDecendingOrder {}

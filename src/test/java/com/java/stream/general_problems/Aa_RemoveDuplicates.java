@@ -1,11 +1,10 @@
-package com.java.stream.problems;
-
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
-
-import java.util.Arrays;
+package com.java.stream.general_problems;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.Arrays;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 public class Aa_RemoveDuplicates {
     @Test

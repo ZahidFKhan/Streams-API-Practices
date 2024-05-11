@@ -1,12 +1,11 @@
-package com.java.stream.problems;
+package com.java.stream.general_problems;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.Arrays;
 import java.util.Comparator;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 public class Ab_HighestWord {
     @Test
