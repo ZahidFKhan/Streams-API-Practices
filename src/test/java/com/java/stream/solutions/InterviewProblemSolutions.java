@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class InterviewProblemSolutions {
   public static Map<String, ? extends Number> findUniqueDomainsCount(List<Employee> employees) {
     return employees.stream()
-        .filter(x -> x.email().split("@").length > 1)
+        .filter(x -> x.email().split("@").length == 2)
         .map(x -> x.email().split("@")[1])
         .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
   }
