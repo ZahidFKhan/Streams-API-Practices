@@ -1,5 +1,5 @@
 <h1 align='center'>
-Welcome! STREAM Playground.
+Welcome! To STREAM Playground.
 </h1>
 
 <p align='center'>
