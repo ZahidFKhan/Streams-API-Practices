@@ -1,10 +1,7 @@
 package com.java.stream.solutions;
 
 import com.java.stream.interview_problems.domain.Employee;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -24,5 +21,10 @@ public class InterviewProblemSolutions {
             .get();
 
     return i;
+  }
+
+  public static Map<Integer, List<Integer>> groupingOfNumbers(List<Integer> randomIntegers) {
+    return randomIntegers.stream()
+            .collect(Collectors.groupingBy(e->e / 10));
   }
 }
