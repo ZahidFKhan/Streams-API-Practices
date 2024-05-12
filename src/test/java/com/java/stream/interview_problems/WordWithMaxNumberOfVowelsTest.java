@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /*
- * Given a string,
+ * Given A String
  * Find the highest number of vowels present in a word.
  *
  * Example:
