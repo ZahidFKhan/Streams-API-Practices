@@ -1,5 +1,11 @@
 package com.java.stream.interview_problems;
 
+import com.java.stream.interview_problems.domain.CorporateEmployee;
+import com.java.stream.interview_problems.domain.Project;
+import java.util.*;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
 /**
  * You are given a list of employees. Each employee has an id, name, and a list of projects they
  * have worked on. Each project has a name and duration in months.
@@ -11,11 +17,6 @@ package com.java.stream.interview_problems;
  * <p>return the employee with the longest total duration of projects. If there are still ties,
  * return any one of the tied employees.
  */
-import com.java.stream.interview_problems.domain.CorporateEmployee;
-import com.java.stream.interview_problems.domain.Project;
-import java.util.*;
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
 
 public class EmployeeWorkedForMaxProjects {
   @Test
