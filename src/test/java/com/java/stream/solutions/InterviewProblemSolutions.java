@@ -24,7 +24,15 @@ public class InterviewProblemSolutions {
   }
 
   public static Map<Integer, List<Integer>> groupingOfNumbers(List<Integer> randomIntegers) {
-    return randomIntegers.stream()
-            .collect(Collectors.groupingBy(e->e / 10));
+    return randomIntegers.stream().collect(Collectors.groupingBy(e -> e / 10));
+  }
+
+  public static Character firstNonRepeatingCharacter(String input) {
+    return input
+        .chars()
+        .mapToObj(x -> (char) x)
+        .filter(x -> input.indexOf(x) == input.lastIndexOf(x))
+        .findFirst()
+        .orElseThrow(() -> new RuntimeException());
   }
 }
