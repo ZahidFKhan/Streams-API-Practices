@@ -1,9 +1,9 @@
 # Repository to practice STREAM Problems.
 
-1. Clone this repository.
+1. Fork this repository.
 2. Remove the @Disabled Tags.
-3. Solve the problems
-4. Raise a PR request to review your code. :)
+3. Solve the Problem.
+4. Raise the PR request to review your code. :)
 
 ### Hint:
 
