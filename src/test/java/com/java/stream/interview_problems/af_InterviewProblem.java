@@ -11,6 +11,8 @@ package com.java.stream.interview_problems;
  * <p>return the employee with the longest total duration of projects. If there are still ties,
  * return any one of the tied employees.
  */
+import com.java.stream.interview_problems.domain.CorporateEmployee;
+import com.java.stream.interview_problems.domain.Project;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -66,18 +68,7 @@ public class af_InterviewProblem {
                     .thenComparing(CorporateEmployee::sumOfProjectDurations))
             .stream()
             .findFirst();
-    ;
   }
 
-  record CorporateEmployee(int id, String name, List<Project> project) {
-    public long sumOfProjectDurations() {
-      return project.stream().mapToInt(Project::duration).sum();
-    }
-
-    public long projectSize() {
-      return this.project().size();
-    }
-  }
 }
 
-record Project(String name, int duration) {}
