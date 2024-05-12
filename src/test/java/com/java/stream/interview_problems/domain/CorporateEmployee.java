@@ -1,7 +1,5 @@
 package com.java.stream.interview_problems.domain;
 
-import com.java.stream.interview_problems.Project;
-
 import java.util.List;
 
 public record CorporateEmployee(int id, String name, List<Project> project) {
