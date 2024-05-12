@@ -14,12 +14,10 @@ package com.java.stream.interview_problems;
 import com.java.stream.interview_problems.domain.CorporateEmployee;
 import com.java.stream.interview_problems.domain.Project;
 import java.util.*;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class af_InterviewProblem {
+public class EmployeeWorkedForMaxProjects {
   @Test
   @Disabled("Remove This Once you Complete The Exercise")
   public void numberOfOccurencesOfEachCharacter() {
@@ -38,14 +36,6 @@ public class af_InterviewProblem {
     var actualOutput = ""; // Assert that the actual output matches the expected output
   }
 
-  private Map<Character, Long> solution1() {
-    String input = "the quick brown fox jumps right over the little lazy dog little";
-    return input
-        .chars()
-        .mapToObj(x -> (char) x)
-        .collect(
-            Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()));
-  }
 
   void solution() {
     final List<Project> projects1 =
