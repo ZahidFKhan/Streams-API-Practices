@@ -2,7 +2,9 @@ package com.java.stream.interview_problems;
 
 import com.java.stream.interview_problems.domain.CorporateEmployee;
 import com.java.stream.interview_problems.domain.Project;
+import com.java.stream.solutions.InterviewProblemSolutions;
 import java.util.*;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -17,49 +19,26 @@ import org.junit.jupiter.api.Test;
  * <p>return the employee with the longest total duration of projects. If there are still ties,
  * return any one of the tied employees.
  */
-
 public class EmployeeWorkedForMaxProjects {
   @Test
-  @Disabled("Remove This Once you Complete The Exercise")
+  @Disabled()
   public void numberOfOccurencesOfEachCharacter() {
-    final List<Project> projects1 =
+    final List<Project> project1 =
         List.of(
             new Project("E1", 2), new Project("E2", 1), new Project("E3", 2), new Project("E4", 2));
 
-    final List<Project> projects2 =
+    final List<Project> project2 =
         List.of(
             new Project("E1", 2), new Project("E2", 2), new Project("E3", 2), new Project("E4", 2));
 
     List<CorporateEmployee> corporateEmployees = new ArrayList<>();
-    corporateEmployees.add(new CorporateEmployee(1, "Priyanka", projects1));
-    corporateEmployees.add(new CorporateEmployee(2, "Zahid", projects2));
+    corporateEmployees.add(new CorporateEmployee(1, "Priyanka", project1));
+    corporateEmployees.add(new CorporateEmployee(2, "Zahid", project2));
 
-    var actualOutput = ""; // Assert that the actual output matches the expected output
+    var expected = InterviewProblemSolutions.employeesWorkedForMaxProjects(corporateEmployees);
+
+    CorporateEmployee actual = null; // Assert that the actual output matches the expected output
+
+    Assertions.assertEquals(expected, actual);
   }
-
-
-  void solution() {
-    final List<Project> projects1 =
-        List.of(
-            new Project("E1", 2), new Project("E2", 1), new Project("E3", 2), new Project("E4", 2));
-
-    final List<Project> projects2 =
-        List.of(
-            new Project("E1", 2), new Project("E2", 2), new Project("E3", 2), new Project("E4", 2));
-
-    List<CorporateEmployee> corporateEmployees = new ArrayList<>();
-    corporateEmployees.add(new CorporateEmployee(1, "Priyanka", projects1));
-    corporateEmployees.add(new CorporateEmployee(2, "Zahid", projects2));
-
-    final Optional<CorporateEmployee> first =
-        corporateEmployees.stream()
-            .map(x -> (CorporateEmployee) x)
-            .max(
-                Comparator.comparing(CorporateEmployee::projectSize)
-                    .thenComparing(CorporateEmployee::sumOfProjectDurations))
-            .stream()
-            .findFirst();
-  }
-
 }
-

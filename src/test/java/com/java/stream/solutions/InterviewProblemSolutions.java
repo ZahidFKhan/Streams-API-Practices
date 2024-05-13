@@ -1,5 +1,6 @@
 package com.java.stream.solutions;
 
+import com.java.stream.interview_problems.domain.CorporateEmployee;
 import com.java.stream.interview_problems.domain.Employee;
 import java.util.*;
 import java.util.function.Function;
@@ -14,13 +15,10 @@ public class InterviewProblemSolutions {
   }
 
   public static Integer maxNumberOfVowels(String input) {
-    final var i =
-        Arrays.stream(input.split(" "))
-            .map(x -> x.length() - x.replaceAll("[aeiouAEIOU]", "").length())
-            .max(Comparator.comparing(Integer::intValue))
-            .get();
-
-    return i;
+    return Arrays.stream(input.split(" "))
+        .map(x -> x.length() - x.replaceAll("[aeiouAEIOU]", "").length())
+        .max(Comparator.comparing(Integer::intValue))
+        .get();
   }
 
   public static Map<Integer, List<Integer>> groupingOfNumbers(List<Integer> randomIntegers) {
@@ -33,6 +31,16 @@ public class InterviewProblemSolutions {
         .mapToObj(x -> (char) x)
         .filter(x -> input.indexOf(x) == input.lastIndexOf(x))
         .findFirst()
-        .orElseThrow(() -> new RuntimeException());
+        .orElseThrow(RuntimeException::new);
+  }
+
+  public static CorporateEmployee employeesWorkedForMaxProjects(
+      List<CorporateEmployee> corporateEmployees) {
+    return corporateEmployees.stream()
+        .sorted(
+            Comparator.comparing(CorporateEmployee::projectSize)
+                .thenComparing(CorporateEmployee::sumOfProjectDurations).reversed())
+        .findFirst()
+        .get();
   }
 }
