@@ -8,7 +8,7 @@ import java.util.Comparator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Ac_2ndHighestWord {
+public class Ac_2ndHighestWordTest {
   @Test
   @Disabled()
   public void find2ndHighestWord() {

@@ -10,4 +10,4 @@ package com.java.stream.general_problems;
 · Loser will have min number of char count and no other char will have same count.
 Input: aabbccdeff
 Output: winner: none, loser: e*/
-public class AO_WinnerLoser {}
+public class AO_WinnerLoserTest {}

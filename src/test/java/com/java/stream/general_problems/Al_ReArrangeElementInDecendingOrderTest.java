@@ -13,4 +13,4 @@ Solution is: Arrays.stream(arr).mapToObj(i-> i+"").sorted((o1,o2) -> (o2+o1).com
 
 
 * */
-public class Al_ReArrangeElementInDecendingOrder {}
+public class Al_ReArrangeElementInDecendingOrderTest {}

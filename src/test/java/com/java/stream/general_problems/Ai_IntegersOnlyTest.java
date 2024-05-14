@@ -6,4 +6,4 @@ Solution:
 listOfStrings.stream().filter( ss -> ss.matches("[0-9]*")).map(Integer::valueOf).collect(Collectors.toList());
 
 */
-public class Ai_IntegersOnly {}
+public class Ai_IntegersOnlyTest {}

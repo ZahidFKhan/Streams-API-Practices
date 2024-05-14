@@ -7,7 +7,7 @@ import java.util.Comparator;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class Ab_HighestWord {
+public class Ab_HighestWordTest {
     @Test
     @Disabled()
     public void findHighestWord() {

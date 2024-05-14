@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Ae_NumberOfOccurencesOfCharacter {
+public class Ae_NumberOfOccurencesOfCharacterTest {
   @Test
   @Disabled("Remove This Once you Complete The Exercise")
   public void numberOfOccurencesOfEachCharacter() {
