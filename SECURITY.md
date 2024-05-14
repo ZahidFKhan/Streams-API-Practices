@@ -11,3 +11,4 @@
 
 You can directly report any security issues or else you can reach out to me
 Email: xahiidkhan@gmail.com
+OR You can directly reach out to me on Linkedin: https://www.linkedin.com/in/zahidfayazkhan/
