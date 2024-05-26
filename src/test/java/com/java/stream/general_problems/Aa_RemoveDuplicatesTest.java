@@ -22,11 +22,11 @@ public class Aa_RemoveDuplicatesTest {
         assertEquals(expectedOutput, actualOutput);
     }
 
-    private void solution1() {
+    public static void solution1() {
         "dabfcadef".chars().distinct().mapToObj(c -> (char) c).forEach(System.out::println);
     }
 
-    private void solution2() {
+    public static void solution2() {
         Arrays.stream("dabfcadef".split("")).distinct().forEach(System.out::print);
     }
 }
