@@ -1,4 +1,4 @@
-package com.java.stream.general_problems;
+package com.java.stream.general_problems.strings;
 
 /*
 *

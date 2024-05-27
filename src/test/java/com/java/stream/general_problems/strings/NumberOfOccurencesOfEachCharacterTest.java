@@ -1,4 +1,4 @@
-package com.java.stream.general_problems;
+package com.java.stream.general_problems.strings;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Ae_NumberOfOccurencesOfCharacterTest {
+public class NumberOfOccurencesOfEachCharacterTest {
   @Test
   @Disabled("Remove This Once you Complete The Exercise")
   public void numberOfOccurencesOfEachCharacter() {

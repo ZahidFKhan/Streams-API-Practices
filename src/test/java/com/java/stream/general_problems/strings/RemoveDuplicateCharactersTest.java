@@ -1,14 +1,12 @@
-package com.java.stream.general_problems;
+package com.java.stream.general_problems.strings;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import java.util.Arrays;
 
 import com.java.stream.solutions.GeneralProblemsSolution;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class Aa_RemoveDuplicatesTest {
+public class RemoveDuplicateCharactersTest {
   @Test
   @Disabled()
   public void testRemoveDuplicates() {

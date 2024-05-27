@@ -1,4 +1,4 @@
-package com.java.stream.general_problems;
+package com.java.stream.general_problems.strings;
 
 /*7)  Given a string, find the words with the maximum number of vowels.
 
