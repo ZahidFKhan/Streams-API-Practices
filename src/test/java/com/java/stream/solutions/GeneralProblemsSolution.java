@@ -27,4 +27,12 @@ public class GeneralProblemsSolution {
         .findFirst()
         .orElseThrow(RuntimeException::new);
   }
+
+  public static String getUniqueCharacters(String input) {
+    return input
+        .chars()
+        .distinct()
+        .mapToObj(x -> (char) x)
+        .reduce("", (x, y) -> x + y, (a, b) -> a + b);
+  }
 }
