@@ -18,4 +18,13 @@ public class GeneralProblemsSolution {
         Arrays.stream(input.split(" ")).max(Comparator.comparing(String::length)).get();
     return maxString;
   }
+
+  public static String find2ndLargestWordInTheString(String input) {
+    return Arrays.stream(input.split(" "))
+        .sorted(Comparator.comparing(String::length, Comparator.reverseOrder()))
+        .skip(1)
+        .limit(1)
+        .findFirst()
+        .orElseThrow(RuntimeException::new);
+  }
 }
