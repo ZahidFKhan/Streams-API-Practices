@@ -5,19 +5,12 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import java.util.Comparator;
 import java.util.function.IntBinaryOperator;
+
+import com.java.stream.practice.models.Person;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-/**
- * Exercises to create comparators using lambda expressions
- * and using the Comparator combinators. Some of the exercises
- * use a Person class, which is a simple POJO containing a last
- * name, first name, and age, with the obvious constructors and
- * getters.
- */
-
-record Person(String name, String lastName, int age){}
 public class ComparatorTest {
 
     final Person michael = new Person("Michael", "Jackson", 51);
