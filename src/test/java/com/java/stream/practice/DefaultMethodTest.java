@@ -1,4 +1,4 @@
-package com.java.stream.pratice;
+package com.java.stream.practice;
 
 import java.util.ArrayList;
 import java.util.Arrays;
