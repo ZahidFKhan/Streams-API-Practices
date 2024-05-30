@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * is named after the functional interface intended to be used
  * as the solution.
  */
-public class Lambdas {
+public class A_Lambdas {
 
     /**
      * Write a lambda expression that is a predicate

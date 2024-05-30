@@ -1,13 +1,11 @@
 package com.java.stream.learn.solutions;
 
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -32,8 +30,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * This set of exercises covers more advanced stream operations
  * longer stream pipelines, and simple reductions.
  */
-@Disabled
-public class IntermediateStreams {
+public class E_IntermediateStreams {
 
     /**
      * Convert a list of strings into a list of characters.
@@ -336,13 +333,13 @@ public class IntermediateStreams {
 
     private BufferedReader reader;
 
-    @BeforeAll
+    @BeforeEach
     public void z_setUpBufferedReader() throws IOException {
-        reader = Files.newBufferedReader(
-                Paths.get("SonnetI.txt"), StandardCharsets.UTF_8);
+        reader =                 new BufferedReader(new InputStreamReader(this.getClass().getResource("/SonnetI.txt").openStream()));
+
     }
 
-    @AfterAll
+    @AfterEach
     public void z_closeBufferedReader() throws IOException {
         reader.close();
     }

@@ -9,10 +9,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.Test;
+
+import org.junit.jupiter.api.*;
 
 /**
  * This set of exercises covers simple stream pipelines,
@@ -22,7 +20,7 @@ import org.junit.jupiter.api.Test;
  * named "reader" that the test has set up for you.
  */
 @Disabled
-public class SimpleStreams {
+public class D_SimpleStreams {
     /**
      * Given a list of words, create an output list that contains
      * only the odd-length words, converted to upper case.
@@ -243,13 +241,12 @@ public class SimpleStreams {
 
     private BufferedReader reader;
 
-    @BeforeAll
+    @BeforeEach
     public void z_setUpBufferedReader() throws IOException {
-        reader =
-                new BufferedReader(new InputStreamReader(this.getClass().getResource("SonnetI.txt").openStream()));
+        reader = new BufferedReader(new InputStreamReader(D_SimpleStreams.class.getResource("/SonnetI.txt").openStream()));
     }
 
-    @AfterAll
+    @AfterEach
     public void z_closeBufferedReader() throws IOException {
         reader.close();
     }

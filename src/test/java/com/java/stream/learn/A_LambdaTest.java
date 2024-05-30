@@ -18,7 +18,7 @@ import org.junit.jupiter.api.Test;
  * reference corresponding to each of several different functional interfaces. Each exercise is
  * named after the functional interface intended to be used as the solution.
  */
-public class LambdaTest {
+public class A_LambdaTest {
 
   /**
    * Write a lambda expression that is a predicate that tests whether a string is longer than four

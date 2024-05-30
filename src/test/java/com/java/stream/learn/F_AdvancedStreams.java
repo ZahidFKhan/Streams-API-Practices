@@ -28,7 +28,7 @@ import java.util.stream.Stream;
  * including grouping collectors, composition of collectors,
  * and customized collectors.
  */
-public class AdvancedStreams {
+public class F_AdvancedStreams {
 
     /**
      * Categorize the words from the text file into a map, where the map's key

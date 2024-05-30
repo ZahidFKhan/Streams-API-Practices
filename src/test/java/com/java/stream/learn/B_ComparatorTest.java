@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class ComparatorTest {
+public class B_ComparatorTest {
 
     final Person michael = new Person("Michael", "Jackson", 51);
     final Person rod = new Person("Rod", "Stewart", 71);

@@ -22,7 +22,7 @@ import org.junit.jupiter.api.*;
  * This set of exercises covers more advanced stream operations
  * longer stream pipelines, and simple reductions.
  */
-public class IntermediateStreamsTest {
+public class E_IntermediateStreamsTest {
 
     /**
      * Convert a list of strings into a list of characters.

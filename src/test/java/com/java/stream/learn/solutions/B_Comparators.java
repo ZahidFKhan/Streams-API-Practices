@@ -17,7 +17,7 @@ import org.junit.jupiter.api.Test;
  * name, first name, and age, with the obvious constructors and
  * getters.
  */
-public class Comparators {
+public class B_Comparators {
 
     final Person michael = new Person("Michael", "Jackson", 51);
     final Person rod = new Person("Rod", "Stewart", 71);

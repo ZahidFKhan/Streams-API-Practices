@@ -16,7 +16,7 @@ import java.util.List;
  * Some of these exercises use a BufferedReader variable
  * named "reader" that the test has set up for you.
  */
-public class SimpleStreamsTest {
+public class D_SimpleStreamsTest {
     /**
      * Given a list of words, create an output list that contains
      * only the odd-length words, converted to upper case.
