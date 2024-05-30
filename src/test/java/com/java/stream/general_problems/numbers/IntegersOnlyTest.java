@@ -1,9 +1,24 @@
 package com.java.stream.general_problems.numbers;
 
-/*
-* Q13) Given a List of Strings  ["as", "123", "32", "2as"], create another Integer list that contains only integers. The output shoul be: List<Integer> iList = [123,32]
-Solution:
-listOfStrings.stream().filter( ss -> ss.matches("[0-9]*")).map(Integer::valueOf).collect(Collectors.toList());
+import com.java.stream.solutions.GeneralProblemsNumbersSolution;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-*/
-public class IntegersOnlyTest {}
+import java.util.List;
+
+/*
+ * Given a list of Strings : ["as", "123", "32", "2as"],
+ * Create another list that contains only integers.
+ * The output should be: [123,32]
+ */
+public class IntegersOnlyTest {
+    @Test
+    void testCheckAllIntegersWithoutAlphabets(){
+        var input = List.of("1","12","12a","a12");
+        var actual = List.of();
+        var expected = GeneralProblemsNumbersSolution.getNumberOnly(input);
+
+        Assertions.assertEquals(expected, actual);
+
+    }
+}
