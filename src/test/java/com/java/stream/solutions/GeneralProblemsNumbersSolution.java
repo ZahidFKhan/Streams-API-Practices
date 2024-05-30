@@ -1,5 +1,6 @@
 package com.java.stream.solutions;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -11,5 +12,12 @@ public class GeneralProblemsNumbersSolution {
 
   public static String getSmallestPossibleValue(List<Integer> input) {
     return input.stream().map(String::valueOf).sorted().collect(Collectors.joining());
+  }
+
+  public static String getHighestPossibleValue(List<Integer> input) {
+    return input.stream()
+        .map(String::valueOf)
+        .sorted(Comparator.reverseOrder())
+        .collect(Collectors.joining());
   }
 }

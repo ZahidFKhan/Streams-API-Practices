@@ -1,16 +1,24 @@
 package com.java.stream.general_problems.numbers;
 
+import com.java.stream.solutions.GeneralProblemsNumbersSolution;
+import java.util.List;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 /*
-Q16) Given a numeric array , re arrange the elements to form a highest possible value.
+ * Given a numeric array , re arrange the elements to form a highest possible value.
+ * Input:  {1, 34, 3, 98, 9, 76, 45, 4};
+ * Output: 998764543431
+ * Explanation: 9,98,76,45,4,34,3,1
+ * */
+public class ReArrangeElementInDecendingOrderTest {
 
-input is: int arr[] = {1, 34, 3, 98, 9, 76, 45, 4};
+  @Test
+  public void test() {
+    var input = List.of(1, 34, 3, 98, 9, 76, 45, 4);
+    var expected = GeneralProblemsNumbersSolution.getHighestPossibleValue(input);
+    var actual = "";
 
-output is: 998764543431
-Solution is: Arrays.stream(arr).mapToObj(i-> i+"").sorted((o1,o2) -> (o2+o1).compareTo(o1+o2)).forEach(System.out::print)
-
-
-	2) Arrays.stream(arr12).mapToObj(i-> i+"").sorted(Collections.reverseOrder()).forEach(System.out::print); ( solution is wrong. Associates need to fix it).
-
-
-* */
-public class ReArrangeElementInDecendingOrderTest {}
+    Assertions.assertEquals(expected, actual);
+  }
+}
