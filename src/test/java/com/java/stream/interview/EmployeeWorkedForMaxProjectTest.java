@@ -23,15 +23,15 @@ public class EmployeeWorkedForMaxProjectTest {
   @Test
   @Disabled()
   public void numberOfOccurencesOfEachCharacter() {
-    final List<Project> project1 =
+    final var project1 =
         List.of(
             new Project("E1", 2), new Project("E2", 1), new Project("E3", 2), new Project("E4", 2));
 
-    final List<Project> project2 =
+    final var project2 =
         List.of(
             new Project("E1", 2), new Project("E2", 2), new Project("E3", 2), new Project("E4", 2));
 
-    List<CorporateEmployee> corporateEmployees = new ArrayList<>();
+    var corporateEmployees = new ArrayList<CorporateEmployee>();
     corporateEmployees.add(new CorporateEmployee(1, "Priyanka", project1));
     corporateEmployees.add(new CorporateEmployee(2, "Zahid", project2));
 
