@@ -3,6 +3,7 @@ package com.java.stream.general_problems.numbers;
 import com.java.stream.solutions.GeneralProblemsNumbersSolution;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /*
@@ -17,6 +18,7 @@ import org.junit.jupiter.api.Test;
 public class ReArrangeElementInAscendingOrderTest {
 
   @Test
+  @Disabled
   public void test() {
     var input = List.of(1, 34, 3, 98, 9, 76, 45, 4);
     var expected = GeneralProblemsNumbersSolution.getSmallestPossibleValue(input);

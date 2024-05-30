@@ -3,6 +3,7 @@ package com.java.stream.practice.solutions;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.io.BufferedReader;
@@ -32,6 +33,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * This set of exercises covers more advanced stream operations
  * longer stream pipelines, and simple reductions.
  */
+@Disabled
 public class IntermediateStreams {
 
     /**

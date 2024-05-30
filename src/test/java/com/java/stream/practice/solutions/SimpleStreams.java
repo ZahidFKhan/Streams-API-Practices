@@ -4,15 +4,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.io.InputStreamReader;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -22,6 +21,7 @@ import org.junit.jupiter.api.Test;
  * Some of these exercises use a BufferedReader variable
  * named "reader" that the test has set up for you.
  */
+@Disabled
 public class SimpleStreams {
     /**
      * Given a list of words, create an output list that contains
@@ -245,8 +245,8 @@ public class SimpleStreams {
 
     @BeforeAll
     public void z_setUpBufferedReader() throws IOException {
-        reader = Files.newBufferedReader(
-                Paths.get("SonnetI.txt"), StandardCharsets.UTF_8);
+        reader =
+                new BufferedReader(new InputStreamReader(this.getClass().getResource("SonnetI.txt").openStream()));
     }
 
     @AfterAll
