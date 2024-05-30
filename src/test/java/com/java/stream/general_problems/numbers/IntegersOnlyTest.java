@@ -1,10 +1,9 @@
 package com.java.stream.general_problems.numbers;
 
 import com.java.stream.solutions.GeneralProblemsNumbersSolution;
+import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.util.List;
 
 /*
  * Given a list of Strings : ["as", "123", "32", "2as"],
