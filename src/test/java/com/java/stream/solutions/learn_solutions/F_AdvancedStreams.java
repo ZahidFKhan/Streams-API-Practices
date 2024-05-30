@@ -1,4 +1,4 @@
-package com.java.stream.learn.solutions;
+package com.java.stream.solutions.learn_solutions;
 
 import static java.util.Map.entry;
 import static org.junit.jupiter.api.Assertions.assertEquals;

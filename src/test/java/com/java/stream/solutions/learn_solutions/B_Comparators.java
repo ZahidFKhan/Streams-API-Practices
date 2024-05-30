@@ -1,4 +1,4 @@
-package com.java.stream.learn.solutions;
+package com.java.stream.solutions.learn_solutions;
 
 
 
