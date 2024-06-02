@@ -20,4 +20,8 @@ public class GeneralProblemsNumbersSolution {
         .sorted(Comparator.reverseOrder())
         .collect(Collectors.joining());
   }
+
+  public static <T> List<T> getUniqueNumberFromList(List<T> input) {
+    return input.stream().distinct().toList();
+  }
 }
