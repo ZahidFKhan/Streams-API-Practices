@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 /*
  * Given an array of {5,6,7,8,5,5,8,8,7)
- *  find the sum of the unique elements.
+ * Find the sum of the unique elements.
  * The output should be in this case is: 26.
  */
 public class SumOfUniqueDigitsTest {
