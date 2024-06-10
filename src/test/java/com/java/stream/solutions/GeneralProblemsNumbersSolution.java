@@ -24,4 +24,8 @@ public class GeneralProblemsNumbersSolution {
   public static <T> List<T> getUniqueNumberFromList(List<T> input) {
     return input.stream().distinct().toList();
   }
+
+  public static long sumOfDigits(List<Integer> input) {
+    return input.stream().reduce(0, Integer::sum);
+  }
 }
