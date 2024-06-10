@@ -1,7 +1,10 @@
 package com.java.stream.problems;
 
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
 /*
-* 5) List of cities
+* List of cities
 
    "Mumbai"
    "Munnar"
@@ -11,4 +14,11 @@ package com.java.stream.problems;
    Calcullate the lenght of each city where the city name starts with 'm' or 'M' and create a list.
 
 */
-public class CalculateLengthOfEachCityTest {}
+public class CalculateLengthOfEachCityTest {
+    @Test
+    @Disabled
+      void testCalculateLengthOfEachCityTest(){
+        
+      }
+
+}

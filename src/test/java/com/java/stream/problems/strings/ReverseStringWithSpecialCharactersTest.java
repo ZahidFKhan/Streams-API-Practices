@@ -1,3 +1,13 @@
 package com.java.stream.problems.strings;
 
-public class ReverseStringWithSpecialCharactersTest {}
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
+public class ReverseStringWithSpecialCharactersTest {
+    @Test
+    @Disabled
+      void testReverseStringWithSpecialCharactersTest(){
+
+      }
+
+}

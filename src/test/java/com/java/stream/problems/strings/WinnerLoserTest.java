@@ -1,5 +1,8 @@
 package com.java.stream.problems.strings;
 
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
 /*
 *
 
@@ -10,4 +13,11 @@ package com.java.stream.problems.strings;
 · Loser will have min number of char count and no other char will have same count.
 Input: aabbccdeff
 Output: winner: none, loser: e*/
-public class AO_WinnerLoserTest {}
+public class WinnerLoserTest {
+    @Test
+    @Disabled
+      void testWinnerLoserTest(){
+
+      }
+
+}
