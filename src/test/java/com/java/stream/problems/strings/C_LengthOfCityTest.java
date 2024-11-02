@@ -9,13 +9,19 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Calculate the length of city names that start with 'm' or 'M'.
+ * Calculates the length of city names that start with 'm' or 'M'.
+ * <br>
+ * <br>
+ * <h3>Example Cities</h3>
+ * <ul>
+ *   <li>Mumbai</li>
+ *   <li>Munnar</li>
+ *   <li>Chennai</li>
+ *   <li>Hyderabad</li>
+ * </ul>
  *
- * <p>List of Cities:
- *
- * <p>- Mumbai - Munnar - Chennai - Hyderabad
  */
-class LengthOfEachCityTest {
+class C_LengthOfCityTest {
   @Test
   @Disabled
   void testCalculateLengthOfEachCityTest() {

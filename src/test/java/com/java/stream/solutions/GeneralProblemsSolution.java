@@ -1,9 +1,6 @@
 package com.java.stream.solutions;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -29,11 +26,20 @@ public class GeneralProblemsSolution {
         .findFirst()
         .orElseThrow(RuntimeException::new);
   }
-  public static Map<String,Integer> findLengthOfEachCityAlongWithSize(List<String> cities){
-    return cities.stream()
-            .filter(cityName -> "M".equalsIgnoreCase(cityName.substring(0, 1)))
-            .collect(Collectors.toMap(Function.identity(), String::length));
 
+  public static Map<String, Integer> findLengthOfEachCityAlongWithSize(List<String> cities) {
+    return cities.stream()
+        .filter(cityName -> "M".equalsIgnoreCase(cityName.substring(0, 1)))
+        .collect(Collectors.toMap(Function.identity(), String::length));
+  }
+
+  public static Map<Character, Long> findOccurenceOfCharacter(String input) {
+    return input
+        .chars()
+        .mapToObj(x -> (char) x)
+        .filter(x -> !Character.isSpaceChar(x))
+        .collect(
+            Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()));
   }
 
   public static String getUniqueCharacters(String input) {
