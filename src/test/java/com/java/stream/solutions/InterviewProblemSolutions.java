@@ -36,11 +36,8 @@ public class InterviewProblemSolutions {
 
   public static CorporateEmployee employeesWorkedForMaxProjects(
       List<CorporateEmployee> corporateEmployees) {
-    return corporateEmployees.stream()
-        .sorted(
-            Comparator.comparing(CorporateEmployee::projectSize)
-                .thenComparing(CorporateEmployee::sumOfProjectDurations).reversed())
-        .findFirst()
+    return corporateEmployees.stream().max(Comparator.comparing(CorporateEmployee::projectSize)
+                    .thenComparing(CorporateEmployee::sumOfProjectDurations))
         .get();
   }
 }
