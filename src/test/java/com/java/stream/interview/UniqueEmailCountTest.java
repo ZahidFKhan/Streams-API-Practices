@@ -33,10 +33,10 @@ public class UniqueEmailCountTest {
             new Employee(Faker.instance().internet().emailAddress()),
             new Employee(Faker.instance().internet().emailAddress()));
 
-    final var expected = InterviewProblemSolutions.findUniqueDomainsCount(employees);
+    final var mySolution = InterviewProblemSolutions.findUniqueDomainsCount(employees);
 
     final Map<String, ? extends Number> yourSolution = null;
 
-    Assertions.assertEquals(expected, yourSolution);
+    Assertions.assertEquals(mySolution, yourSolution);
   }
 }

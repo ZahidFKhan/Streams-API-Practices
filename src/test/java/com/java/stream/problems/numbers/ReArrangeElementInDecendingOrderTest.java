@@ -18,9 +18,9 @@ public class ReArrangeElementInDecendingOrderTest {
   @Disabled
   public void test() {
     var input = List.of(1, 34, 3, 98, 9, 76, 45, 4);
-    var expected = GeneralProblemsNumbersSolution.getHighestPossibleValue(input);
+    var mySolution = GeneralProblemsNumbersSolution.getHighestPossibleValue(input);
     var yourSolution = "";
 
-    Assertions.assertEquals(expected, yourSolution);
+    Assertions.assertEquals(mySolution, yourSolution);
   }
 }

@@ -37,8 +37,8 @@ public class RemoveDuplicationFromListTest {
             instance.number().randomNumber(),
             instance.number().randomNumber());
     var yourSolution = List.<Long>of();
-    var expected = GeneralProblemsNumbersSolution.getUniqueNumberFromList(input);
+    var mySolution = GeneralProblemsNumbersSolution.getUniqueNumberFromList(input);
 
-    Assertions.assertEquals(expected, yourSolution);
+    Assertions.assertEquals(mySolution, yourSolution);
   }
 }

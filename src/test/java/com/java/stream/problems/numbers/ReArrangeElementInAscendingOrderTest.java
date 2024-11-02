@@ -21,9 +21,9 @@ public class ReArrangeElementInAscendingOrderTest {
   @Disabled
   public void test() {
     var input = List.of(1, 34, 3, 98, 9, 76, 45, 4);
-    var expected = GeneralProblemsNumbersSolution.getSmallestPossibleValue(input);
+    var mySolution = GeneralProblemsNumbersSolution.getSmallestPossibleValue(input);
     var yourSolution = "";
 
-    Assertions.assertEquals(expected, yourSolution);
+    Assertions.assertEquals(mySolution, yourSolution);
   }
 }

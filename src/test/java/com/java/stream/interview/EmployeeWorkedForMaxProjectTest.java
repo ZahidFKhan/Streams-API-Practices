@@ -35,10 +35,10 @@ public class EmployeeWorkedForMaxProjectTest {
     corporateEmployees.add(new CorporateEmployee(1, "Priyanka", project1));
     corporateEmployees.add(new CorporateEmployee(2, "Zahid", project2));
 
-    var expected = InterviewProblemSolutions.employeesWorkedForMaxProjects(corporateEmployees);
+    var mySolution = InterviewProblemSolutions.employeesWorkedForMaxProjects(corporateEmployees);
 
-    CorporateEmployee yourSolution = null; // Assert that the yourSolution output matches the expected output
+    CorporateEmployee yourSolution = null; // Assert that the yourSolution output matches the mySolution output
 
-    Assertions.assertEquals(expected, yourSolution);
+    Assertions.assertEquals(mySolution, yourSolution);
   }
 }

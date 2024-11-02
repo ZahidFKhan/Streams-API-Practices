@@ -11,11 +11,11 @@ public class SecondHighestWordTest {
   @Disabled()
   public void find2ndHighestWord() {
     final String input = "I am interested123455 to grow in my organization";
-    String expected = GeneralProblemsSolution.find2ndLargestWordInTheString(input);
+    String mySolution = GeneralProblemsSolution.find2ndLargestWordInTheString(input);
 
     final String yourSolution = "";
 
-    assertEquals(expected, yourSolution);
+    assertEquals(mySolution, yourSolution);
   }
 
 }

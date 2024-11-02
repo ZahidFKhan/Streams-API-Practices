@@ -17,9 +17,9 @@ public class SumOfUniqueDigitsTest {
   @Disabled
   void testSumOfUniqueDigitsTest() {
     final var input = List.of(5, 6, 7, 8, 5, 5, 8, 8, 7);
-    var expected = GeneralProblemsNumbersSolution.sumOfDigits(input);
+    var mySolution = GeneralProblemsNumbersSolution.sumOfDigits(input);
     var yourSolution = List.of();
 
-    Assertions.assertEquals(expected, yourSolution);
+    Assertions.assertEquals(mySolution, yourSolution);
   }
 }

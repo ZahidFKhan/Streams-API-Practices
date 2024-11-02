@@ -21,8 +21,8 @@ public class WordWithMaxNumberOfVowelsTest {
   @Test
   void testNumberOfVowels() {
     var input = Faker.instance().chuckNorris().fact();
-    final var expected = InterviewProblemSolutions.maxNumberOfVowels(input);
+    final var mySolution = InterviewProblemSolutions.maxNumberOfVowels(input);
     final var yourSolution = 0;
-    Assertions.assertEquals(expected, yourSolution);
+    Assertions.assertEquals(mySolution, yourSolution);
   }
 }
