@@ -1,4 +1,4 @@
-package com.java.stream.problems;
+package com.java.stream.problems.strings;
 
 import com.github.javafaker.Faker;
 import com.java.stream.solutions.GeneralProblemsSolution;
@@ -9,6 +9,13 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 public class SortListBasedOn2ndCharacterTest {
+  /**
+   * This test creates a list of random names and passes it to the sortListBasedOn2ndCharacter method.
+   * The expected result is compared to the actual result to verify the correctness of the method.
+   *
+   * @author @ZahidKhan
+   * @see GeneralProblemsSolution#sortListBasedOn2ndCharacter(List)
+   */
   @Test
   @Disabled
   void testSortListBasedOn2ndCharacter() {
@@ -43,5 +50,6 @@ public class SortListBasedOn2ndCharacterTest {
     List<String> yourSolution = Collections.emptyList();
 
     Assertions.assertEquals(mySolution, yourSolution);
+
   }
 }
