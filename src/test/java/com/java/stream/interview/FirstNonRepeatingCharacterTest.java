@@ -18,9 +18,9 @@ class FirstNonRepeatingCharacterTest {
   void testFirstNonRepeatingCharacter() {
     final var input =
         "The quick brown fox jumps over the lazy dog, find the first non repeated character.";
-    final var actual = 'T';
+    final var yourSolution = ' ';
     final var expected = InterviewProblemSolutions.firstNonRepeatingCharacter(input);
 
-    Assertions.assertEquals(expected, actual);
+    Assertions.assertEquals(expected, yourSolution);
   }
 }

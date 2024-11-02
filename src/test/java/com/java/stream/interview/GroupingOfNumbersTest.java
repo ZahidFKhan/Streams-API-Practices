@@ -44,8 +44,8 @@ public class GroupingOfNumbersTest {
             new Random().nextInt(100));
 
     final var expected = InterviewProblemSolutions.groupingOfNumbers(randomIntegers);
-    final var actual = Collections.<Integer, List<Integer>>emptyMap();
+    final var yourSolution = Collections.<Integer, List<Integer>>emptyMap();
 
-    Assertions.assertEquals(expected, actual);
+    Assertions.assertEquals(expected, yourSolution);
   }
 }

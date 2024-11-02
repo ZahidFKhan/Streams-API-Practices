@@ -11,9 +11,9 @@ public class RemoveDuplicateCharactersTest {
   @Disabled()
   public void testRemoveDuplicates() {
     final String input = "dabfcadef";
-    final String actual = "";
+    final String yourSolution = "";
     final String expected = GeneralProblemsSolution.getUniqueCharacters(input);
 
-    assertEquals(expected, actual);
+    assertEquals(expected, yourSolution);
   }
 }

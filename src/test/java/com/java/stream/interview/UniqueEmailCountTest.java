@@ -35,8 +35,8 @@ public class UniqueEmailCountTest {
 
     final var expected = InterviewProblemSolutions.findUniqueDomainsCount(employees);
 
-    final Map<String, ? extends Number> actual = null;
+    final Map<String, ? extends Number> yourSolution = null;
 
-    Assertions.assertEquals(expected, actual);
+    Assertions.assertEquals(expected, yourSolution);
   }
 }

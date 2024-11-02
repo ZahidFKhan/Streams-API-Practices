@@ -40,8 +40,8 @@ public class SortListBasedOn2ndCharacterTest {
             fakePersons.name());
 
     List<String> expected = GeneralProblemsSolution.sortListBasedOn2ndCharacter(input);
-    List<String> actual = Collections.emptyList();
+    List<String> yourSolution = Collections.emptyList();
 
-    Assertions.assertEquals(expected, actual);
+    Assertions.assertEquals(expected, yourSolution);
   }
 }

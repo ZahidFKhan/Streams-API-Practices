@@ -37,8 +37,8 @@ public class EmployeeWorkedForMaxProjectTest {
 
     var expected = InterviewProblemSolutions.employeesWorkedForMaxProjects(corporateEmployees);
 
-    CorporateEmployee actual = null; // Assert that the actual output matches the expected output
+    CorporateEmployee yourSolution = null; // Assert that the yourSolution output matches the expected output
 
-    Assertions.assertEquals(expected, actual);
+    Assertions.assertEquals(expected, yourSolution);
   }
 }

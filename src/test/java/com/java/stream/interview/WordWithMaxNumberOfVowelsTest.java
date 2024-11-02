@@ -22,7 +22,7 @@ public class WordWithMaxNumberOfVowelsTest {
   void testNumberOfVowels() {
     var input = Faker.instance().chuckNorris().fact();
     final var expected = InterviewProblemSolutions.maxNumberOfVowels(input);
-    final var actual = 0;
-    Assertions.assertEquals(expected, actual);
+    final var yourSolution = 0;
+    Assertions.assertEquals(expected, yourSolution);
   }
 }

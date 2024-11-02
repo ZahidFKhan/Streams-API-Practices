@@ -25,9 +25,9 @@ public class NumberOfOccurencesOfEachWordTest {
                 Map.entry("fox", 1L),
                 Map.entry("little", 2L));
 
-        String actualOutput = "<PUT YOUR LOGIC HERE>";
-        // Assert that the actual output matches the expected output
-        assertEquals(expectedOutput, actualOutput);
+        String yourSolution = "<PUT YOUR LOGIC HERE>";
+        // Assert that the yourSolution output matches the expected output
+        assertEquals(expectedOutput, yourSolution);
     }
 
     private void solution1() {

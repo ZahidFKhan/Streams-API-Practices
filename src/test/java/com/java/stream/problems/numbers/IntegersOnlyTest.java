@@ -16,10 +16,10 @@ public class IntegersOnlyTest {
     @Disabled
     void testCheckAllIntegersWithoutAlphabets(){
         var input = List.of("1","12","12a","a12");
-        var actual = List.of();
-        var expected = GeneralProblemsNumbersSolution.getNumberOnly(input);
+        var yourSolution = List.of();
+        var mySolution = GeneralProblemsNumbersSolution.getNumberOnly(input);
 
-        Assertions.assertEquals(expected, actual);
+        Assertions.assertEquals(mySolution, yourSolution);
 
     }
 }

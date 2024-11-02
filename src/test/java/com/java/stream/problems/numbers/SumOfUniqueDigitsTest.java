@@ -18,8 +18,8 @@ public class SumOfUniqueDigitsTest {
   void testSumOfUniqueDigitsTest() {
     final var input = List.of(5, 6, 7, 8, 5, 5, 8, 8, 7);
     var expected = GeneralProblemsNumbersSolution.sumOfDigits(input);
-    var actual = List.of();
+    var yourSolution = List.of();
 
-    Assertions.assertEquals(expected, actual);
+    Assertions.assertEquals(expected, yourSolution);
   }
 }

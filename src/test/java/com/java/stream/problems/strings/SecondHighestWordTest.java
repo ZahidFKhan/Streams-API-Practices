@@ -13,9 +13,9 @@ public class SecondHighestWordTest {
     final String input = "I am interested123455 to grow in my organization";
     String expected = GeneralProblemsSolution.find2ndLargestWordInTheString(input);
 
-    final String actual = "";
+    final String yourSolution = "";
 
-    assertEquals(expected, actual);
+    assertEquals(expected, yourSolution);
   }
 
 }

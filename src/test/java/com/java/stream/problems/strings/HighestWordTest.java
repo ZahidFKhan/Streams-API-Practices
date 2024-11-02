@@ -12,8 +12,8 @@ public class HighestWordTest {
     final String input = "I am interested123455 to grow in my organization";
     final String expected = GeneralProblemsSolution.findLargestWordInTheString(input);
 
-    String actual = null;
+    String yourSolution = null;
 
-    Assertions.assertEquals(expected, actual);
+    Assertions.assertEquals(expected, yourSolution);
   }
 }
