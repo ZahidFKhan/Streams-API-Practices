@@ -1,8 +1,10 @@
 package com.java.stream.solutions;
 
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class GeneralProblemsNumbersSolution {
 
@@ -30,5 +32,11 @@ public class GeneralProblemsNumbersSolution {
   }
   public static long sumOfUniqueDigits(List<Integer> input) {
     return input.stream().distinct().reduce(0, Integer::sum);
+  }
+
+  public static List<Integer> segregateEvenOddNumbers(Stream<Integer> input) {
+    return input.collect(Collectors.partitioningBy(x -> x % 2 == 0)).values().stream()
+        .flatMap(Collection::stream)
+        .toList();
   }
 }
