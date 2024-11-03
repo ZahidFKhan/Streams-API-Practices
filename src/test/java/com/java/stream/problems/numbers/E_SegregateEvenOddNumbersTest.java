@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 /*
  * Given a list of integers, divide into two lists one having even numbers and other having odd numbers.
  */
-public class SegregationOfEvenOddNumbersTest {
+public class E_SegregateEvenOddNumbersTest {
     @Test
     @Disabled
       void testSegregationOfEvenOddNumbersTest(){

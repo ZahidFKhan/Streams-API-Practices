@@ -28,4 +28,7 @@ public class GeneralProblemsNumbersSolution {
   public static long sumOfDigits(List<Integer> input) {
     return input.stream().reduce(0, Integer::sum);
   }
+  public static long sumOfUniqueDigits(List<Integer> input) {
+    return input.stream().distinct().reduce(0, Integer::sum);
+  }
 }

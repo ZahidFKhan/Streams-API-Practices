@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
 public class D_NumberOfOccurencesOfEachCharacterTest {
   @Test
   @Disabled("Remove This Once you Complete The Exercise")
-  public void numberOfOccurencesOfEachCharacter() {
+  void numberOfOccurencesOfEachCharacter() {
     final String input = "the quick brown fox jumps right over the little lazy dog little";
     final var mySolution = GeneralProblemsSolution.findOccurenceOfCharacter(input);
     final Map<Character, Long> yourSolution = null;

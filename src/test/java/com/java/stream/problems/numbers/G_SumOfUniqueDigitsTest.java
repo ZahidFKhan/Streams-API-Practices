@@ -11,13 +11,13 @@ import org.junit.jupiter.api.Test;
  * Find the sum of the unique elements.
  * The output should be in this case is: 26.
  */
-public class SumOfUniqueDigitsTest {
+public class G_SumOfUniqueDigitsTest {
 
   @Test
   @Disabled
   void testSumOfUniqueDigitsTest() {
     final var input = List.of(5, 6, 7, 8, 5, 5, 8, 8, 7);
-    var mySolution = GeneralProblemsNumbersSolution.sumOfDigits(input);
+    var mySolution = GeneralProblemsNumbersSolution.sumOfUniqueDigits(input);
     var yourSolution = List.of();
 
     Assertions.assertEquals(mySolution, yourSolution);

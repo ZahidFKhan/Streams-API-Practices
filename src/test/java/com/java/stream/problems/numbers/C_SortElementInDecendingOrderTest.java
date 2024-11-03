@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
  * Output: 998764543431
  * Explanation: 9,98,76,45,4,34,3,1
  * */
-public class ReArrangeElementInDecendingOrderTest {
+public class C_SortElementInDecendingOrderTest {
 
   @Test
   @Disabled

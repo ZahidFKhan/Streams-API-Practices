@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
  *
  * Explanation: 1,3,34,4,45,76,9,98
  * */
-public class ReArrangeElementInAscendingOrderTest {
+public class B_SortElementTest {
 
   @Test
   @Disabled
