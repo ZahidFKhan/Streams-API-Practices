@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  * String = The quick brown fox jumps over the lazy dog, find the first non-repeated character.
  * (Google interview)
  */
-class FirstNonRepeatingCharacterTest {
+class B_FirstNonRepeatingCharacterTest {
 
   @Test
   @Disabled

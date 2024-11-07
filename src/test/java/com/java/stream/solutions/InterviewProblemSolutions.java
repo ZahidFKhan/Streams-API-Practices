@@ -1,7 +1,7 @@
 package com.java.stream.solutions;
 
-import com.java.stream.interview.domain.CorporateEmployee;
-import com.java.stream.interview.domain.Employee;
+import com.java.stream.interview.ignore.domain.CorporateEmployee;
+import com.java.stream.interview.ignore.domain.Employee;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;

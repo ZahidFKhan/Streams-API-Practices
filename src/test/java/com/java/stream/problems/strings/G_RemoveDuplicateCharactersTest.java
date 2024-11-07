@@ -6,7 +6,7 @@ import com.java.stream.solutions.GeneralProblemsSolution;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class RemoveDuplicateCharactersTest {
+public class G_RemoveDuplicateCharactersTest {
   @Test
   @Disabled()
   public void testRemoveDuplicates() {

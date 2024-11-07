@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
  * OUTPUT: 2
  * EXPLANATION: HELLO contains 2 vowels.
  * */
-public class WordWithMaxNumberOfVowelsTest {
+public class E_WordWithMaxNumberOfVowelsTest {
 
   @Disabled
   @Test

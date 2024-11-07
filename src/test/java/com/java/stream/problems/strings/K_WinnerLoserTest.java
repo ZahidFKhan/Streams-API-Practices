@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 · Loser will have min number of char count and no other char will have same count.
 Input: aabbccdeff
 Output: winner: none, loser: e*/
-public class WinnerLoserTest {
+public class K_WinnerLoserTest {
     @Test
     @Disabled
       void testWinnerLoserTest(){

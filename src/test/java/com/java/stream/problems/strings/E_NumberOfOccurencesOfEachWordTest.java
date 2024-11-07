@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class NumberOfOccurencesOfEachWordTest {
+public class E_NumberOfOccurencesOfEachWordTest {
     @Test
     @Disabled("Remove This Once you Complete The Exercise")
     public void numberOfOccurencesOfEachWord() {
