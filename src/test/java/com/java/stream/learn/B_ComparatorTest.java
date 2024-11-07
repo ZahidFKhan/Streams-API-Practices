@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import java.util.Comparator;
 import java.util.function.IntBinaryOperator;
 
-import com.java.stream.learn.models.Person;
+import com.java.stream.learn.ignore.models.Person;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

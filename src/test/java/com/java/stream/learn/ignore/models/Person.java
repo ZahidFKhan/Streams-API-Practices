@@ -1,4 +1,4 @@
-package com.java.stream.learn.models;
+package com.java.stream.learn.ignore.models;
 
 /**
  * Exercises to create comparators using lambda expressions and using the Comparator combinators.

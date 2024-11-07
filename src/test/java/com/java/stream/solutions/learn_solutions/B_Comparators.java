@@ -5,7 +5,7 @@ package com.java.stream.solutions.learn_solutions;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.java.stream.learn.models.Person;
+import com.java.stream.learn.ignore.models.Person;
 import java.util.Comparator;
 import java.util.function.IntBinaryOperator;
 import org.junit.jupiter.api.Test;
