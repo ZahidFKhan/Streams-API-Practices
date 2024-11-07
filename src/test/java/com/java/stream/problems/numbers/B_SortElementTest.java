@@ -1,6 +1,6 @@
 package com.java.stream.problems.numbers;
 
-import com.java.stream.solutions.GeneralProblemsNumbersSolution;
+import com.java.stream.solutions.GeneralNumbersProblemSolution;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
@@ -21,7 +21,7 @@ public class B_SortElementTest {
   @Disabled
   public void test() {
     var input = List.of(1, 34, 3, 98, 9, 76, 45, 4);
-    var mySolution = GeneralProblemsNumbersSolution.getSmallestPossibleValue(input);
+    var mySolution = GeneralNumbersProblemSolution.getSmallestPossibleValue(input);
     var yourSolution = "";
 
     Assertions.assertEquals(mySolution, yourSolution);

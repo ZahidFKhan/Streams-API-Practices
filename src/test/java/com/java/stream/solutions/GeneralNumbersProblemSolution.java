@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class GeneralProblemsNumbersSolution {
+public class GeneralNumbersProblemSolution {
 
   public static List<String> getNumberOnly(List<String> values) {
     return values.stream().filter(x -> x.matches("\\d+")).toList();

@@ -1,6 +1,6 @@
 package com.java.stream.problems.strings;
 
-import com.java.stream.solutions.GeneralProblemsSolution;
+import com.java.stream.solutions.GeneralStringProblemsSolution;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -19,13 +19,13 @@ public class B_HighestWordTest {
    *
    * @author ZahidKhan
    *
-   * @see GeneralProblemsSolution#findLargestWordInTheString(String)
+   * @see GeneralStringProblemsSolution#findLargestWordInTheString(String)
    */
   @Test
   @Disabled()
   public void findLargestWordInTheString() {
     final String input = "I am interested123455 to grow in my organization";
-    final String mySolution = GeneralProblemsSolution.findLargestWordInTheString(input);
+    final String mySolution = GeneralStringProblemsSolution.findLargestWordInTheString(input);
 
     String yourSolution = null;
 

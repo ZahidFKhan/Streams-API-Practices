@@ -1,7 +1,7 @@
 package com.java.stream.problems.numbers;
 
 import com.github.javafaker.Faker;
-import com.java.stream.solutions.GeneralProblemsNumbersSolution;
+import com.java.stream.solutions.GeneralNumbersProblemSolution;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
@@ -37,7 +37,7 @@ public class D_RemoveDuplicationFromListTest {
             instance.number().randomNumber(),
             instance.number().randomNumber());
     var yourSolution = List.<Long>of();
-    var mySolution = GeneralProblemsNumbersSolution.getUniqueNumberFromList(input);
+    var mySolution = GeneralNumbersProblemSolution.getUniqueNumberFromList(input);
 
     Assertions.assertEquals(mySolution, yourSolution);
   }

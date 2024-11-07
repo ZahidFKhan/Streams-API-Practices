@@ -1,6 +1,6 @@
 package com.java.stream.problems.strings;
 
-import com.java.stream.solutions.GeneralProblemsSolution;
+import com.java.stream.solutions.GeneralStringProblemsSolution;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,7 +26,7 @@ class C_LengthOfCityTest {
   @Disabled
   void testCalculateLengthOfEachCityTest() {
     final var cities = List.of("Mumbai", "Munnar", "Chennai", "Hyderabad");
-    final var mySolution = GeneralProblemsSolution.findLengthOfEachCityAlongWithSize(cities);
+    final var mySolution = GeneralStringProblemsSolution.findLengthOfEachCityAlongWithSize(cities);
 
     final Map<String, Integer> yourSolution = new HashMap<>();
     Assertions.assertEquals(yourSolution, mySolution);

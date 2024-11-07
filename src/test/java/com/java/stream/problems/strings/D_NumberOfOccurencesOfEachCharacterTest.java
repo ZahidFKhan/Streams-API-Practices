@@ -2,7 +2,7 @@ package com.java.stream.problems.strings;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.java.stream.solutions.GeneralProblemsSolution;
+import com.java.stream.solutions.GeneralStringProblemsSolution;
 
 import java.util.Map;
 
@@ -14,7 +14,7 @@ public class D_NumberOfOccurencesOfEachCharacterTest {
   @Disabled("Remove This Once you Complete The Exercise")
   void numberOfOccurencesOfEachCharacter() {
     final String input = "the quick brown fox jumps right over the little lazy dog little";
-    final var mySolution = GeneralProblemsSolution.findOccurenceOfCharacter(input);
+    final var mySolution = GeneralStringProblemsSolution.findOccurenceOfCharacter(input);
     final Map<Character, Long> yourSolution = null;
 
     assertEquals(mySolution, yourSolution);

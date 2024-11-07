@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class GeneralProblemsSolution {
+public class GeneralStringProblemsSolution {
 
   public static List<String> sortListBasedOn2ndCharacter(List<String> input) {
     return input.stream()
@@ -48,5 +48,11 @@ public class GeneralProblemsSolution {
         .distinct()
         .mapToObj(x -> (char) x)
         .reduce("", (x, y) -> x + y, (a, b) -> a + b);
+  }
+
+  public static List<String> getMatchesVowels(String input, int length) {
+    return Arrays.stream(input.split(" "))
+        .filter(word -> word.replaceAll("[aeiouAEIOU]", "").length() == word.length() - length)
+        .toList();
   }
 }

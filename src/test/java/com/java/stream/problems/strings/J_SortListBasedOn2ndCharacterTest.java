@@ -1,7 +1,7 @@
 package com.java.stream.problems.strings;
 
 import com.github.javafaker.Faker;
-import com.java.stream.solutions.GeneralProblemsSolution;
+import com.java.stream.solutions.GeneralStringProblemsSolution;
 import java.util.Collections;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
@@ -14,7 +14,7 @@ public class J_SortListBasedOn2ndCharacterTest {
    * The expected result is compared to the actual result to verify the correctness of the method.
    *
    * @author @ZahidKhan
-   * @see GeneralProblemsSolution#sortListBasedOn2ndCharacter(List)
+   * @see GeneralStringProblemsSolution#sortListBasedOn2ndCharacter(List)
    */
   @Test
   @Disabled
@@ -46,7 +46,7 @@ public class J_SortListBasedOn2ndCharacterTest {
             fakePersons.name(),
             fakePersons.name());
 
-    List<String> mySolution = GeneralProblemsSolution.sortListBasedOn2ndCharacter(input);
+    List<String> mySolution = GeneralStringProblemsSolution.sortListBasedOn2ndCharacter(input);
     List<String> yourSolution = Collections.emptyList();
 
     Assertions.assertEquals(mySolution, yourSolution);

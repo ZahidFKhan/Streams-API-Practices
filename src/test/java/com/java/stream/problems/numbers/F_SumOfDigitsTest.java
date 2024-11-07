@@ -1,6 +1,6 @@
 package com.java.stream.problems.numbers;
 
-import com.java.stream.solutions.GeneralProblemsNumbersSolution;
+import com.java.stream.solutions.GeneralNumbersProblemSolution;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
@@ -17,7 +17,7 @@ public class F_SumOfDigitsTest {
   @Disabled
   void testSumOfUniqueDigitsTest() {
     final var input = List.of(5, 6, 7, 8, 5, 5, 8, 8, 7);
-    var mySolution = GeneralProblemsNumbersSolution.sumOfDigits(input);
+    var mySolution = GeneralNumbersProblemSolution.sumOfDigits(input);
     var yourSolution = List.of();
 
     Assertions.assertEquals(mySolution, yourSolution);

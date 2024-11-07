@@ -1,6 +1,6 @@
 package com.java.stream.problems.numbers;
 
-import com.java.stream.solutions.GeneralProblemsNumbersSolution;
+import com.java.stream.solutions.GeneralNumbersProblemSolution;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
@@ -17,7 +17,7 @@ public class A_ExtractIntegersTest {
     void testCheckAllIntegersWithoutAlphabets(){
         var input = List.of("1","12","12a","a12");
         var yourSolution = List.of();
-        var mySolution = GeneralProblemsNumbersSolution.getNumberOnly(input);
+        var mySolution = GeneralNumbersProblemSolution.getNumberOnly(input);
 
         Assertions.assertEquals(mySolution, yourSolution);
 
