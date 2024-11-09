@@ -55,4 +55,10 @@ public class GeneralStringProblemsSolution {
         .filter(word -> word.replaceAll("[aeiouAEIOU]", "").length() == word.length() - length)
         .toList();
   }
+
+  public static Map<String, Long> numberOfOccurenceOfEachWord(String input) {
+    return Arrays.stream(input.split(" "))
+        .collect(
+            Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()));
+  }
 }
