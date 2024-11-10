@@ -61,4 +61,8 @@ public class GeneralStringProblemsSolution {
         .collect(
             Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()));
   }
+
+  public static String reverseStringWithSpecialCharacters(String input) {
+    return input.chars().mapToObj(x -> (char) x).reduce("", (a, b) -> b + a, (a, b) -> b + a);
+  }
 }
