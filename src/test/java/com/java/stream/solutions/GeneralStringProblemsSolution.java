@@ -69,4 +69,11 @@ public class GeneralStringProblemsSolution {
   public static String concatenateStrings(List<String> strings) {
     return String.join(",", strings);
   }
+
+  public static List<String> findDuplicateStrings(List<String> input) {
+    return input.stream().collect(Collectors.groupingBy(Function.identity())).values().stream()
+        .filter(strings -> strings.size() > 1)
+        .map(strings -> strings.get(0))
+        .collect(Collectors.toList());
+  }
 }
