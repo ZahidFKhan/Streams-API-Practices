@@ -65,4 +65,8 @@ public class GeneralStringProblemsSolution {
   public static String reverseStringWithSpecialCharacters(String input) {
     return input.chars().mapToObj(x -> (char) x).reduce("", (a, b) -> b + a, (a, b) -> b + a);
   }
+
+  public static String concatenateStrings(List<String> strings) {
+    return String.join(",", strings);
+  }
 }
