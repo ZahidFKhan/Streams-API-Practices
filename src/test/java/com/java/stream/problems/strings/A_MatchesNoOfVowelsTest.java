@@ -32,7 +32,7 @@ import org.junit.jupiter.api.Test;
  *   Words with Maximum Vowels: [Hello, World]
  * </pre>
  */
-public class A_MatchesNoOfVowelsTest {
+class A_MatchesNoOfVowelsTest {
   @Test
   @Disabled
   void testAM_MaxNoOfVowelsTest() {

@@ -1,7 +1,7 @@
-package com.java.stream.interview;
+package com.java.stream.interview.employee;
 
-import com.java.stream.interview.ignore.domain.CorporateEmployee;
-import com.java.stream.interview.ignore.domain.Project;
+import com.java.stream.interview.employee.domain.CorporateEmployee;
+import com.java.stream.interview.employee.domain.Project;
 import com.java.stream.solutions.InterviewProblemSolutions;
 import java.util.*;
 import org.junit.jupiter.api.Assertions;
@@ -19,7 +19,7 @@ import org.junit.jupiter.api.Test;
  * <p>return the employee with the longest total duration of projects. If there are still ties,
  * return any one of the tied employees.
  */
-public class A_EmployeeWorkedForMaxProjectTest {
+class A_EmployeeWorkedForMaxProjectTest {
   @Test
   @Disabled()
   public void numberOfOccurencesOfEachCharacter() {

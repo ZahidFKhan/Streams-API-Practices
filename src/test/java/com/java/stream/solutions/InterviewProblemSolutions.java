@@ -1,12 +1,13 @@
 package com.java.stream.solutions;
 
-import com.java.stream.interview.ignore.domain.CorporateEmployee;
-import com.java.stream.interview.ignore.domain.Employee;
+import com.java.stream.interview.employee.domain.CorporateEmployee;
+import com.java.stream.interview.employee.domain.Employee;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class InterviewProblemSolutions {
+public class InterviewProblemSolutions
+{
   public static Map<String, ? extends Number> findUniqueDomainsCount(List<Employee> employees) {
     return employees.stream()
         .filter(x -> x.email().split("@").length == 2)

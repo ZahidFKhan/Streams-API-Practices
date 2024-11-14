@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
  * This set of exercises covers new default methods on
  * the Collections and related APIs.
  */
-public class C_DefaultMethodTest {
+class C_DefaultMethodTest {
 
     /**
      * Given a list of StringBuilders, modify each StringBuilder

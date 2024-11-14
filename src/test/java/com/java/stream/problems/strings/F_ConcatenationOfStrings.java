@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class F_ConcatenationOfStrings {
+class F_ConcatenationOfStrings {
   /**
    * Given a list of strings, write a method to concatenate all the strings in the list, separated
    * by a comma, using Java 8 Streams.

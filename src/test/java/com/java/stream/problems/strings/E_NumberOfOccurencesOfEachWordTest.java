@@ -7,7 +7,7 @@ import java.util.Map;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class E_NumberOfOccurencesOfEachWordTest {
+class E_NumberOfOccurencesOfEachWordTest {
   @Test
   @Disabled
   public void numberOfOccurencesOfEachWord() {

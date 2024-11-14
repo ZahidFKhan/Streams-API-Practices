@@ -6,7 +6,7 @@ import com.java.stream.solutions.GeneralStringProblemsSolution;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class I_SecondHighestWordTest {
+class I_SecondHighestWordTest {
   @Test
   @Disabled()
   public void find2ndHighestWord() {

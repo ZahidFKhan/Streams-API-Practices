@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author Zahid Khan.
  */
-public class H_ReverseStringWithSpecialCharactersTest {
+class H_ReverseStringWithSpecialCharactersTest {
   /**
    * Test case for reversing a string with special characters.
    *

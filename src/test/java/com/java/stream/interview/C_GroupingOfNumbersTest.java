@@ -15,7 +15,7 @@ Q12) Given an array of integers (2,34,54,23,33,20,59,11,19,37 )
 * Output should be {0=[2], 50=[54,59], 20=[23,20], 10=[11,19], 30=[34,33,37]}
 *
 */
-public class C_GroupingOfNumbersTest {
+class C_GroupingOfNumbersTest {
   @Test
   @Disabled
   void testGroupingOfNumbers() {

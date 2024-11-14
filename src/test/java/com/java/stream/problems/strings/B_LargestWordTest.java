@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class B_LargestWordTest {
+class B_LargestWordTest {
   /**
    * Find the largest word in a given string.
    * <br>

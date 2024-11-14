@@ -1,8 +1,6 @@
 package com.java.stream.learn;
 
 
-import org.junit.jupiter.api.*;
-
 import static java.util.Map.entry;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -22,13 +20,14 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+import org.junit.jupiter.api.*;
 
 /**
  * This set of exercises covers advanced stream operations,
  * including grouping collectors, composition of collectors,
  * and customized collectors.
  */
-public class F_AdvancedStreams {
+class F_AdvancedStreams {
 
     /**
      * Categorize the words from the text file into a map, where the map's key

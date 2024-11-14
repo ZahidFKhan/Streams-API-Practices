@@ -1,4 +1,4 @@
-package com.java.stream.interview.ignore.domain;
+package com.java.stream.interview.employee.domain;
 
 import java.util.List;
 

@@ -40,6 +40,36 @@
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <groupId>com.cosium.code</groupId>
+                    <artifactId>git-code-format-maven-plugin</artifactId>
+                    <version>${git-code-format-maven-plugin.version}</version>
+                    <executions>
+                        <!-- On commit, format the modified files -->
+                        <execution>
+                            <id>install-formatter-hook</id>
+                            <goals>
+                                <goal>install-hooks</goal>
+                            </goals>
+                        </execution>
+                        <!-- On Maven verify phase, fail if any file
+                        (including unmodified) is badly formatted -->
+                        <execution>
+                            <id>validate-code-format</id>
+                            <goals>
+                                <goal>validate-code-format</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <dependencies>
+                        <!-- Enable https://github.com/google/google-java-format -->
+                        <dependency>
+                            <groupId>com.cosium.code</groupId>
+                            <artifactId>google-java-format</artifactId>
+                            <version>${git-code-format-maven-plugin.version}</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <configuration>

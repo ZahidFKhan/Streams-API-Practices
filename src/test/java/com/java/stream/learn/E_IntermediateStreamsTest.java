@@ -14,15 +14,13 @@ import java.util.List;
 import java.util.Random;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
-
 import org.junit.jupiter.api.*;
-
 
 /**
  * This set of exercises covers more advanced stream operations
  * longer stream pipelines, and simple reductions.
  */
-public class E_IntermediateStreamsTest {
+class E_IntermediateStreamsTest {
 
     /**
      * Convert a list of strings into a list of characters.

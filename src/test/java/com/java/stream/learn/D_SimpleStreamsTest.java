@@ -1,13 +1,12 @@
 package com.java.stream.learn;
 
-import org.junit.jupiter.api.*;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
+import org.junit.jupiter.api.*;
 
 /**
  * This set of exercises covers simple stream pipelines,
@@ -16,7 +15,7 @@ import java.util.List;
  * Some of these exercises use a BufferedReader variable
  * named "reader" that the test has set up for you.
  */
-public class D_SimpleStreamsTest {
+class D_SimpleStreamsTest {
     /**
      * Given a list of words, create an output list that contains
      * only the odd-length words, converted to upper case.

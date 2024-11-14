@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  * Find the sum of the unique elements.
  * The output should be in this case is: 26.
  */
-public class G_SumOfUniqueDigitsTest {
+class G_SumOfUniqueDigitsTest {
 
   @Test
   @Disabled

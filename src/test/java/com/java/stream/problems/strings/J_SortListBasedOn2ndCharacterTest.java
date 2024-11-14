@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class J_SortListBasedOn2ndCharacterTest {
+class J_SortListBasedOn2ndCharacterTest {
   /**
    * This test creates a list of random names and passes it to the sortListBasedOn2ndCharacter method.
    * The expected result is compared to the actual result to verify the correctness of the method.

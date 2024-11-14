@@ -3,15 +3,14 @@ package com.java.stream.learn;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
+import com.java.stream.learn.ignore.models.Person;
 import java.util.Comparator;
 import java.util.function.IntBinaryOperator;
-
-import com.java.stream.learn.ignore.models.Person;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class B_ComparatorTest {
+class B_ComparatorTest {
 
     final Person michael = new Person("Michael", "Jackson", 51);
     final Person rod = new Person("Rod", "Stewart", 71);

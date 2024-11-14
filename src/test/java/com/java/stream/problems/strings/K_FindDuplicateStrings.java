@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class K_FindDuplicateStrings {
+class K_FindDuplicateStrings {
   @Test
   @Disabled
   void findDuplicateStrings() {
