@@ -42,9 +42,9 @@
                 <plugin>
                     <groupId>com.cosium.code</groupId>
                     <artifactId>git-code-format-maven-plugin</artifactId>
-                    <version>${git-code-format-maven-plugin.version}</version>
+                    <version>5.3</version>
                     <executions>
-                        <!-- On commit, format the modified files -->
+                        <!-- On commit, format the modified java files -->
                         <execution>
                             <id>install-formatter-hook</id>
                             <goals>
@@ -60,14 +60,6 @@
                             </goals>
                         </execution>
                     </executions>
-                    <dependencies>
-                        <!-- Enable https://github.com/google/google-java-format -->
-                        <dependency>
-                            <groupId>com.cosium.code</groupId>
-                            <artifactId>google-java-format</artifactId>
-                            <version>${git-code-format-maven-plugin.version}</version>
-                        </dependency>
-                    </dependencies>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
