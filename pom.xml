@@ -32,45 +32,18 @@
         <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
-            <version>LATEST</version>
+            <version>1.0.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <build>
+    <!--<build>
         <pluginManagement>
             <plugins>
                 <plugin>
-                    <groupId>com.cosium.code</groupId>
-                    <artifactId>git-code-format-maven-plugin</artifactId>
-                    <version>5.3</version>
-                    <executions>
-                        <!-- On commit, format the modified java files -->
-                        <execution>
-                            <id>install-formatter-hook</id>
-                            <goals>
-                                <goal>install-hooks</goal>
-                            </goals>
-                        </execution>
-                        <!-- On Maven verify phase, fail if any file
-                        (including unmodified) is badly formatted -->
-                        <execution>
-                            <id>validate-code-format</id>
-                            <goals>
-                                <goal>validate-code-format</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <configuration>
-                        <includes>
-                            <include>com.java.stream/**/*.java</include>
-                        </includes>
-                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
-    </build>
+    </build>-->
 </project>
