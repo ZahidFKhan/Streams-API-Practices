@@ -1,7 +1,7 @@
 package com.java.stream.interview;
 
 import com.github.javafaker.Faker;
-import com.java.stream.interview.employee.domain.Employee;
+import com.java.stream.interview.employee.domain_related.Person;
 import com.java.stream.solutions.InterviewProblemSolutions;
 import java.util.List;
 import java.util.Map;
@@ -20,17 +20,17 @@ class D_UniqueEmailCountTest {
   void findUniqueDomainsWithCount() {
     final var employees =
         List.of(
-            new Employee(Faker.instance().internet().emailAddress()),
-            new Employee(Faker.instance().internet().emailAddress()),
-            new Employee(Faker.instance().internet().emailAddress()),
-            new Employee(Faker.instance().internet().emailAddress()),
-            new Employee(Faker.instance().internet().emailAddress()),
-            new Employee(Faker.instance().internet().emailAddress()),
-            new Employee(Faker.instance().internet().emailAddress()),
-            new Employee(Faker.instance().internet().emailAddress()),
-            new Employee(Faker.instance().internet().emailAddress()),
-            new Employee(Faker.instance().internet().emailAddress()),
-            new Employee(Faker.instance().internet().emailAddress()));
+            new Person(Faker.instance().internet().emailAddress(), ""),
+            new Person(Faker.instance().internet().emailAddress(), ""),
+            new Person(Faker.instance().internet().emailAddress(), ""),
+            new Person(Faker.instance().internet().emailAddress(), ""),
+            new Person(Faker.instance().internet().emailAddress(), ""),
+            new Person(Faker.instance().internet().emailAddress(), ""),
+            new Person(Faker.instance().internet().emailAddress(), ""),
+            new Person(Faker.instance().internet().emailAddress(), ""),
+            new Person(Faker.instance().internet().emailAddress(), ""),
+            new Person(Faker.instance().internet().emailAddress(), ""),
+            new Person(Faker.instance().internet().emailAddress(), ""));
 
     final var mySolution = InterviewProblemSolutions.findUniqueDomainsCount(employees);
 

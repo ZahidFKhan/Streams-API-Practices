@@ -1,7 +1,8 @@
 package com.java.stream.interview.employee;
 
-import com.java.stream.interview.employee.domain.CorporateEmployee;
-import com.java.stream.interview.employee.domain.Project;
+import com.java.stream.interview.employee.domain_related.Employee;
+import com.java.stream.interview.employee.domain_related.Department;
+import com.java.stream.interview.employee.domain_related.Project;
 import com.java.stream.solutions.InterviewProblemSolutions;
 import java.util.*;
 import org.junit.jupiter.api.Assertions;
@@ -19,7 +20,7 @@ import org.junit.jupiter.api.Test;
  * <p>return the employee with the longest total duration of projects. If there are still ties,
  * return any one of the tied employees.
  */
-class A_EmployeeWorkedForMaxProjectTest {
+class A_PersonWorkedForMaxProjectTest {
   @Test
   @Disabled()
   public void numberOfOccurencesOfEachCharacter() {
@@ -31,13 +32,13 @@ class A_EmployeeWorkedForMaxProjectTest {
         List.of(
             new Project("E1", 2), new Project("E2", 2), new Project("E3", 2), new Project("E4", 2));
 
-    var corporateEmployees = new ArrayList<CorporateEmployee>();
-    corporateEmployees.add(new CorporateEmployee(1, "Priyanka", project1));
-    corporateEmployees.add(new CorporateEmployee(2, "Zahid", project2));
+    var corporateEmployees = new ArrayList<Employee>();
+    corporateEmployees.add(new Employee(1, "Priyanka", project1, Department.ComputerScience));
+    corporateEmployees.add(new Employee(2, "Zahid", project2, Department.ComputerScience));
 
     var mySolution = InterviewProblemSolutions.employeesWorkedForMaxProjects(corporateEmployees);
 
-    CorporateEmployee yourSolution = null; // Assert that the yourSolution output matches the mySolution output
+    Employee yourSolution = null; // Assert that the yourSolution output matches the mySolution output
 
     Assertions.assertEquals(mySolution, yourSolution);
   }

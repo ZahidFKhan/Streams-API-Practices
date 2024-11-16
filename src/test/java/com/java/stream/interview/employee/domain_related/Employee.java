@@ -1,8 +1,8 @@
-package com.java.stream.interview.employee.domain;
+package com.java.stream.interview.employee.domain_related;
 
 import java.util.List;
 
-public record CorporateEmployee(int id, String name, List<Project> projects) {
+public record Employee(int id, String name, List<Project> projects, Department department) {
   public long sumOfProjectDurations() {
     return projects.stream().mapToInt(Project::duration).sum();
   }
