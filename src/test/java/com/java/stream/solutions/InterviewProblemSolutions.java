@@ -1,14 +1,14 @@
 package com.java.stream.solutions;
 
 import com.java.stream.interview.employee.domain_related.Employee;
-import com.java.stream.interview.employee.domain_related.Identity;
+
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class InterviewProblemSolutions
 {
-  public static Map<String, ? extends Number> findUniqueDomainsCount(List<Identity> people) {
+  public static Map<String, ? extends Number> findUniqueDomainsCount(List<Employee.Identity> people) {
     return people.stream()
         .filter(x -> x.email().split("@").length == 2)
         .map(x -> x.email().split("@")[1])

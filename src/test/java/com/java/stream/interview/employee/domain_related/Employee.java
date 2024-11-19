@@ -10,4 +10,6 @@ public record Employee(int id, Identity identity, List<Project> projects) {
   public long projectSize() {
     return this.projects().size();
   }
+
+  public record Identity(String email, String name, long salary) {}
 }

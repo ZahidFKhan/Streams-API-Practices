@@ -2,7 +2,6 @@ package com.java.stream.interview.employee;
 
 import com.java.stream.interview.employee.domain_related.Department;
 import com.java.stream.interview.employee.domain_related.Employee;
-import com.java.stream.interview.employee.domain_related.Identity;
 import com.java.stream.interview.employee.domain_related.Project;
 import com.java.stream.solutions.InterviewProblemSolutions;
 import java.util.*;
@@ -40,8 +39,8 @@ class A_IdentityWorkedForMaxProjectTest {
             new Project("E4", 2, Department.ComputerScience));
 
     var corporateEmployees = new ArrayList<Employee>();
-    final var priyanka = new Identity("x@y.z", "Priyanka", 12000);
-    final var zahid = new Identity("y@y.z", "Zahid", 10000);
+    final var priyanka = new Employee.Identity("x@y.z", "Priyanka", 12000);
+    final var zahid = new Employee.Identity("y@y.z", "Zahid", 10000);
 
     corporateEmployees.add(new Employee(1, priyanka, projectsThatEmp1HasWorkedOn));
 
