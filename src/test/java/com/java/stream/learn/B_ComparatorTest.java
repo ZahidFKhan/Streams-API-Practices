@@ -80,7 +80,7 @@ class B_ComparatorTest {
 
     /**
      * Write a Comparator that compares instances of Person using their
-     * lastName, and if their last name is the same, uses their first name.
+     * lastName, and if their last projectName is the same, uses their first projectName.
      */
     @Test @Disabled
     public void comparator04() {
@@ -98,8 +98,8 @@ class B_ComparatorTest {
     /**
      * Write a Comparator that compares the people in the order reversed from
      * the one you wrote in the comparator04() exercise. That is, the person
-     * with the greater last name should be ordered first. If two persons have
-     * the same last name, the one with the greater first name should be
+     * with the greater last projectName should be ordered first. If two persons have
+     * the same last projectName, the one with the greater first projectName should be
      * ordered first.
      */
     @Test @Disabled

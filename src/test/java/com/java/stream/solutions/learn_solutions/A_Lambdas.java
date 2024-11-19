@@ -56,7 +56,7 @@ public class A_Lambdas {
     /**
      * Write an unbound method reference that is a predicate
      * that tests whether a string is empty. An unbound method
-     * reference has a class name on the left-hand side of the ::
+     * reference has a class projectName on the left-hand side of the ::
      * operator:
      *
      *     classname::methodname

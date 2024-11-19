@@ -1,7 +1,7 @@
 package com.java.stream.interview;
 
 import com.github.javafaker.Faker;
-import com.java.stream.interview.employee.domain_related.Person;
+import com.java.stream.interview.employee.domain_related.Identity;
 import com.java.stream.solutions.InterviewProblemSolutions;
 import java.util.List;
 import java.util.Map;
@@ -20,17 +20,50 @@ class D_UniqueEmailCountTest {
   void findUniqueDomainsWithCount() {
     final var employees =
         List.of(
-            new Person(Faker.instance().internet().emailAddress(), ""),
-            new Person(Faker.instance().internet().emailAddress(), ""),
-            new Person(Faker.instance().internet().emailAddress(), ""),
-            new Person(Faker.instance().internet().emailAddress(), ""),
-            new Person(Faker.instance().internet().emailAddress(), ""),
-            new Person(Faker.instance().internet().emailAddress(), ""),
-            new Person(Faker.instance().internet().emailAddress(), ""),
-            new Person(Faker.instance().internet().emailAddress(), ""),
-            new Person(Faker.instance().internet().emailAddress(), ""),
-            new Person(Faker.instance().internet().emailAddress(), ""),
-            new Person(Faker.instance().internet().emailAddress(), ""));
+            new Identity(
+                Faker.instance().internet().emailAddress(),
+                "",
+                Faker.instance().number().numberBetween(10000, 20000)),
+            new Identity(
+                Faker.instance().internet().emailAddress(),
+                "",
+                Faker.instance().number().numberBetween(10000, 20000)),
+            new Identity(
+                Faker.instance().internet().emailAddress(),
+                "",
+                Faker.instance().number().numberBetween(10000, 20000)),
+            new Identity(
+                Faker.instance().internet().emailAddress(),
+                "",
+                Faker.instance().number().numberBetween(10000, 20000)),
+            new Identity(
+                Faker.instance().internet().emailAddress(),
+                "",
+                Faker.instance().number().numberBetween(10000, 20000)),
+            new Identity(
+                Faker.instance().internet().emailAddress(),
+                "",
+                Faker.instance().number().numberBetween(10000, 20000)),
+            new Identity(
+                Faker.instance().internet().emailAddress(),
+                "",
+                Faker.instance().number().numberBetween(10000, 20000)),
+            new Identity(
+                Faker.instance().internet().emailAddress(),
+                "",
+                Faker.instance().number().numberBetween(10000, 20000)),
+            new Identity(
+                Faker.instance().internet().emailAddress(),
+                "",
+                Faker.instance().number().numberBetween(10000, 20000)),
+            new Identity(
+                Faker.instance().internet().emailAddress(),
+                "",
+                Faker.instance().number().numberBetween(10000, 20000)),
+            new Identity(
+                Faker.instance().internet().emailAddress(),
+                "",
+                Faker.instance().number().numberBetween(10000, 20000)));
 
     final var mySolution = InterviewProblemSolutions.findUniqueDomainsCount(employees);
 

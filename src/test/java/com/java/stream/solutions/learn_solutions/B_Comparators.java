@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
  * Exercises to create comparators using lambda expressions
  * and using the Comparator combinators. Some of the exercises
  * use a Person class, which is a simple POJO containing a last
- * name, first name, and age, with the obvious constructors and
+ * projectName, first projectName, and age, with the obvious constructors and
  * getters.
  */
 public class B_Comparators {
@@ -96,7 +96,7 @@ public class B_Comparators {
 
     /**
      * Write a Comparator that compares instances of Person using their
-     * lastName, and if their last name is the same, uses their first name.
+     * lastName, and if their last projectName is the same, uses their first projectName.
      */
     @Test
     public void comparator04() {
@@ -119,8 +119,8 @@ public class B_Comparators {
     /**
      * Write a Comparator that compares the people in the order reversed from
      * the one you wrote in the comparator04() exercise. That is, the person
-     * with the greater last name should be ordered first. If two persons have
-     * the same last name, the one with the greater first name should be
+     * with the greater last projectName should be ordered first. If two persons have
+     * the same last projectName, the one with the greater first projectName should be
      * ordered first.
      */
     @Test
