@@ -40,7 +40,7 @@ public class InterviewProblemSolutions
     return employees.stream()
         .max(
             Comparator.comparing(Employee::projectSize)
-                .thenComparing(Employee::sumOfProjectDurations))
+                .thenComparing(Employee::totalProjectDurations))
         .get();
   }
 }

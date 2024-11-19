@@ -3,7 +3,7 @@ package com.java.stream.interview.employee.domain_related;
 import java.util.List;
 
 public record Employee(int id, Identity identity, List<Project> projects) {
-  public long sumOfProjectDurations() {
+  public long totalProjectDurations() {
     return projects.stream().mapToInt(Project::projectDurationInMonths).sum();
   }
 
