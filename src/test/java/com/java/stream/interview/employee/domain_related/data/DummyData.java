@@ -1,4 +1,6 @@
-package com.java.stream.interview.employee.domain_related;
+package com.java.stream.interview.employee.domain_related.data;
+
+import com.java.stream.interview.employee.domain_related.Employee;
 
 import static com.java.stream.interview.employee.domain_related.Department.*;
 import static com.java.stream.interview.employee.domain_related.Department.Civil;

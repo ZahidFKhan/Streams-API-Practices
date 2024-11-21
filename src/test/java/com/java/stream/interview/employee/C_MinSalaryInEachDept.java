@@ -1,6 +1,6 @@
 package com.java.stream.interview.employee;
 
-import com.java.stream.interview.employee.domain_related.DummyData;
+import com.java.stream.interview.employee.domain_related.data.DummyData;
 import com.java.stream.solutions.InterviewProblemSolutions;
 import java.util.Map;
 import org.junit.jupiter.api.Assertions;
