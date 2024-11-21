@@ -2,7 +2,7 @@ package com.java.stream.interview.employee.domain_related;
 
 import java.util.List;
 
-public record Employee(int id, Identity identity, List<Project> projects) {
+public record Employee(Identity identity, long salary, Department department, List<Project> projects) {
   public long totalProjectDurations() {
     return projects.stream().mapToInt(Project::projectDurationInMonths).sum();
   }
@@ -11,5 +11,5 @@ public record Employee(int id, Identity identity, List<Project> projects) {
     return this.projects().size();
   }
 
-  public record Identity(String email, String name, long salary) {}
+  public record Identity(String email, String name) {}
 }

@@ -22,48 +22,48 @@ class D_UniqueEmailCountTest {
         List.of(
             new Employee.Identity(
                 Faker.instance().internet().emailAddress(),
-                "",
-                Faker.instance().number().numberBetween(10000, 20000)),
+                ""
+            ),
             new Employee.Identity(
                 Faker.instance().internet().emailAddress(),
-                "",
-                Faker.instance().number().numberBetween(10000, 20000)),
+                ""
+            ),
             new Employee.Identity(
                 Faker.instance().internet().emailAddress(),
-                "",
-                Faker.instance().number().numberBetween(10000, 20000)),
+                ""
+            ),
             new Employee.Identity(
                 Faker.instance().internet().emailAddress(),
-                "",
-                Faker.instance().number().numberBetween(10000, 20000)),
+                ""
+            ),
             new Employee.Identity(
                 Faker.instance().internet().emailAddress(),
-                "",
-                Faker.instance().number().numberBetween(10000, 20000)),
+                ""
+            ),
             new Employee.Identity(
                 Faker.instance().internet().emailAddress(),
-                "",
-                Faker.instance().number().numberBetween(10000, 20000)),
+                ""
+            ),
             new Employee.Identity(
                 Faker.instance().internet().emailAddress(),
-                "",
-                Faker.instance().number().numberBetween(10000, 20000)),
+                ""
+            ),
             new Employee.Identity(
                 Faker.instance().internet().emailAddress(),
-                "",
-                Faker.instance().number().numberBetween(10000, 20000)),
+                ""
+            ),
             new Employee.Identity(
                 Faker.instance().internet().emailAddress(),
-                "",
-                Faker.instance().number().numberBetween(10000, 20000)),
+                ""
+            ),
             new Employee.Identity(
                 Faker.instance().internet().emailAddress(),
-                "",
-                Faker.instance().number().numberBetween(10000, 20000)),
+                ""
+            ),
             new Employee.Identity(
                 Faker.instance().internet().emailAddress(),
-                "",
-                Faker.instance().number().numberBetween(10000, 20000)));
+                ""
+            ));
 
     final var mySolution = InterviewProblemSolutions.findUniqueDomainsCount(employees);
 

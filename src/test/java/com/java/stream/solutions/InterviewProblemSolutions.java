@@ -1,14 +1,13 @@
 package com.java.stream.solutions;
 
 import com.java.stream.interview.employee.domain_related.Employee;
-
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class InterviewProblemSolutions
-{
-  public static Map<String, ? extends Number> findUniqueDomainsCount(List<Employee.Identity> people) {
+public class InterviewProblemSolutions {
+  public static Map<String, ? extends Number> findUniqueDomainsCount(
+      List<Employee.Identity> people) {
     return people.stream()
         .filter(x -> x.email().split("@").length == 2)
         .map(x -> x.email().split("@")[1])
@@ -35,12 +34,31 @@ public class InterviewProblemSolutions
         .orElseThrow(RuntimeException::new);
   }
 
-  public static Employee employeesWorkedForMaxProjects(
-      List<Employee> employees) {
+  public static Employee employeesWorkedForMaxProjects(List<Employee> employees) {
     return employees.stream()
         .max(
             Comparator.comparing(Employee::projectSize)
                 .thenComparing(Employee::totalProjectDurations))
         .get();
+  }
+
+  public static Map<String, Long> getHighestSalaryInEachDepartment(Collection<Employee> employees) {
+    return employees.stream()
+        .collect(
+            Collectors.groupingBy(
+                e -> e.department().name(),
+                Collectors.collectingAndThen(
+                    Collectors.maxBy(Comparator.comparing(Employee::salary)),
+                    employee -> employee.get().salary())));
+  }
+
+  public static Map<String, Long> getMinSalaryInEachDepartment(Collection<Employee> employees) {
+    return employees.stream()
+        .collect(
+            Collectors.groupingBy(
+                e -> e.department().name(),
+                Collectors.collectingAndThen(
+                    Collectors.minBy(Comparator.comparing(Employee::salary)),
+                    employee -> employee.get().salary())));
   }
 }

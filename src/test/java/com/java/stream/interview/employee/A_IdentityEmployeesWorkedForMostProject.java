@@ -20,7 +20,7 @@ import org.junit.jupiter.api.Test;
  * <p>return the employee with the longest total projectDurationInMonths of projects. If there are
  * still ties, return any one of the tied employees.
  */
-class A_IdentityWorkedForMaxProjectTest {
+class A_IdentityEmployeesWorkedForMostProject {
   @Test
   @Disabled()
   public void employeeWorkedOnMostProject() {
@@ -39,12 +39,12 @@ class A_IdentityWorkedForMaxProjectTest {
             new Project("E4", 2, Department.ComputerScience));
 
     var corporateEmployees = new ArrayList<Employee>();
-    final var priyanka = new Employee.Identity("x@y.z", "Priyanka", 12000);
-    final var zahid = new Employee.Identity("y@y.z", "Zahid", 10000);
+    final var priyanka = new Employee.Identity("x@y.z", "Priyanka");
+    final var zahid = new Employee.Identity("y@y.z", "Zahid");
 
-    corporateEmployees.add(new Employee(1, priyanka, projectsThatEmp1HasWorkedOn));
+    corporateEmployees.add(new Employee(priyanka, 10000, Department.ComputerScience, projectsThatEmp1HasWorkedOn));
 
-    corporateEmployees.add(new Employee(2, zahid, projectsThatEmp2HasWorkedOn));
+    corporateEmployees.add(new Employee(zahid, 10000, Department.ComputerScience, projectsThatEmp2HasWorkedOn));
 
     var mySolution = InterviewProblemSolutions.employeesWorkedForMaxProjects(corporateEmployees);
 
