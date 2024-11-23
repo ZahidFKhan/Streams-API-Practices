@@ -61,4 +61,13 @@ public class InterviewProblemSolutions {
                     Collectors.minBy(Comparator.comparing(Employee::salary)),
                     employee -> employee.get().salary())));
   }
+
+  public static Map<String, Long> getSumOfSalariesOnEachDepartment(Collection<Employee> employees) {
+    final var collect =
+        employees.stream()
+            .collect(
+                Collectors.groupingBy(
+                    e -> e.department().name(), Collectors.summingLong(e -> e.salary())));
+    return collect;
+  }
 }
