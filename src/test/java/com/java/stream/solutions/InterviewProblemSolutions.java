@@ -1,5 +1,6 @@
 package com.java.stream.solutions;
 
+import com.java.stream.interview.employee.domain_related.Department;
 import com.java.stream.interview.employee.domain_related.Employee;
 import java.util.*;
 import java.util.function.Function;
@@ -70,4 +71,13 @@ public class InterviewProblemSolutions {
                     e -> e.department().name(), Collectors.summingLong(e -> e.salary())));
     return collect;
   }
+
+    public static Map<Department, List<String>> getEmployeesBelongToEachDepartment(
+         Collection<Employee> employees) {
+       return employees.stream()
+           .collect(
+               Collectors.groupingBy(
+                   Employee::department,
+                   Collectors.mapping(e -> e.identity().name(), Collectors.toList())));
+     }
 }

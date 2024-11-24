@@ -1,3 +1,12 @@
 package com.java.stream.interview.employee;
 
-class F_CountNumberOfEmployeeBelongToEachDept {}
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+
+class F_CountNumberOfEmployeeBelongToEachDept {
+    @Test
+    @Disabled
+    void countNumberOfEmployeeBelongToEachDept() {
+        // TODO
+    }
+}
