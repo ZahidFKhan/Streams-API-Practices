@@ -80,4 +80,19 @@ public class InterviewProblemSolutions {
                    Employee::department,
                    Collectors.mapping(e -> e.identity().name(), Collectors.toList())));
      }
+
+    public static Object largestConsecutiveSequence(List<Integer> input) {
+      final var set = new HashSet<>(input);
+      return set
+              .stream()
+              .filter(value->set.contains(value-1))
+              .collect(Collectors.toMap(Function.identity(),x->{
+                int count = 0;
+                while(set.contains(x++)){
+                  ++count;
+                }
+                return count;
+              })).values().stream().max(Comparator.comparing(Integer::intValue)).get();
+
+    }
 }
