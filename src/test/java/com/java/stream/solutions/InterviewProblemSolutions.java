@@ -72,27 +72,32 @@ public class InterviewProblemSolutions {
     return collect;
   }
 
-    public static Map<Department, List<String>> getEmployeesBelongToEachDepartment(
-         Collection<Employee> employees) {
-       return employees.stream()
-           .collect(
-               Collectors.groupingBy(
-                   Employee::department,
-                   Collectors.mapping(e -> e.identity().name(), Collectors.toList())));
-     }
+  public static Map<Department, List<String>> getEmployeesBelongToEachDepartment(
+      Collection<Employee> employees) {
+    return employees.stream()
+        .collect(
+            Collectors.groupingBy(
+                Employee::department,
+                Collectors.mapping(e -> e.identity().name(), Collectors.toList())));
+  }
 
-    public static Object largestConsecutiveSequence(List<Integer> input) {
-      final var set = new HashSet<>(input);
-      return set
-              .stream()
-              .filter(value->set.contains(value-1))
-              .collect(Collectors.toMap(Function.identity(),x->{
-                int count = 0;
-                while(set.contains(x++)){
-                  ++count;
-                }
-                return count;
-              })).values().stream().max(Comparator.comparing(Integer::intValue)).get();
-
-    }
+  public static Object largestConsecutiveSequence(List<Integer> input) {
+    final var set = new HashSet<>(input);
+    return set.stream()
+        .filter(value -> set.contains(value - 1))
+        .collect(
+            Collectors.toMap(
+                Function.identity(),
+                x -> {
+                  int count = 0;
+                  while (set.contains(x++)) {
+                    ++count;
+                  }
+                  return count;
+                }))
+        .values()
+        .stream()
+        .max(Comparator.comparing(Integer::intValue))
+        .get();
+  }
 }
