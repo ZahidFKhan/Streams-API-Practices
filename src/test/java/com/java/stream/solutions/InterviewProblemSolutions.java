@@ -81,7 +81,7 @@ public class InterviewProblemSolutions {
                 Collectors.mapping(e -> e.identity().name(), Collectors.toList())));
   }
 
-  public static Object largestConsecutiveSequence(List<Integer> input) {
+  public static Integer largestConsecutiveSequence(List<Integer> input) {
     final var set = new HashSet<>(input);
     return set.stream()
         .filter(value -> set.contains(value - 1))
