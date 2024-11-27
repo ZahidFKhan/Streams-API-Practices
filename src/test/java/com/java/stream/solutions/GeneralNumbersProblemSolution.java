@@ -9,7 +9,16 @@ import java.util.stream.Stream;
 public class GeneralNumbersProblemSolution {
 
   public static List<String> getNumberOnly(List<String> values) {
-    return values.stream().filter(x -> x.matches("\\d+")).toList();
+    return values.stream()
+        .<String>mapMulti(
+            (value, stream) -> {
+              try {
+                Double.parseDouble(value);
+                stream.accept(value);
+              } catch (NumberFormatException ignore) {
+              }
+            })
+        .toList();
   }
 
   public static String getSmallestPossibleValue(List<Integer> input) {
