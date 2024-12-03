@@ -36,10 +36,10 @@ public class GeneralNumbersProblemSolution {
     return input.stream().distinct().toList();
   }
 
-  public static long sumOfDigits(List<Integer> input) {
+  public static long sumOfNumbers(List<Integer> input) {
     return input.stream().reduce(0, Integer::sum);
   }
-  public static long sumOfUniqueDigits(List<Integer> input) {
+  public static long sumOfUniqueNumbers(List<Integer> input) {
     return input.stream().distinct().reduce(0, Integer::sum);
   }
 
