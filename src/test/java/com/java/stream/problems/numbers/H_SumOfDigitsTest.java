@@ -2,24 +2,29 @@ package com.java.stream.problems.numbers;
 
 import com.github.javafaker.Faker;
 import java.util.List;
+
+import com.java.stream.solutions.GeneralNumbersProblemSolution;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
 /**
- * Given an array of {5,6,7,8,5,5,8,8,7)
- * Find the sum of the unique elements.
- * The output should be in this case is: 26.
+ * Tests the sumOfDigits method in the GeneralNumbersProblemSolution class.
+ *
+ * This test case generates a random integer between 1 and the maximum possible integer value,
+ * passes it to the sumOfDigits method, and verifies that the result is correct.
+ *
+ * Note: This test case is currently disabled and should be updated to reflect the correct expected behavior.
+ *
+ * @see GeneralNumbersProblemSolution#sumOfDigits(int)
  */
 class H_SumOfDigitsTest {
 
   @Test
   @Disabled
-  void testSumOfDigitsTest() {
-    //todo: complete it
-    final var input = Faker.instance().number().randomNumber();
-    var mySolution = 0L;
-    var yourSolution = List.of();
+  void testSumOfDigits() {
+    final var input = Faker.instance().number().numberBetween(1,Integer.MAX_VALUE);
+    var mySolution = GeneralNumbersProblemSolution.sumOfDigits(input);
+    var yourSolution = 2;
 
     Assertions.assertEquals(mySolution, yourSolution);
   }
