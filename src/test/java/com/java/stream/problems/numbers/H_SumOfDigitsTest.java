@@ -15,7 +15,8 @@ class H_SumOfDigitsTest {
 
   @Test
   @Disabled
-  void testSumOfUniqueDigitsTest() {
+  void testSumOfDigitsTest() {
+    //todo: complete it
     final var input = Faker.instance().number().randomNumber();
     var mySolution = 0L;
     var yourSolution = List.of();
