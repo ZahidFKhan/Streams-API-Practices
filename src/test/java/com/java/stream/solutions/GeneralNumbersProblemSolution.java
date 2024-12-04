@@ -62,4 +62,8 @@ public class GeneralNumbersProblemSolution {
     return IntStream.iterate(input, isDivisibleBy10, divideBy10)
             .map(x -> x % 10).sum();
   }
+
+  public static int reverseANumber(int input) {
+    return 0;
+  }
 }
