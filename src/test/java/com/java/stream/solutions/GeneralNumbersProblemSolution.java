@@ -1,5 +1,6 @@
 package com.java.stream.solutions;
 
+
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
@@ -59,11 +60,13 @@ public class GeneralNumbersProblemSolution {
 
     System.out.println("Input number : " + input);
 
-    return IntStream.iterate(input, isDivisibleBy10, divideBy10)
-            .map(x -> x % 10).sum();
+    return IntStream.iterate(input, isDivisibleBy10, divideBy10).map(x -> x % 10).sum();
   }
 
   public static int reverseANumber(int input) {
-    return 0;
+    System.out.println("Input number : " + input);
+    return IntStream.iterate(input, x -> x > 0, x -> x / 10)
+        .map(x -> x % 10)
+        .reduce(0, (value, previous) -> value * 10 + previous);
   }
 }

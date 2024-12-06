@@ -11,9 +11,9 @@ class I_ReverseANumberTest {
   @Test
   @Disabled
   void reverseANumber() {
-    final var input = Faker.instance().number().numberBetween(1, Integer.MAX_VALUE);
+    final var input = Faker.instance().number().numberBetween(1, 1_00_000);
     var mySolution = GeneralNumbersProblemSolution.reverseANumber(input);
-    var yourSolution = 2;
+    int yourSolution = 0;
 
     Assertions.assertEquals(mySolution, yourSolution);
   }
