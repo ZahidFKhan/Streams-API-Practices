@@ -1,6 +1,5 @@
 package com.java.stream.solutions;
 
-
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
@@ -68,5 +67,18 @@ public class GeneralNumbersProblemSolution {
     return IntStream.iterate(input, x -> x > 0, x -> x / 10)
         .map(x -> x % 10)
         .reduce(0, (value, previous) -> value * 10 + previous);
+  }
+
+  public static List<Integer> generateIntStreamOfPrimeNumberStream(final int limit) {
+    final IntPredicate isPrime =
+        number ->
+            IntStream.rangeClosed(2, (int) Math.sqrt(number))
+                .noneMatch(divisor -> number % divisor == 0);
+
+    return IntStream.iterate(2, x -> x < Integer.MAX_VALUE, x -> x + 1)
+        .filter(isPrime)
+        .limit(limit)
+        .boxed()
+        .toList();
   }
 }
