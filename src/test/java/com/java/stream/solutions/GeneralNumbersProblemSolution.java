@@ -1,5 +1,6 @@
 package com.java.stream.solutions;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
@@ -80,5 +81,11 @@ public class GeneralNumbersProblemSolution {
         .limit(limit)
         .boxed()
         .toList();
+  }
+
+  public static List<List<Integer>> convertInt2DArrayToList(int[][] input) {
+    return Arrays.stream(input)
+        .map(row -> Arrays.stream(row).boxed().collect(Collectors.toList()))
+        .collect(Collectors.toList());
   }
 }

@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-class J_GenerateIntStreamOfPrimeNumbersTest {
+class J_GenerateInfinitePrimeNumberStream {
 
   @Test
   @Disabled

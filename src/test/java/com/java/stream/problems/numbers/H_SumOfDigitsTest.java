@@ -1,12 +1,12 @@
 package com.java.stream.problems.numbers;
 
-import com.github.javafaker.Faker;
-import java.util.List;
 
+import com.java.stream.problems.numbers.ignore.data.DummyData;
 import com.java.stream.solutions.GeneralNumbersProblemSolution;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+
 /**
  * Tests the sumOfDigits method in the GeneralNumbersProblemSolution class.
  *
@@ -22,7 +22,7 @@ class H_SumOfDigitsTest {
   @Test
   @Disabled
   void testSumOfDigits() {
-    final var input = Faker.instance().number().numberBetween(1,Integer.MAX_VALUE);
+    final var input = DummyData.fakerNumber();
     var mySolution = GeneralNumbersProblemSolution.sumOfDigits(input);
     var yourSolution = 2;
 
