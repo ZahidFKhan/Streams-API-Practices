@@ -3,11 +3,7 @@ Welcome! To STREAM Playground.
 </h1>
 
 [![GitHub stars](https://img.shields.io/github/stars/ZahidFKhan/Streams-API-Practices?logo=github)](https://github.com/ZahidFKhan/Streams-API-Practices)
-<p align='center'>
-  <a href="#">
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/ZahidFKhan/Streams-API-Practices?style=for-the-badge">
-</a>&nbsp;&nbsp;
-</p>
+[![GitHub forks](https://img.shields.io/github/forks/ZahidFKhan/Streams-API-Practices?logo=github)](https://github.com/ZahidFKhan/Streams-API-Practices)
 
 ## How to use? 🛠️
 
