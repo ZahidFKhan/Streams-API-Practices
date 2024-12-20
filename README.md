@@ -1,6 +1,7 @@
 <h1 align='center'>
 Welcome! To STREAM Playground.
 </h1>
+[![GitHub stars](https://img.shields.io/github/stars/ZahidFKhan/Streams-API-Practices?logo=github)](https://github.com/ZahidFKhan/Streams-API-Practices)
 
 <p align='center'>
   <a href="#">
