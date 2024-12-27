@@ -1,9 +1,9 @@
-<h1 align='center'>
-Welcome! To STREAM Playground.
-</h1>
+# Welcome! To STREAM Playground.
 
 [![GitHub stars](https://img.shields.io/github/stars/ZahidFKhan/Streams-API-Practices?logo=github)](https://github.com/ZahidFKhan/Streams-API-Practices)
 [![GitHub forks](https://img.shields.io/github/forks/ZahidFKhan/Streams-API-Practices?logo=github)](https://github.com/ZahidFKhan/Streams-API-Practices)
+
+[![Visitor Count](https://profile-counter.glitch.me/ZahidFKhan/count.svg)](https://github.com/ZahidFKhan)
 
 ## How to use? 🛠️
 
