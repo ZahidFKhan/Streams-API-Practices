@@ -1,9 +1,8 @@
 # Welcome! To STREAM Playground.
 
-[![GitHub stars](https://img.shields.io/github/stars/ZahidFKhan/Streams-API-Practices?logo=github)](https://github.com/ZahidFKhan/Streams-API-Practices)
+![Visitors](https://komarev.com/ghpvc/?username=ahrwn&label=Visitors&color=60598F&style=flat)
 [![GitHub forks](https://img.shields.io/github/forks/ZahidFKhan/Streams-API-Practices?logo=github)](https://github.com/ZahidFKhan/Streams-API-Practices)
-
-[![Visitor Count](https://profile-counter.glitch.me/ZahidFKhan/count.svg)](https://github.com/ZahidFKhan)
+[![GitHub stars](https://img.shields.io/github/stars/ZahidFKhan/Streams-API-Practices?logo=github)](https://github.com/ZahidFKhan/Streams-API-Practices)
 
 ## How to use? 🛠️
 
