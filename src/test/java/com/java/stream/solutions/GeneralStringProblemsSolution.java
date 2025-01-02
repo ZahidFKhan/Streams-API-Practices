@@ -76,4 +76,8 @@ public class GeneralStringProblemsSolution {
         .map(strings -> strings.get(0))
         .collect(Collectors.toList());
   }
+
+  public static String convertListOfCharactersToString(Collection<Character> listOfCharacters) {
+    return listOfCharacters.stream().map(Object::toString).reduce("", String::concat);
+  }
 }
