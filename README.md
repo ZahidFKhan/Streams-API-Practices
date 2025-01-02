@@ -1,12 +1,9 @@
 #  Java Stream Screams!
 
-![Visitors](https://komarev.com/ghpvc/?username=ahrwn&label=Visitors&color=blue&style=plastic)
+[//]: # (![Visitors]&#40;https://komarev.com/ghpvc/?username=ahrwn&label=Visitors&color=blue&style=plastic&#41;)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![GitHub forks](https://img.shields.io/github/forks/ZahidFKhan/Streams-API-Practices?logo=github)](https://github.com/ZahidFKhan/Streams-API-Practices)
 [![GitHub stars](https://img.shields.io/github/stars/ZahidFKhan/Streams-API-Practices?logo=github)](https://github.com/ZahidFKhan/Streams-API-Practices)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Watchers](https://img.shields.io/github/watchers/ZahidFKhan/Streams-API-Practices?color=blue)]()
-
-<img src="https://i.giphy.com/1khStZaArE0NeKetsX.webp" height="400" width="1000"/>
 
 ## How to use? 🛠️
 
