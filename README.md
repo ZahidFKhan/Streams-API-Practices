@@ -16,4 +16,6 @@ Welcome! To STREAM Playground.
 
 NOTE: Don't forget to rate this to bookmark.
 
+Cloned from https://github.com/ZahidFKhan/Streams-API-Practices
+
 # Good luck!

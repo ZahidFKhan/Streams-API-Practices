@@ -23,9 +23,9 @@ class B_ComparatorTest {
      * For instance FOUR (4 letters) is greater than TWO (three letters)
      */
     @Test
-    //  @Disabled
+    @Disabled
     public void comparator01() {
-        java.util.Comparator<String> compareByLength = Comparator.comparing(String::length);
+        java.util.Comparator<String> compareByLength = null; // TODO
 
         Assertions.assertTrue(compareByLength.compare("FOUR", "TWO") > 0);
         Assertions.assertTrue(compareByLength.compare("ONE", "SEVEN") < 0);
@@ -42,9 +42,10 @@ class B_ComparatorTest {
      * Write a Comparator that compare instances of String using their length.
      * If the lengths are the same, then use the alphabetical order.
      */
-    @Test //  @Disabled
+    @Test @Disabled
     public void comparator02() {
-        Comparator<String> compareByLengthThenAlphabetical = Comparator.comparing(String::length).thenComparing(Comparator.naturalOrder());
+        Comparator<String> compareByLengthThenAlphabetical = null; // TODO
+
         Assertions.assertTrue(compareByLengthThenAlphabetical.compare("FOUR", "TWO") > 0);
         Assertions.assertTrue(compareByLengthThenAlphabetical.compare("ONE", "SEVEN") < 0);
         Assertions.assertTrue(compareByLengthThenAlphabetical.compare("ONE", "TWO") < 0);
@@ -62,8 +63,7 @@ class B_ComparatorTest {
     /**
      * Write a Comparator that compares instances of Person using their lastName.
      */
-    @Test
-    //  @Disabled
+    @Test @Disabled
     public void comparator03() {
         Comparator<Person> comparebyLastName = null; // TODO
 
@@ -82,7 +82,7 @@ class B_ComparatorTest {
      * Write a Comparator that compares instances of Person using their
      * lastName, and if their last projectName is the same, uses their first projectName.
      */
-    @Test //  @Disabled
+    @Test @Disabled
     public void comparator04() {
         Comparator<Person> comparebyLastNameThenFirstName = null; // TODO
 
@@ -102,7 +102,7 @@ class B_ComparatorTest {
      * the same last projectName, the one with the greater first projectName should be
      * ordered first.
      */
-    @Test //  @Disabled
+    @Test @Disabled
     public void comparator05() {
         Comparator<Person> comparebyLastNameThenFirstNameReversed = null; // TODO
 
@@ -120,7 +120,7 @@ class B_ComparatorTest {
      * one you wrote in comparator04(), but that supports null values. The null
      * values should be considered greater than any non-null values.
      */
-    @Test //  @Disabled
+    @Test @Disabled
     public void comparator06() {
         Comparator<Person> comparebyLastNameThenFirstNameWithNull = null; // TODO
 
@@ -139,7 +139,7 @@ class B_ComparatorTest {
      * Write a Comparator that compares two people by age.
      * Try to write the comparator so as to avoid boxing of primitives.
      */
-    @Test //  @Disabled
+    @Test @Disabled
     public void comparator07() {
         Comparator<Person> comparebyAge = null; // TODO
 
@@ -160,7 +160,7 @@ class B_ComparatorTest {
      * two objects, but in this case we are comparing int primitives, so the
      * functional interface we use is IntBinaryOperator.
      */
-    @Test //  @Disabled
+    @Test @Disabled
     public void comparator08() {
         IntBinaryOperator intCompare = null; // TODO
 
@@ -180,7 +180,7 @@ class B_ComparatorTest {
      * int result that is less than, equal to, or greater than zero, like
      * a comparator.
      */
-    @Test //  @Disabled
+    @Test @Disabled
     public void comparator09() {
         IntBinaryOperator intCompare = null; // TODO
 
@@ -207,7 +207,7 @@ class B_ComparatorTest {
      * special cases such NaN. Consider all NaN values to be equal to each other
      * and greater than any non-NaN value.
      */
-    @Test //  @Disabled
+    @Test @Disabled
     public void comparator10() {
         DoubleToIntBiFunction doubleCompare = null; // TODO
 

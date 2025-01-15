@@ -18,11 +18,11 @@ import org.junit.jupiter.api.Test;
 class B_SortElementTest {
 
   @Test
-  //  @Disabled
+  @Disabled
   public void test() {
     var input = List.of(1, 34, 3, 98, 9, 76, 45, 4);
     var mySolution = GeneralNumbersProblemSolution.getSmallestPossibleValue(input);
-    var yourSolution = "133444576998";
+    var yourSolution = "";
 
     Assertions.assertEquals(mySolution, yourSolution);
   }
