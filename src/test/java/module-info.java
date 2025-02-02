@@ -1,4 +1,4 @@
-module StreamProblemsModule {
+module com.github.streams {
   requires org.junit.jupiter;
   requires javafaker;
 
