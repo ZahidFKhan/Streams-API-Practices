@@ -2,16 +2,16 @@ module StreamProblemsModule {
   requires org.junit.jupiter;
   requires javafaker;
 
-  opens com.java.stream.interview to
+  opens com.github.streams.interview to
       org.junit.platform.commons;
-  opens com.java.stream.learn to
+  opens com.github.streams.learn to
       org.junit.platform.commons;
-  opens com.java.stream.problems.strings to
+  opens com.github.streams.problems.strings to
       org.junit.platform.commons;
-  opens com.java.stream.problems.numbers to
+  opens com.github.streams.problems.numbers to
       org.junit.platform.commons;
-  opens com.java.stream.solutions to
+  opens com.github.streams.solutions to
       org.junit.platform.commons;
-  opens com.java.stream.solutions.learn_solutions to
+  opens com.github.streams.solutions.learn_solutions to
       org.junit.platform.commons;
 }
