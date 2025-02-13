@@ -20,50 +20,17 @@ class D_UniqueEmailCountTest {
   void findUniqueDomainsWithCount() {
     final var employees =
         List.of(
-            new Employee.Identity(
-                Faker.instance().internet().emailAddress(),
-                ""
-            ),
-            new Employee.Identity(
-                Faker.instance().internet().emailAddress(),
-                ""
-            ),
-            new Employee.Identity(
-                Faker.instance().internet().emailAddress(),
-                ""
-            ),
-            new Employee.Identity(
-                Faker.instance().internet().emailAddress(),
-                ""
-            ),
-            new Employee.Identity(
-                Faker.instance().internet().emailAddress(),
-                ""
-            ),
-            new Employee.Identity(
-                Faker.instance().internet().emailAddress(),
-                ""
-            ),
-            new Employee.Identity(
-                Faker.instance().internet().emailAddress(),
-                ""
-            ),
-            new Employee.Identity(
-                Faker.instance().internet().emailAddress(),
-                ""
-            ),
-            new Employee.Identity(
-                Faker.instance().internet().emailAddress(),
-                ""
-            ),
-            new Employee.Identity(
-                Faker.instance().internet().emailAddress(),
-                ""
-            ),
-            new Employee.Identity(
-                Faker.instance().internet().emailAddress(),
-                ""
-            ));
+            new Employee.Identity(Faker.instance().internet().emailAddress(), ""),
+            new Employee.Identity(Faker.instance().internet().emailAddress(), ""),
+            new Employee.Identity(Faker.instance().internet().emailAddress(), ""),
+            new Employee.Identity(Faker.instance().internet().emailAddress(), ""),
+            new Employee.Identity(Faker.instance().internet().emailAddress(), ""),
+            new Employee.Identity(Faker.instance().internet().emailAddress(), ""),
+            new Employee.Identity(Faker.instance().internet().emailAddress(), ""),
+            new Employee.Identity(Faker.instance().internet().emailAddress(), ""),
+            new Employee.Identity(Faker.instance().internet().emailAddress(), ""),
+            new Employee.Identity(Faker.instance().internet().emailAddress(), ""),
+            new Employee.Identity(Faker.instance().internet().emailAddress(), ""));
 
     final var mySolution = InterviewProblemSolutions.findUniqueDomainsCount(employees);
 

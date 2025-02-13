@@ -2,6 +2,7 @@ package com.github.streams.interview.employee;
 
 import com.github.streams.interview.employee.domain_related.Department;
 import com.github.streams.interview.employee.domain_related.Employee;
+import com.github.streams.interview.employee.domain_related.Manager;
 import com.github.streams.interview.employee.domain_related.Project;
 import com.github.streams.solutions.InterviewProblemSolutions;
 import java.util.*;
@@ -42,9 +43,21 @@ class A_EmployeesWhoWorkedOnMostProject {
     final var priyanka = new Employee.Identity("x@y.z", "Priyanka");
     final var zahid = new Employee.Identity("y@y.z", "Zahid");
 
-    corporateEmployees.add(new Employee(priyanka, 10000, Department.ComputerScience, projectsThatEmp1HasWorkedOn));
+    corporateEmployees.add(
+        new Employee(
+            priyanka,
+            10000,
+            Department.ComputerScience,
+            projectsThatEmp1HasWorkedOn,
+            Manager.DEFAULT_MANAGER));
 
-    corporateEmployees.add(new Employee(zahid, 10000, Department.ComputerScience, projectsThatEmp2HasWorkedOn));
+    corporateEmployees.add(
+        new Employee(
+            zahid,
+            10000,
+            Department.ComputerScience,
+            projectsThatEmp2HasWorkedOn,
+            Manager.DEFAULT_MANAGER));
 
     var mySolution = InterviewProblemSolutions.employeesWorkedForMaxProjects(corporateEmployees);
 

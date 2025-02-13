@@ -10,8 +10,9 @@ import org.junit.jupiter.api.Test;
 
 class J_SortListBasedOn2ndCharacterTest {
   /**
-   * This test creates a list of random names and passes it to the sortListBasedOn2ndCharacter method.
-   * The expected result is compared to the actual result to verify the correctness of the method.
+   * This test creates a list of random names and passes it to the sortListBasedOn2ndCharacter
+   * method. The expected result is compared to the actual result to verify the correctness of the
+   * method.
    *
    * @author @ZahidKhan
    * @see GeneralStringProblemsSolution#sortListBasedOn2ndCharacter(List)
@@ -50,6 +51,5 @@ class J_SortListBasedOn2ndCharacterTest {
     List<String> yourSolution = Collections.emptyList();
 
     Assertions.assertEquals(mySolution, yourSolution);
-
   }
 }

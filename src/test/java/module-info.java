@@ -14,4 +14,6 @@ module com.github.streams {
       org.junit.platform.commons;
   opens com.github.streams.solutions.learn_solutions to
       org.junit.platform.commons;
+  opens com.github.streams.interview.employee to
+      org.junit.platform.commons;
 }

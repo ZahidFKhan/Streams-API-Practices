@@ -26,6 +26,25 @@ import org.junit.jupiter.api.*;
  */
 public class F_AdvancedStreams {
 
+  // Pattern for splitting a string into words
+  static final Pattern SPLIT_PATTERN = Pattern.compile("[- .:,]+");
+
+  // Hint:
+  // <editor-fold defaultstate="collapsed">
+  // Use Collectors.groupingBy().
+  // </editor-fold>
+  private BufferedReader reader;
+
+  // Hint 1:
+  // <editor-fold defaultstate="collapsed">
+  // Use the overload of Collectors.groupingBy() that has
+  // a "downstream" parameter.
+  // </editor-fold>
+  // Hint 2:
+  // <editor-fold defaultstate="collapsed">
+  // Use Collectors.counting().
+  // </editor-fold>
+
   /**
    * Categorize the words from the text file into a map, where the map's key is the length of each
    * word, and the value corresponding to a key is a list of words of that length. Don't bother with
@@ -54,9 +73,16 @@ public class F_AdvancedStreams {
     assertFalse(result.containsKey(12));
   }
 
-  // Hint:
+  // Hint 1:
   // <editor-fold defaultstate="collapsed">
-  // Use Collectors.groupingBy().
+  // For Collectors.groupingBy(), consider that each word needs to be in
+  // a category of its own, that is, each word is categorized as itself.
+  // </editor-fold>
+  // Hint 2:
+  // <editor-fold defaultstate="collapsed">
+  // For Collectors.toMap(), the first occurrence of a word should be mapped to 1.
+  // If two elements of the Stream are generating the same key, you will need to
+  // provide a merging function.
   // </editor-fold>
 
   /**
@@ -96,12 +122,12 @@ public class F_AdvancedStreams {
 
   // Hint 1:
   // <editor-fold defaultstate="collapsed">
-  // Use the overload of Collectors.groupingBy() that has
-  // a "downstream" parameter.
+  // The nested map structure that's desired is the result of applying a
+  // "downstream" collector that's the same operation as the first-level collector.
   // </editor-fold>
   // Hint 2:
   // <editor-fold defaultstate="collapsed">
-  // Use Collectors.counting().
+  // Both collection operations are Collectors.groupingBy().
   // </editor-fold>
 
   /**
@@ -144,14 +170,12 @@ public class F_AdvancedStreams {
 
   // Hint 1:
   // <editor-fold defaultstate="collapsed">
-  // For Collectors.groupingBy(), consider that each word needs to be in
-  // a category of its own, that is, each word is categorized as itself.
+  // Use Collectors.partitioningBy().
   // </editor-fold>
   // Hint 2:
   // <editor-fold defaultstate="collapsed">
-  // For Collectors.toMap(), the first occurrence of a word should be mapped to 1.
-  // If two elements of the Stream are generating the same key, you will need to
-  // provide a merging function.
+  // The collect(Collector) method we need is defined on Stream<T>, but not on
+  // IntStream, LongStream or DoubleStream.
   // </editor-fold>
 
   /**
@@ -192,12 +216,20 @@ public class F_AdvancedStreams {
 
   // Hint 1:
   // <editor-fold defaultstate="collapsed">
-  // The nested map structure that's desired is the result of applying a
-  // "downstream" collector that's the same operation as the first-level collector.
+  // The collector state (that is, the object being accumulated and
+  // combined) can be a single StringBuilder, which is manipulated
+  // by lambda expressions in the three-arg form of the collect() method.
   // </editor-fold>
   // Hint 2:
   // <editor-fold defaultstate="collapsed">
-  // Both collection operations are Collectors.groupingBy().
+  // The combiner function must take its second argument and merge
+  // it into the first argument, mutating the first argument.
+  // </editor-fold>
+  // Hint 3:
+  // <editor-fold defaultstate="collapsed">
+  // The second argument to the combiner function happens AFTER the first
+  // argument in encounter order, so the second argument needs to be split
+  // in half and prepended/appended to the first argument.
   // </editor-fold>
 
   /**
@@ -224,14 +256,10 @@ public class F_AdvancedStreams {
     assertEquals(614, sumOdds);
   }
 
-  // Hint 1:
+  // Hint:
   // <editor-fold defaultstate="collapsed">
-  // Use Collectors.partitioningBy().
-  // </editor-fold>
-  // Hint 2:
-  // <editor-fold defaultstate="collapsed">
-  // The collect(Collector) method we need is defined on Stream<T>, but not on
-  // IntStream, LongStream or DoubleStream.
+  // The operations you need to write are actually quite simple.
+  // Don't overthink it.
   // </editor-fold>
 
   /**
@@ -268,23 +296,41 @@ public class F_AdvancedStreams {
     assertEquals("tsrqponmlkjihgfedcbaabcdefghijklmnopqrst", result);
   }
 
-  // Hint 1:
-  // <editor-fold defaultstate="collapsed">
-  // The collector state (that is, the object being accumulated and
-  // combined) can be a single StringBuilder, which is manipulated
-  // by lambda expressions in the three-arg form of the collect() method.
-  // </editor-fold>
-  // Hint 2:
-  // <editor-fold defaultstate="collapsed">
-  // The combiner function must take its second argument and merge
-  // it into the first argument, mutating the first argument.
-  // </editor-fold>
-  // Hint 3:
-  // <editor-fold defaultstate="collapsed">
-  // The second argument to the combiner function happens AFTER the first
-  // argument in encounter order, so the second argument needs to be split
-  // in half and prepended/appended to the first argument.
-  // </editor-fold>
+  // ========================================================
+  // END OF EXERCISES
+  // TEST INFRASTRUCTURE IS BELOW
+  // ========================================================
+
+  @Test
+  public void f7_countTotalAndDistinctWords() {
+    List<String> allWords =
+        reader
+            .lines()
+            .map(String::toLowerCase)
+            .flatMap(line -> SPLIT_PATTERN.splitAsStream(line))
+            .collect(Collectors.toList());
+
+    TotalAndDistinct totalAndDistinct =
+        Collections.nCopies(100, allWords).parallelStream()
+            .flatMap(List::stream)
+            .collect(
+                TotalAndDistinct::new, TotalAndDistinct::accumulate, TotalAndDistinct::combine);
+
+    assertEquals(81, totalAndDistinct.getDistinctCount(), "distinct count");
+    assertEquals(totalAndDistinct.getTotalCount(), 10700, "total count");
+  }
+
+  @BeforeEach
+  public void z_setUpBufferedReader() throws IOException {
+    reader =
+        new BufferedReader(
+            new InputStreamReader(this.getClass().getResource("/SonnetI.txt").openStream()));
+  }
+
+  @AfterEach
+  public void z_closeBufferedReader() throws IOException {
+    reader.close();
+  }
 
   /**
    * Count the total number of words and the number of distinct, lower case words in a stream, in
@@ -295,8 +341,8 @@ public class F_AdvancedStreams {
    * <p>The stream is run in parallel, so you must write a combine() method that works properly.
    */
   static class TotalAndDistinct {
-    private int count = 0;
     private final Set<String> set = new HashSet<>();
+    private int count = 0;
 
     // rely on implicit no-arg constructor
 
@@ -323,52 +369,5 @@ public class F_AdvancedStreams {
     int getDistinctCount() {
       return set.size();
     }
-  }
-
-  // Hint:
-  // <editor-fold defaultstate="collapsed">
-  // The operations you need to write are actually quite simple.
-  // Don't overthink it.
-  // </editor-fold>
-
-  @Test
-  public void f7_countTotalAndDistinctWords() {
-    List<String> allWords =
-        reader
-            .lines()
-            .map(String::toLowerCase)
-            .flatMap(line -> SPLIT_PATTERN.splitAsStream(line))
-            .collect(Collectors.toList());
-
-    TotalAndDistinct totalAndDistinct =
-        Collections.nCopies(100, allWords).parallelStream()
-            .flatMap(List::stream)
-            .collect(
-                TotalAndDistinct::new, TotalAndDistinct::accumulate, TotalAndDistinct::combine);
-
-    assertEquals(81, totalAndDistinct.getDistinctCount(), "distinct count");
-    assertEquals(totalAndDistinct.getTotalCount(), 10700, "total count");
-  }
-
-  // ========================================================
-  // END OF EXERCISES
-  // TEST INFRASTRUCTURE IS BELOW
-  // ========================================================
-
-  // Pattern for splitting a string into words
-  static final Pattern SPLIT_PATTERN = Pattern.compile("[- .:,]+");
-
-  private BufferedReader reader;
-
-  @BeforeEach
-  public void z_setUpBufferedReader() throws IOException {
-    reader =
-        new BufferedReader(
-            new InputStreamReader(this.getClass().getResource("/SonnetI.txt").openStream()));
-  }
-
-  @AfterEach
-  public void z_closeBufferedReader() throws IOException {
-    reader.close();
   }
 }

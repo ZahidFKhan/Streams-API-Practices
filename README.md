@@ -1,4 +1,4 @@
-#  Java Stream Screams!
+# Java Stream Screams!
 
 [//]: # (![Visitors]&#40;https://komarev.com/ghpvc/?username=ahrwn&label=Visitors&color=blue&style=plastic&#41;)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)

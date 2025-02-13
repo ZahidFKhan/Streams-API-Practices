@@ -19,6 +19,5 @@ class B_MaxSalaryInEachDept {
     final var yourSolution = Map.of();
 
     Assertions.assertEquals(mySolution, yourSolution);
-
   }
 }

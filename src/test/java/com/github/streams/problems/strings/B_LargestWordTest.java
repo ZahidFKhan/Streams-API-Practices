@@ -7,8 +7,7 @@ import org.junit.jupiter.api.Test;
 
 class B_LargestWordTest {
   /**
-   * Find the largest word in a given string.
-   * <br>
+   * Find the largest word in a given string. <br>
    * <br>
    * Example string:
    *
@@ -18,7 +17,6 @@ class B_LargestWordTest {
    * </pre>
    *
    * @author ZahidKhan
-   *
    * @see GeneralStringProblemsSolution#findLargestWordInTheString(String)
    */
   @Test

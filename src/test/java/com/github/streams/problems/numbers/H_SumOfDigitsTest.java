@@ -9,10 +9,11 @@ import org.junit.jupiter.api.Test;
 /**
  * Tests the sumOfDigits method in the GeneralNumbersProblemSolution class.
  *
- * This test case generates a random integer between 1 and the maximum possible integer value,
+ * <p>This test case generates a random integer between 1 and the maximum possible integer value,
  * passes it to the sumOfDigits method, and verifies that the result is correct.
  *
- * Note: This test case is currently disabled and should be updated to reflect the correct expected behavior.
+ * <p>Note: This test case is currently disabled and should be updated to reflect the correct
+ * expected behavior.
  *
  * @see GeneralNumbersProblemSolution#sumOfDigits(int)
  */

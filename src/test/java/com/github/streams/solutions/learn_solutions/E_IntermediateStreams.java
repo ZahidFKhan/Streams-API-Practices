@@ -26,6 +26,24 @@ import org.junit.jupiter.api.*;
  */
 public class E_IntermediateStreams {
 
+  // Pattern for splitting a string into words
+  static final Pattern SPLIT_PATTERN = Pattern.compile("[- .:,]+");
+
+  // Hint 1:
+  // <editor-fold defaultstate="collapsed">
+  // Use String.chars() and Stream.flatMap().
+  // </editor-fold>
+  // Hint 2:
+  // <editor-fold defaultstate="collapsed">
+  // Pay attention to the return type of String.chars() and boxing conversion.
+  // </editor-fold>
+  private BufferedReader reader;
+
+  // Hint:
+  // <editor-fold defaultstate="collapsed">
+  // Use Stream.flatMap().
+  // </editor-fold>
+
   /** Convert a list of strings into a list of characters. */
   @Test
   public void e1_stringsToCharacters() {
@@ -43,13 +61,9 @@ public class E_IntermediateStreams {
     assertTrue(result.stream().allMatch(x -> x instanceof Character));
   }
 
-  // Hint 1:
+  // Hint:
   // <editor-fold defaultstate="collapsed">
-  // Use String.chars() and Stream.flatMap().
-  // </editor-fold>
-  // Hint 2:
-  // <editor-fold defaultstate="collapsed">
-  // Pay attention to the return type of String.chars() and boxing conversion.
+  // Use Stream.sorted().
   // </editor-fold>
 
   /**
@@ -186,7 +200,7 @@ public class E_IntermediateStreams {
 
   // Hint:
   // <editor-fold defaultstate="collapsed">
-  // Use Stream.flatMap().
+  // Use Comparator.reverseOrder().
   // </editor-fold>
 
   /**
@@ -222,9 +236,13 @@ public class E_IntermediateStreams {
         output);
   }
 
-  // Hint:
+  // Hint 1:
   // <editor-fold defaultstate="collapsed">
-  // Use Stream.sorted().
+  // Use Stream.distinct().
+  // </editor-fold>
+  // Hint 2:
+  // <editor-fold defaultstate="collapsed">
+  // Use Comparator.thenComparing().
   // </editor-fold>
 
   /**
@@ -261,9 +279,15 @@ public class E_IntermediateStreams {
         result);
   }
 
-  // Hint:
+  // Hint 1:
   // <editor-fold defaultstate="collapsed">
-  // Use Comparator.reverseOrder().
+  // Use one of the range methods of LongStream to help create
+  // the BigInteger instances.
+  // </editor-fold>
+  // Hint 2:
+  // <editor-fold defaultstate="collapsed">
+  // Use Stream.reduce() to "collapse" all elements of a stream into
+  // a single value.
   // </editor-fold>
 
   /**
@@ -373,13 +397,9 @@ public class E_IntermediateStreams {
         result);
   }
 
-  // Hint 1:
+  // Hint:
   // <editor-fold defaultstate="collapsed">
-  // Use Stream.distinct().
-  // </editor-fold>
-  // Hint 2:
-  // <editor-fold defaultstate="collapsed">
-  // Use Comparator.thenComparing().
+  // Use Stream.reduce() and think about the order of the arguments.
   // </editor-fold>
 
   /**
@@ -399,15 +419,12 @@ public class E_IntermediateStreams {
     assertEquals(new BigInteger("51090942171709440000"), result);
   }
 
-  // Hint 1:
+  // Hint:
   // <editor-fold defaultstate="collapsed">
-  // Use one of the range methods of LongStream to help create
-  // the BigInteger instances.
-  // </editor-fold>
-  // Hint 2:
-  // <editor-fold defaultstate="collapsed">
-  // Use Stream.reduce() to "collapse" all elements of a stream into
-  // a single value.
+  // There is a getSuperClass() method on the Class class.
+  // Creating a stream of these classes can be made with Stream.iterate().
+  // Then you need to close that stream when the current class is null.
+  // Java 9 added the takeWhile() method on the stream interface.
   // </editor-fold>
 
   /**
@@ -432,8 +449,13 @@ public class E_IntermediateStreams {
 
   // Hint:
   // <editor-fold defaultstate="collapsed">
-  // Use Stream.reduce() and think about the order of the arguments.
+  // Java 9 added the dropWhile() method on the stream interface.
   // </editor-fold>
+
+  // ========================================================
+  // END OF EXERCISES
+  // TEST INFRASTRUCTURE IS BELOW
+  // ========================================================
 
   /** Create a list containing ArrayList.class and all its super classes. */
   @Test
@@ -452,14 +474,6 @@ public class E_IntermediateStreams {
         List.of(ArrayList.class, AbstractList.class, AbstractCollection.class, Object.class),
         result);
   }
-
-  // Hint:
-  // <editor-fold defaultstate="collapsed">
-  // There is a getSuperClass() method on the Class class.
-  // Creating a stream of these classes can be made with Stream.iterate().
-  // Then you need to close that stream when the current class is null.
-  // Java 9 added the takeWhile() method on the stream interface.
-  // </editor-fold>
 
   /** Count the length of a stream dropping the first elements on a predicate. */
   @Test
@@ -484,21 +498,6 @@ public class E_IntermediateStreams {
 
     assertEquals(53, count);
   }
-
-  // Hint:
-  // <editor-fold defaultstate="collapsed">
-  // Java 9 added the dropWhile() method on the stream interface.
-  // </editor-fold>
-
-  // ========================================================
-  // END OF EXERCISES
-  // TEST INFRASTRUCTURE IS BELOW
-  // ========================================================
-
-  // Pattern for splitting a string into words
-  static final Pattern SPLIT_PATTERN = Pattern.compile("[- .:,]+");
-
-  private BufferedReader reader;
 
   @BeforeEach
   public void z_setUpBufferedReader() throws IOException {

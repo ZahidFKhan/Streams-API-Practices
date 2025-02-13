@@ -23,5 +23,4 @@ class C_SortElementInDecendingOrderTest {
 
     Assertions.assertEquals(mySolution, yourSolution);
   }
-
 }

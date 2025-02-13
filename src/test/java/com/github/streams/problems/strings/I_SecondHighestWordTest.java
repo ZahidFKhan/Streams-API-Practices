@@ -17,5 +17,4 @@ class I_SecondHighestWordTest {
 
     assertEquals(mySolution, yourSolution);
   }
-
 }
