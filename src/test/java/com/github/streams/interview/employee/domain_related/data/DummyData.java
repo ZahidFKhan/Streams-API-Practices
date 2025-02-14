@@ -11,7 +11,12 @@ import java.util.Collection;
 import java.util.List;
 import java.util.function.Supplier;
 
-public class DummyData {
+public final class DummyData {
+
+  // NON INSTANTIABLE UTILITY CLASS.
+  private DummyData() {
+    throw new AssertionError("No instances");
+  }
 
   public static Collection<Employee> randomEmployees() {
     final var faker = Faker.instance();
