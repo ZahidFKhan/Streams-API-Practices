@@ -30,16 +30,16 @@ class A_EmployeesWhoWorkedOnMostProject {
     final var employee1 = new Identity("x@y.z", "employee1");
     final var employee2 = new Identity("y@a.z", "employee2");
 
-    var corporateEmployees = new ArrayList<Employee>();
-    corporateEmployees.add(
+    var employees = new ArrayList<Employee>();
+    employees.add(
         new Employee(
             1, employee1, 10000, Department.ComputerScience, projectsThatEmp1HasWorkedOn, -1));
 
-    corporateEmployees.add(
+    employees.add(
         new Employee(
             1, employee2, 10000, Department.ComputerScience, projectsThatEmp2HasWorkedOn, -1));
 
-    var mySolution = InterviewProblemSolutions.employeesWorkedForMaxProjects(corporateEmployees);
+    var mySolution = InterviewProblemSolutions.employeesWorkedForMaxProjects(employees);
 
     Employee yourSolution = null;
 

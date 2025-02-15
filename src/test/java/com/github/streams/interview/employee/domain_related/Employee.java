@@ -12,8 +12,4 @@ public record Employee(
   public long totalProjectDurations() {
     return projects.stream().mapToInt(Project::projectDurationInMonths).sum();
   }
-
-  public long projectSize() {
-    return this.projects().size();
-  }
 }

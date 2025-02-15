@@ -38,7 +38,7 @@ public class InterviewProblemSolutions {
   public static Employee employeesWorkedForMaxProjects(List<Employee> employees) {
     return employees.stream()
         .max(
-            Comparator.comparing(Employee::projectSize)
+            Comparator.comparing((Employee employee) -> employee.projects().size())
                 .thenComparing(Employee::totalProjectDurations))
         .get();
   }
