@@ -2,13 +2,13 @@ package com.github.streams.solutions;
 
 import com.github.streams.interview.employee.domain_related.Department;
 import com.github.streams.interview.employee.domain_related.Employee;
+import com.github.streams.interview.employee.domain_related.Identity;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class InterviewProblemSolutions {
-  public static Map<String, ? extends Number> findUniqueDomainsCount(
-      List<Employee.Identity> people) {
+  public static Map<String, ? extends Number> findUniqueDomainsCount(List<Identity> people) {
     return people.stream()
         .filter(x -> x.email().split("@").length == 2)
         .map(x -> x.email().split("@")[1])

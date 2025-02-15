@@ -1,13 +1,14 @@
 package com.github.streams.interview.employee.domain_related;
 
-import java.util.List;
+import java.util.Collection;
 
 public record Employee(
+    int employeeId,
     Identity identity,
     long salary,
     Department department,
-    List<Project> projects,
-    Manager manager) {
+    Collection<Project> projects,
+    long managerId) {
   public long totalProjectDurations() {
     return projects.stream().mapToInt(Project::projectDurationInMonths).sum();
   }
@@ -15,6 +16,4 @@ public record Employee(
   public long projectSize() {
     return this.projects().size();
   }
-
-  public record Identity(String email, String name) {}
 }

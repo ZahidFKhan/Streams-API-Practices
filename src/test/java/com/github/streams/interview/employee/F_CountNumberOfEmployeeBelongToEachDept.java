@@ -1,6 +1,6 @@
 package com.github.streams.interview.employee;
 
-import com.github.streams.interview.employee.domain_related.data.DummyData;
+import com.github.streams.interview.employee.domain_related.data.DummyEmployees;
 import java.util.Map;
 import java.util.stream.Collectors;
 import org.junit.jupiter.api.Assertions;
@@ -11,7 +11,7 @@ class F_CountNumberOfEmployeeBelongToEachDept {
   @Test
   @Disabled
   void countNumberOfEmployeeBelongToEachDept() {
-    final var employees = DummyData.randomEmployees();
+    final var employees = DummyEmployees.randomEmployees();
     final var mySolution =
         employees.stream()
             .collect(Collectors.groupingBy(e -> e.department().name(), Collectors.counting()));
