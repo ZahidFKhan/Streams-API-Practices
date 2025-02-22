@@ -1,6 +1,8 @@
 package com.github.streams.interview;
 
 import com.github.streams.interview.employee.domain_related.data.DummyEmployees;
+import com.github.streams.solutions.InterviewProblemSolutions;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -9,5 +11,10 @@ public class F_ManagerWithMaxEmployeesTest {
   @Disabled
   void findManagerWithMaxEmployeesTest() {
     final var employees = DummyEmployees.randomEmployees();
+
+    final var mySolution = InterviewProblemSolutions.getManagerIdHavingMaxEmployees(employees);
+    final var yourSolution = -1;
+
+    Assertions.assertEquals(mySolution, yourSolution);
   }
 }

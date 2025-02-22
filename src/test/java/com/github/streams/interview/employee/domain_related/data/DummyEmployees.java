@@ -34,6 +34,7 @@ public final class DummyEmployees {
         employeeWith(id.get(), Chemical),
         employeeWith(id.get(), Chemical),
         employeeWith(id.get(), Chemical),
+        employeeWith(id.get(), Chemical),
         employeeWith(id.get(), Mechanical),
         employeeWith(id.get(), Mechanical),
         employeeWith(id.get(), Mechanical),
@@ -49,8 +50,8 @@ public final class DummyEmployees {
     final Supplier<String> email = () -> faker.internet().emailAddress();
     final Supplier<Integer> salary = () -> faker.number().numberBetween(1000, 50000);
     final Function<Department, Integer> managerId =
-        dpt ->
-            switch (dpt) {
+        deptt ->
+            switch (deptt) {
               case ComputerScience -> 1;
               case Chemical -> 5;
               case Mechanical -> 9;

@@ -100,4 +100,18 @@ public class InterviewProblemSolutions {
         .max(Comparator.comparing(Integer::intValue))
         .get();
   }
+
+  public static Long getManagerIdHavingMaxEmployees(Collection<Employee> employees) {
+    return employees.stream()
+        .peek(
+            e ->
+                System.out.println(
+                    "Employee " + e.identity().name() + " works for managerID: " + e.managerId()))
+        .collect(Collectors.groupingBy(Employee::managerId, Collectors.counting()))
+        .entrySet()
+        .stream()
+        .max(Map.Entry.comparingByValue())
+        .orElseThrow(RuntimeException::new)
+        .getValue();
+  }
 }

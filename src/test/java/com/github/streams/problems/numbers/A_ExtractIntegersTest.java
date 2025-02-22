@@ -15,7 +15,7 @@ class A_ExtractIntegersTest {
   @Test
   @Disabled
   void testCheckAllIntegersWithoutAlphabets() {
-    var input = List.of("1", "12", "12a", "a12");
+    final var input = List.of("1", "12", "12a", "a12");
     var yourSolution = List.of();
     var mySolution = GeneralNumbersProblemSolution.getNumberOnly(input);
 
