@@ -1,4 +1,4 @@
-package com.github.streams.interview;
+package com.github.streams.interview.employee;
 
 import com.github.streams.interview.employee.domain_related.data.DummyEmployees;
 import com.github.streams.solutions.InterviewProblemSolutions;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class F_ManagerWithMaxEmployeesTest {
+public class G_ManagerWithMaxEmployeesTest {
   @Test
   @Disabled
   void findManagerWithMaxEmployeesTest() {

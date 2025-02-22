@@ -7,14 +7,16 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-class E_EmployeesBelongToEachDept {
+class A_MinSalaryInEachDept {
   @Test
   @Disabled
-  void employeesBelongToEachDept() {
+  void testMinSalaryInEachDepartment() {
+
     final var employees = DummyEmployees.randomEmployees();
-    final var mySolution = InterviewProblemSolutions.getEmployeesBelongToEachDepartment(employees);
+
+    final var mySolution = InterviewProblemSolutions.getMinSalaryInEachDepartment(employees);
     final var yourSolution = Map.of();
 
-    Assertions.assertEquals(yourSolution, mySolution);
+    Assertions.assertEquals(mySolution, yourSolution);
   }
 }
