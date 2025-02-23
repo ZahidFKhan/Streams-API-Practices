@@ -17,7 +17,7 @@ import org.junit.jupiter.api.Test;
  *
  * @see GeneralNumbersProblemSolution#sumOfDigits(int)
  */
-class C_SumOfDigitsTest {
+class C_SumOfDigits {
 
   @Test
   @Disabled

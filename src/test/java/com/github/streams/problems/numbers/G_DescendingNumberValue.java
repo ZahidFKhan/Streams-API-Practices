@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Test;
  * Output: 998764543431
  * Explanation: 9,98,76,45,4,34,3,1
  * */
-class G_SortElementInDecendingOrderTest {
+class G_DescendingNumberValue {
 
   @Test
   @Disabled

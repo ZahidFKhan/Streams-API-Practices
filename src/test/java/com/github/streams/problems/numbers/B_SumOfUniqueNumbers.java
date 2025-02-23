@@ -7,17 +7,18 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /*
- * Given a list of Strings : ["as", "123", "32", "2as"],
- * Create another list that contains only integers.
- * The output should be: [123,32]
+ * Given an array of {5,6,7,8,5,5,8,8,7)
+ * Find the sum of the unique elements.
+ * The output should be in this case is: 26.
  */
-class D_ExtractIntegersTest {
+class B_SumOfUniqueNumbers {
+
   @Test
   @Disabled
-  void testCheckAllIntegersWithoutAlphabets() {
-    final var input = List.of("1", "12", "12a", "a12");
+  void testSumOfUniqueDigitsTest() {
+    final var input = List.of(5, 6, 7, 8, 5, 5, 8, 8, 7);
+    var mySolution = GeneralNumbersProblemSolution.sumOfUniqueNumbers(input);
     var yourSolution = List.of();
-    var mySolution = GeneralNumbersProblemSolution.getNumberOnly(input);
 
     Assertions.assertEquals(mySolution, yourSolution);
   }
