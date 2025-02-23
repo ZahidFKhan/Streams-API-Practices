@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
  *
  * Find the list of domains ( gmail.com, yahoo.com..) and the no of occurrences for each domain?
  * */
-class D_UniqueEmailCountTest {
+class D_UniqueEmailCount {
   @Test
   @Disabled
   void findUniqueDomainsWithCount() {

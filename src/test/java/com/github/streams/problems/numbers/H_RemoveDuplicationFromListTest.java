@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 /*
  * Remove duplicates from an arrayList.
  * */
-class D_RemoveDuplicationFromListTest {
+class H_RemoveDuplicationFromListTest {
 
   @Test
   @Disabled

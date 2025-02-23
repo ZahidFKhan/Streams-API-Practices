@@ -2,19 +2,19 @@ package com.github.streams.interview.employee;
 
 import com.github.streams.interview.employee.domain_related.data.DummyEmployees;
 import com.github.streams.solutions.InterviewProblemSolutions;
-import java.util.Map;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-class D_EmployeesBelongToEachDept {
+class G_ManagerWithMaxEmployees {
   @Test
   @Disabled
-  void employeesBelongToEachDept() {
+  void findManagerWithMaxEmployeesTest() {
     final var employees = DummyEmployees.randomEmployees();
-    final var mySolution = InterviewProblemSolutions.getEmployeesBelongToEachDepartment(employees);
-    final var yourSolution = Map.of();
 
-    Assertions.assertEquals(yourSolution, mySolution);
+    final var mySolution = InterviewProblemSolutions.getManagerIdHavingMaxEmployees(employees);
+    final var yourSolution = -1;
+
+    Assertions.assertEquals(mySolution, yourSolution);
   }
 }

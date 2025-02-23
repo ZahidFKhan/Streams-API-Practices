@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  * Create another list that contains only integers.
  * The output should be: [123,32]
  */
-class A_ExtractIntegersTest {
+class D_ExtractIntegersTest {
   @Test
   @Disabled
   void testCheckAllIntegersWithoutAlphabets() {

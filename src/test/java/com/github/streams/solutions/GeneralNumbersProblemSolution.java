@@ -88,4 +88,8 @@ public class GeneralNumbersProblemSolution {
         .map(row -> Arrays.stream(row).boxed().collect(Collectors.toList()))
         .collect(Collectors.toList());
   }
+
+  public static double meanOfNumbers(List<Integer> input) {
+    return input.stream().mapToInt(Integer::intValue).average().orElse(0);
+  }
 }
