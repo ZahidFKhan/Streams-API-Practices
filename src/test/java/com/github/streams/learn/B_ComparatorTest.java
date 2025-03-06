@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 
 class B_ComparatorTest {
 
-  final Person michael = new Person("Michael", "Jackson", 51);
+  final Person ayman = new Person("Ayman", "Khan", 51);
   final Person rod = new Person("Rod", "Stewart", 71);
   final Person paul = new Person("Paul", "McCartney", 74);
   final Person mick = new Person("Mick", "Jagger", 73);
@@ -68,9 +68,9 @@ class B_ComparatorTest {
   public void comparator03() {
     Comparator<Person> comparebyLastName = null; // TODO
 
-    Assertions.assertTrue(comparebyLastName.compare(michael, rod) < 0);
+    Assertions.assertTrue(comparebyLastName.compare(ayman, rod) < 0);
     Assertions.assertTrue(comparebyLastName.compare(paul, paul) == 0);
-    Assertions.assertTrue(comparebyLastName.compare(michael, jermaine) == 0);
+    Assertions.assertTrue(comparebyLastName.compare(ayman, jermaine) == 0);
   }
 
   // Hint:
@@ -89,9 +89,9 @@ class B_ComparatorTest {
   public void comparator04() {
     Comparator<Person> comparebyLastNameThenFirstName = null; // TODO
 
-    Assertions.assertTrue(comparebyLastNameThenFirstName.compare(michael, rod) < 0);
+    Assertions.assertTrue(comparebyLastNameThenFirstName.compare(ayman, rod) < 0);
     Assertions.assertTrue(comparebyLastNameThenFirstName.compare(paul, paul) == 0);
-    Assertions.assertTrue(comparebyLastNameThenFirstName.compare(michael, jermaine) > 0);
+    Assertions.assertTrue(comparebyLastNameThenFirstName.compare(ayman, jermaine) > 0);
   }
 
   // Hint:
@@ -110,9 +110,9 @@ class B_ComparatorTest {
   public void comparator05() {
     Comparator<Person> comparebyLastNameThenFirstNameReversed = null; // TODO
 
-    assertFalse(comparebyLastNameThenFirstNameReversed.compare(michael, rod) < 0);
+    assertFalse(comparebyLastNameThenFirstNameReversed.compare(ayman, rod) < 0);
     Assertions.assertTrue(comparebyLastNameThenFirstNameReversed.compare(paul, paul) == 0);
-    assertFalse(comparebyLastNameThenFirstNameReversed.compare(michael, jermaine) > 0);
+    assertFalse(comparebyLastNameThenFirstNameReversed.compare(ayman, jermaine) > 0);
   }
 
   // Hint:
@@ -130,9 +130,9 @@ class B_ComparatorTest {
   public void comparator06() {
     Comparator<Person> comparebyLastNameThenFirstNameWithNull = null; // TODO
 
-    Assertions.assertTrue(comparebyLastNameThenFirstNameWithNull.compare(michael, rod) < 0);
+    Assertions.assertTrue(comparebyLastNameThenFirstNameWithNull.compare(ayman, rod) < 0);
     Assertions.assertTrue(comparebyLastNameThenFirstNameWithNull.compare(paul, paul) == 0);
-    Assertions.assertTrue(comparebyLastNameThenFirstNameWithNull.compare(michael, jermaine) > 0);
+    Assertions.assertTrue(comparebyLastNameThenFirstNameWithNull.compare(ayman, jermaine) > 0);
     Assertions.assertTrue(comparebyLastNameThenFirstNameWithNull.compare(mick, null) < 0);
     Assertions.assertTrue(comparebyLastNameThenFirstNameWithNull.compare(null, mick) > 0);
   }
@@ -151,7 +151,7 @@ class B_ComparatorTest {
   public void comparator07() {
     Comparator<Person> comparebyAge = null; // TODO
 
-    Assertions.assertTrue(comparebyAge.compare(michael, rod) < 0);
+    Assertions.assertTrue(comparebyAge.compare(ayman, rod) < 0);
     Assertions.assertTrue(comparebyAge.compare(paul, paul) == 0);
     Assertions.assertTrue(comparebyAge.compare(mick, jermaine) > 0);
   }
