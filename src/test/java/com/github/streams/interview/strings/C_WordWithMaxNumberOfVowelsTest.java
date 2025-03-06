@@ -1,4 +1,4 @@
-package com.github.streams.interview;
+package com.github.streams.interview.strings;
 
 import com.github.javafaker.Faker;
 import com.github.streams.solutions.InterviewProblemSolutions;
@@ -15,7 +15,7 @@ import org.junit.jupiter.api.Test;
  * OUTPUT: 2
  * EXPLANATION: HELLO contains 2 vowels.
  * */
-class E_WordWithMaxNumberOfVowelsTest {
+class C_WordWithMaxNumberOfVowelsTest {
 
   @Disabled
   @Test

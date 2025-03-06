@@ -2,7 +2,9 @@ module com.github.streams {
   requires org.junit.jupiter;
   requires javafaker;
 
-  opens com.github.streams.interview to
+  opens com.github.streams.interview.numbers to
+      org.junit.platform.commons;
+  opens com.github.streams.interview.strings to
       org.junit.platform.commons;
   opens com.github.streams.learn to
       org.junit.platform.commons;

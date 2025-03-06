@@ -1,4 +1,4 @@
-package com.github.streams.interview;
+package com.github.streams.interview.numbers;
 
 import com.github.streams.solutions.InterviewProblemSolutions;
 import java.util.List;
