@@ -1,8 +1,8 @@
 package com.github.streams.solutions;
 
-import com.github.streams.interview.employee.domain_related.Department;
-import com.github.streams.interview.employee.domain_related.Employee;
-import com.github.streams.interview.employee.domain_related.Identity;
+import com.github.streams.interview.employee.ignore.domain_related.Department;
+import com.github.streams.interview.employee.ignore.domain_related.Employee;
+import com.github.streams.interview.employee.ignore.domain_related.Identity;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;

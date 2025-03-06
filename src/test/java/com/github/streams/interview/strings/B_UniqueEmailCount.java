@@ -1,7 +1,7 @@
 package com.github.streams.interview.strings;
 
 import com.github.javafaker.Faker;
-import com.github.streams.interview.employee.domain_related.Identity;
+import com.github.streams.interview.employee.ignore.domain_related.Identity;
 import com.github.streams.solutions.InterviewProblemSolutions;
 import java.util.List;
 import java.util.Map;

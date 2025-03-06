@@ -1,7 +1,7 @@
 package com.github.streams.interview.employee;
 
-import com.github.streams.interview.employee.domain_related.*;
-import com.github.streams.interview.employee.domain_related.data.DummyProjects;
+import com.github.streams.interview.employee.ignore.domain_related.*;
+import com.github.streams.interview.employee.ignore.domain_related.dummy_data.DummyProjects;
 import com.github.streams.solutions.InterviewProblemSolutions;
 import java.util.*;
 import org.junit.jupiter.api.Assertions;

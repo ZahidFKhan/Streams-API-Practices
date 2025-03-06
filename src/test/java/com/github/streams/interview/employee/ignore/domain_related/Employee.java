@@ -1,4 +1,4 @@
-package com.github.streams.interview.employee.domain_related;
+package com.github.streams.interview.employee.ignore.domain_related;
 
 import java.util.Collection;
 

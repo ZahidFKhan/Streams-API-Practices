@@ -1,7 +1,7 @@
-package com.github.streams.interview.employee.domain_related.data;
+package com.github.streams.interview.employee.ignore.domain_related.dummy_data;
 
-import com.github.streams.interview.employee.domain_related.Department;
-import com.github.streams.interview.employee.domain_related.Project;
+import com.github.streams.interview.employee.ignore.domain_related.Department;
+import com.github.streams.interview.employee.ignore.domain_related.Project;
 import java.util.Collection;
 import java.util.List;
 

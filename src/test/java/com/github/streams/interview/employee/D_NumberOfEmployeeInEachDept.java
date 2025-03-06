@@ -1,6 +1,6 @@
 package com.github.streams.interview.employee;
 
-import com.github.streams.interview.employee.domain_related.data.DummyEmployees;
+import com.github.streams.interview.employee.ignore.domain_related.dummy_data.DummyEmployees;
 import java.util.Map;
 import java.util.stream.Collectors;
 import org.junit.jupiter.api.Assertions;
