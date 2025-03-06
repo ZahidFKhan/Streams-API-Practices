@@ -26,26 +26,26 @@ public final class DummyEmployees {
     final Supplier<Integer> id = employeeId::getAndIncrement;
 
     return List.of(
-        employeeWith(id.get(), ComputerScience),
-        employeeWith(id.get(), ComputerScience),
-        employeeWith(id.get(), ComputerScience),
-        employeeWith(id.get(), ComputerScience),
-        employeeWith(id.get(), Chemical),
-        employeeWith(id.get(), Chemical),
-        employeeWith(id.get(), Chemical),
-        employeeWith(id.get(), Chemical),
-        employeeWith(id.get(), Chemical),
-        employeeWith(id.get(), Mechanical),
-        employeeWith(id.get(), Mechanical),
-        employeeWith(id.get(), Mechanical),
-        employeeWith(id.get(), Mechanical),
-        employeeWith(id.get(), Electrical),
-        employeeWith(id.get(), Electrical),
-        employeeWith(id.get(), Civil),
-        employeeWith(id.get(), Civil));
+        createEmployeeWithMgr(id.get(), ComputerScience),
+        createEmployeeWithMgr(id.get(), ComputerScience),
+        createEmployeeWithMgr(id.get(), ComputerScience),
+        createEmployeeWithMgr(id.get(), ComputerScience),
+        createEmployeeWithMgr(id.get(), Chemical),
+        createEmployeeWithMgr(id.get(), Chemical),
+        createEmployeeWithMgr(id.get(), Chemical),
+        createEmployeeWithMgr(id.get(), Chemical),
+        createEmployeeWithMgr(id.get(), Chemical),
+        createEmployeeWithMgr(id.get(), Mechanical),
+        createEmployeeWithMgr(id.get(), Mechanical),
+        createEmployeeWithMgr(id.get(), Mechanical),
+        createEmployeeWithMgr(id.get(), Mechanical),
+        createEmployeeWithMgr(id.get(), Electrical),
+        createEmployeeWithMgr(id.get(), Electrical),
+        createEmployeeWithMgr(id.get(), Civil),
+        createEmployeeWithMgr(id.get(), Civil));
   }
 
-  private static Employee employeeWith(final Integer id, final Department department) {
+  private static Employee createEmployeeWithMgr(final Integer id, final Department department) {
     final Supplier<String> name = () -> faker.name().firstName();
     final Supplier<String> email = () -> faker.internet().emailAddress();
     final Supplier<Integer> salary = () -> faker.number().numberBetween(1000, 50000);
