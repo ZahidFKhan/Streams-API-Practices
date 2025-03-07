@@ -20,7 +20,7 @@ import org.junit.jupiter.api.Test;
  * <p>return the employee with the longest total projectDurationInMonths of projects. If there are
  * still ties, return any one of the tied employees.
  */
-class F_EmployeesWhoWorkedOnMostProject {
+class G_EmployeesWhoWorkedOnMostProject {
   @Test
   @Disabled()
   public void employeeWorkedOnMostProject() {
