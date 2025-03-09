@@ -6,15 +6,13 @@ module com.github.streams {
       org.junit.platform.commons;
   opens com.github.streams.interview.problems.strings to
       org.junit.platform.commons;
-  opens com.github.streams.learn to
+  opens com.github.streams.learn.content to
       org.junit.platform.commons;
   opens com.github.streams.learn.content.functional_interfaces to
       org.junit.platform.commons;
   opens com.github.streams.practice.strings to
       org.junit.platform.commons;
   opens com.github.streams.practice.numbers to
-      org.junit.platform.commons;
-  opens com.github.streams.practice.solutions to
       org.junit.platform.commons;
   opens com.github.streams.learn.solutions to
       org.junit.platform.commons;
