@@ -19,7 +19,7 @@ import org.junit.jupiter.api.*;
  * This set of exercises covers more advanced stream operations longer stream pipelines, and simple
  * reductions.
  */
-class E_IntermediateStreamsTest {
+class C_IntermediateStreamsTest {
 
   // Pattern for splitting a string into words
   static final Pattern SPLIT_PATTERN = Pattern.compile("[- .:,]+");

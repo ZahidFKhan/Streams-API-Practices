@@ -25,7 +25,7 @@ import org.junit.jupiter.api.*;
  * This set of exercises covers advanced stream operations, including grouping collectors,
  * composition of collectors, and customized collectors.
  */
-class F_AdvancedStreams {
+class D_AdvancedStreams {
 
   // Pattern for splitting a string into words
   static final Pattern SPLIT_PATTERN = Pattern.compile("[- .:,]+");

@@ -1,15 +1,15 @@
-package com.github.streams.learn.content;
+package com.github.streams.learn.content.functional_interfaces;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
-import com.github.streams.learn.content.ignore.models.Person;
+import com.github.streams.learn.content.functional_interfaces.ignore.models.Person;
 import java.util.Comparator;
 import java.util.function.IntBinaryOperator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-class B_ComparatorTest {
+class F_ComparatorTest {
 
   final Person ayman = new Person("Ayman", "Khan", 51);
   final Person rod = new Person("Rod", "Stewart", 71);

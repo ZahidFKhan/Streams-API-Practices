@@ -1,11 +1,11 @@
-package com.github.streams.learn.content;
+package com.github.streams.learn.content.functional_interfaces;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-class A_LambdaTest {
+class G_RunnableTest {
 
   /**
    * Write a lambda expression that appends the 'suffix' variable (a String) to the sb variable (a

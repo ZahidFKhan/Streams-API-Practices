@@ -1,4 +1,4 @@
-package com.github.streams.learn.content.ignore.models;
+package com.github.streams.learn.content.functional_interfaces.ignore.models;
 
 /**
  * Exercises to create comparators using lambda expressions and using the Comparator combinators.

@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /** This set of exercises covers new default methods on the Collections and related APIs. */
-class C_DefaultMethodTest {
+class A_DefaultMethodTest {
 
   /**
    * Given a list of StringBuilders, modify each StringBuilder in-place by appending the string

@@ -15,7 +15,7 @@ import org.junit.jupiter.api.*;
  * <p>Some of these exercises use a BufferedReader variable named "reader" that the test has set up
  * for you.
  */
-class D_SimpleStreamsTest {
+class B_SimpleStreamsTest {
   private BufferedReader reader;
 
   // Hint 1:
