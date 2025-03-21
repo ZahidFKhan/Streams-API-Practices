@@ -1,7 +1,7 @@
 package com.github.streams.practice.numbers.problems.ignore.data;
 
-import com.github.javafaker.Faker;
 import java.util.List;
+import net.datafaker.Faker;
 
 public class DummyData {
   public static int[][] random2DPrimitiveArray() {
@@ -9,11 +9,11 @@ public class DummyData {
   }
 
   public static int fakerNumber() {
-    return Faker.instance().number().numberBetween(1, 1_00_000);
+    return new Faker().number().numberBetween(1, 1_00_000);
   }
 
   public static List<Long> fakeListOfLongNumbers() {
-    final var instance = Faker.instance();
+    final var instance = new Faker();
 
     final var someValue = instance.number().randomNumber();
     return List.of(

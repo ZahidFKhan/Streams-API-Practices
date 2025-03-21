@@ -1,7 +1,7 @@
 module com.github.streams {
   requires org.junit.jupiter;
   requires org.junit.platform.commons;
-  requires javafaker;
+  requires net.datafaker;
 
   //  INTERVIEW
   opens com.github.streams.interview.problems.numbers to

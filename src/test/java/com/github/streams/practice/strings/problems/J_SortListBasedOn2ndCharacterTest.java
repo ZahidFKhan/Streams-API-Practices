@@ -1,9 +1,9 @@
 package com.github.streams.practice.strings.problems;
 
-import com.github.javafaker.Faker;
 import com.github.streams.practice.strings.StringProblemsSolution;
 import java.util.Collections;
 import java.util.List;
+import net.datafaker.Faker;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -20,7 +20,7 @@ class J_SortListBasedOn2ndCharacterTest {
   @Test
   @Disabled
   void testSortListBasedOn2ndCharacter() {
-    final var fakePersons = Faker.instance().name();
+    final var fakePersons = new Faker().name();
     List<String> input =
         List.of(
             fakePersons.name(),

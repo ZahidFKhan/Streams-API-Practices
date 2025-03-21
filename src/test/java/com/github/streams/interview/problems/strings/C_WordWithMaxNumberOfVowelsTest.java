@@ -1,7 +1,7 @@
 package com.github.streams.interview.problems.strings;
 
-import com.github.javafaker.Faker;
 import com.github.streams.interview.InterviewProblemSolutions;
+import net.datafaker.Faker;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -20,7 +20,7 @@ class C_WordWithMaxNumberOfVowelsTest {
   @Disabled
   @Test
   void testNumberOfVowels() {
-    var input = Faker.instance().chuckNorris().fact();
+    var input = new Faker().chuckNorris().fact();
     final var mySolution = InterviewProblemSolutions.maxNumberOfVowels(input);
     final var yourSolution = 0;
     Assertions.assertEquals(mySolution, yourSolution);

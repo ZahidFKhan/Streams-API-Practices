@@ -1,10 +1,10 @@
 package com.github.streams.interview.problems.strings;
 
-import com.github.javafaker.Faker;
 import com.github.streams.interview.InterviewProblemSolutions;
 import com.github.streams.interview.problems.employee.ignore.domain_related.Identity;
 import java.util.List;
 import java.util.Map;
+import net.datafaker.Faker;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -18,7 +18,7 @@ class B_UniqueEmailCount {
   @Test
   @Disabled
   void findUniqueDomainsWithCount() {
-    final var instance = Faker.instance();
+    final var instance = new Faker();
     final var employees =
         List.of(
             new Identity(instance.internet().emailAddress(), ""),

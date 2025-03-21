@@ -3,7 +3,6 @@ package com.github.streams.interview.problems.employee.ignore.domain_related.dum
 import static com.github.streams.interview.problems.employee.ignore.domain_related.Department.*;
 import static java.util.List.of;
 
-import com.github.javafaker.Faker;
 import com.github.streams.interview.problems.employee.ignore.domain_related.Department;
 import com.github.streams.interview.problems.employee.ignore.domain_related.Employee;
 import com.github.streams.interview.problems.employee.ignore.domain_related.Identity;
@@ -12,9 +11,10 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Function;
 import java.util.function.Supplier;
+import net.datafaker.Faker;
 
 public final class DummyEmployees {
-  static final Faker faker = Faker.instance();
+  static final Faker faker = new Faker();
 
   // NON INSTANTIABLE UTILITY CLASS.
   private DummyEmployees() {
