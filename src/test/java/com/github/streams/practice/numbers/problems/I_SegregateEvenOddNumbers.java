@@ -19,6 +19,8 @@ class I_SegregateEvenOddNumbers {
     final var input = IntStream.range(1, 50).boxed();
     final var mySolution = NumbersProblemSolution.segregateEvenOddNumbers(input);
     final var yourSolution = new ArrayList<>();
+    final var input = IntStream.range(1, 50).boxed().toList();
+    final var mySolution = NumbersProblemSolution.segregateEvenOddNumbers(input.stream());
 
     Assertions.assertEquals(mySolution, yourSolution);
   }
