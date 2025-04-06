@@ -16,12 +16,10 @@ class I_SegregateEvenOddNumbers {
   @Test
   @Disabled
   void testSegregationOfEvenOddNumbersTest() {
-    final var input = IntStream.range(1, 50).boxed();
-    final var mySolution = NumbersProblemSolution.segregateEvenOddNumbers(input);
-    final var yourSolution = new ArrayList<>();
     final var input = IntStream.range(1, 50).boxed().toList();
     final var mySolution = NumbersProblemSolution.segregateEvenOddNumbers(input.stream());
-
+    final var yourSolution = new ArrayList<>();
+    
     Assertions.assertEquals(mySolution, yourSolution);
   }
 }
