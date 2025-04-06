@@ -40,7 +40,7 @@ public class NumbersProblemSolution {
     return input.stream().distinct().toList();
   }
 
-  public static long sumOfNumbers(List<Integer> input) {
+  public static Integer sumOfNumbers(List<Integer> input) {
     return input.stream().reduce(0, Integer::sum);
   }
 
