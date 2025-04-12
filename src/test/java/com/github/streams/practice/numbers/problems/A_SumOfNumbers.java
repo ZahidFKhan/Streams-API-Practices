@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /*
- * Given an array of {5,6,7,8,5,5,8,8,7)
- * Find the sum of the unique elements.
+ * Given an array of integers like {5,6,7,8)
+ * Find the sum of the all the elements in the array.
  * The output should be in this case is: 26.
  */
 class A_SumOfNumbers {
