@@ -1,6 +1,9 @@
 package com.github.streams.practice.numbers.problems.ignore.data;
 
+import static java.util.stream.Collectors.toList;
+
 import java.util.List;
+import java.util.stream.IntStream;
 import net.datafaker.Faker;
 
 public class DummyData {
@@ -36,7 +39,10 @@ public class DummyData {
         instance.number().randomNumber());
   }
 
-  public static List<Integer> fakeList() {
-    return List.of(1, 34, 3, 98, 9, 76, 45, 4);
+  public static List<Integer> fakeList(final int size) {
+    final var instance = new Faker();
+    return IntStream.range(1, size)
+        .mapToObj(x -> instance.number().numberBetween(1, 99))
+        .collect(toList());
   }
 }

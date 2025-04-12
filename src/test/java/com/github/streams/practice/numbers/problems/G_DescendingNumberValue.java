@@ -17,7 +17,7 @@ class G_DescendingNumberValue {
   @Test
   @Disabled
   public void test() {
-    var input = DummyData.fakeList();
+    var input = DummyData.fakeList(7);
     var mySolution = NumbersProblemSolution.getHighestPossibleValue(input);
     var yourSolution = "";
 
