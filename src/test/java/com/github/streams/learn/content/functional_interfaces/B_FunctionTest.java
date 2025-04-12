@@ -85,7 +85,7 @@ class B_FunctionTest {
   @Test
   @Disabled
   public void g_boundMethodRef2() {
-    final Function<String, Integer> func = null; // TODO
+    Function<String, Integer> func = null; // TODO
 
     assertEquals(2, func.apply("cde").intValue());
     assertEquals(4, func.apply("efg").intValue());
