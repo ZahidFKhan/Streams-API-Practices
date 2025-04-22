@@ -7,15 +7,15 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Tests the sumOfDigits method in the GeneralNumbersProblemSolution class.
- *
- * <p>This test case generates a random integer between 1 and the maximum possible integer value,
- * passes it to the sumOfDigits method, and verifies that the result is correct.
- *
- * <p>Note: This test case is currently disabled and should be updated to reflect the correct
- * expected behavior.
- *
- * @see NumbersProblemSolution#sumOfDigits(int)
+ * Calculates the sum of digits of a given integer.
+ * <p>
+ * This method takes an integer as input, breaks it down into individual digits,
+ * and returns their sum.
+ * <p>
+ * Example: <br>
+ * Input = 123<br>
+ * Output = 6 <br>
+ * Explanation: (1 + 2 + 3)
  */
 class C_SumOfDigits {
 

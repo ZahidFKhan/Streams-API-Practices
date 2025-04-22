@@ -6,10 +6,12 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-/*
- * Given an array of {5,6,7,8,5,5,8,8,7)
- * Find the sum of the unique elements.
- * The output should be in this case is: 26.
+/**
+ * Calculates the sum of unique elements in an array.
+ * <br>
+ * Example: <br>
+ * Input: [5, 6, 7, 8, 5, 5, 8, 8, 7]<br>
+ * Output: 26
  */
 class B_SumOfUniqueNumbers {
 
