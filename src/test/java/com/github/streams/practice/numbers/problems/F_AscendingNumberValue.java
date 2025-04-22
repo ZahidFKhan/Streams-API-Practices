@@ -6,15 +6,15 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-/*
- * Given a numeric array , re arrange the elements to form a smallest possible value.
+/**
+ * Re-arranges the elements of a numeric array to form the smallest possible value.
  *
- * input is: int arr[] = {1, 34, 3, 98, 9, 76, 45, 4};
+ * <p>Example: Input: [1, 34, 3, 98, 9, 76, 45, 4] <br>
+ * Output: 133444576998
  *
- * output is: 133444576998
- *
- * Explanation: 1,3,34,4,45,76,9,98
- * */
+ * <p>Explanation: The numbers are re-arranged in ascending order, with single-digit numbers placed
+ * before multi-digit numbers like [1,3,34,4,45,76,9,98].
+ */
 class F_AscendingNumberValue {
 
   @Test
