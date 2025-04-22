@@ -7,9 +7,14 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-/*
- * Remove duplicates from an arrayList.
- * */
+/**
+ * Removes duplicates from a list of integers.
+ *
+ * <p><b>Input:</b> [1, 2, 2, 3, 4, 4, 5] <br>
+ * <b>Output:</b> [1, 2, 3, 4, 5] <br>
+ *
+ * <p><b>Explanation:</b> Removes duplicate integers from a list.
+ */
 class E_RemoveDuplicates {
 
   @Test
