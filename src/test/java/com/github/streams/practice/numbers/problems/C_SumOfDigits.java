@@ -8,11 +8,11 @@ import org.junit.jupiter.api.Test;
 
 /**
  * Calculates the sum of digits of a given integer.
- * <p>
- * This method takes an integer as input, breaks it down into individual digits,
- * and returns their sum.
- * <p>
- * Example: <br>
+ *
+ * <p>This method takes an integer as input, breaks it down into individual digits, and returns
+ * their sum.
+ *
+ * <p>Example: <br>
  * Input = 123<br>
  * Output = 6 <br>
  * Explanation: (1 + 2 + 3)

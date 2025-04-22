@@ -8,11 +8,11 @@ import org.junit.jupiter.api.Test;
 
 /**
  * Calculates the sum of all elements in an integer array.
- * <p>
- * Example: <br>
- *  Input: [5, 6, 7, 8]
- *  <p>
- *  Output: 26
+ *
+ * <p>Example: <br>
+ * Input: [5, 6, 7, 8]
+ *
+ * <p>Output: 26
  */
 class A_SumOfNumbers {
 

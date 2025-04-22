@@ -7,8 +7,7 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
- * Calculates the sum of unique elements in an array.
- * <br>
+ * Calculates the sum of unique elements in an array. <br>
  * Example: <br>
  * Input: [5, 6, 7, 8, 5, 5, 8, 8, 7]<br>
  * Output: 26
