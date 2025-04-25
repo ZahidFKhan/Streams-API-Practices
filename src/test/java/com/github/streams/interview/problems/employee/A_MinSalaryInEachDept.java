@@ -7,6 +7,22 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
+/**
+ *
+ *
+ * <h2>Given a list of employees, find the minimum salary in each department.</h2>
+ *
+ * <h2>Input</h2>
+ *
+ * <li>Employee(department="Sales", salary=5000)
+ * <li>Employee(department="Sales", salary=6000)
+ * <li>Employee(department="Marketing", salary=4000)
+ * <li>Employee(department="Marketing", salary=7000)
+ *
+ *     <h2>Output</h2>
+ *
+ * <li>Sales=5000, Marketing=4000
+ */
 class A_MinSalaryInEachDept {
   @Test
   @Disabled
