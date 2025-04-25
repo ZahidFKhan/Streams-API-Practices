@@ -18,7 +18,6 @@ import org.junit.jupiter.api.Test;
  * <li>Employee(department="Sales", salary=6000)
  * <li>Employee(department="Marketing", salary=4000)
  * <li>Employee(department="Marketing", salary=7000)
- *
  *     <h2>Output</h2>
  *
  * <li>Sales=5000, Marketing=4000
