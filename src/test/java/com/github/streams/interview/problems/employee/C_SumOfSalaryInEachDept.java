@@ -7,6 +7,23 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Calculation of the sum of salaries in each department.<br/>
+ *
+ * <h2>Input:</h2>
+ *
+ * <li>Employee("John", "Sales", 50000)</li>
+ * <li>Employee("Jane", "Marketing", 60000)</li>
+ * <li>Employee("Bob", "Sales", 70000)</li>
+ *   <br/>
+ * <h2>Output:</h2>
+ *   <pre>
+ *   {
+ *     "Sales": 120000,
+ *     "Marketing": 60000
+ *   }
+ *   </pre>
+ */
 class C_SumOfSalaryInEachDept {
   @Test
   @Disabled
