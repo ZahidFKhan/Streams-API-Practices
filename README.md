@@ -4,22 +4,22 @@
 [![GitHub forks](https://img.shields.io/github/forks/ZahidFKhan/Streams-API-Practices?logo=github)](https://github.com/ZahidFKhan/Streams-API-Practices)
 [![GitHub stars](https://img.shields.io/github/stars/ZahidFKhan/Streams-API-Practices?logo=github)](https://github.com/ZahidFKhan/Streams-API-Practices)
 
+___
+
+## How to use? 🛠️
+
+1. Fork this repository.
+2. Remove the `@Disabled` Tags.
+3. Solve the Problem.
+
+##### NOTE: Don't forget to rate this to bookmark.
+
+---
+
 ### Master the Java Stream API: Exercises, Tutorials, and Practical Examples
 
 This repository offers a comprehensive collection of functional programming exercises and practical examples designed to
 help you master the Java Stream API and write cleaner, more efficient code.
-
-___
-
-### Getting Started?
-
-1. **Fork this Repository**.
-2. **Explore the Exercises:** Navigate through the directories to find exercises focused on different aspects of the
-   Stream API.
-3. **Remove `@Disabled` Tags:** Locate the test cases and remove the `@Disabled` annotation to enable them.
-4. **Solve the Problems**
-5. **Test Your Solutions Against My Solution.**
-6. **Contribute (Optional):** If you have improvements or new exercises to share, feel free to submit a pull request!
 
 ---
 
@@ -58,7 +58,6 @@ ___
 9. [x] Master Java Stream API
 10. [x] Java Programming Skills
 
-**Don't forget to star this repository to bookmark it and easily access it in the future! Your support helps others
-discover and benefit from these resources.**
+Your support helps others discover and benefit from these resources.
 
 # Happy coding with the Java Stream API!
