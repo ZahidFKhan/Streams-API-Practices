@@ -20,6 +20,8 @@ module com.github.streams {
       org.junit.platform.commons;
   opens com.github.streams.learn.solutions to
       org.junit.platform.commons;
+  opens com.github.streams.learn.default_methods to
+      org.junit.platform.commons;
 
   //  PRACTICE
   opens com.github.streams.practice.strings to
