@@ -1,4 +1,4 @@
-package com.github.streams.learn.content;
+package com.github.streams.learn.ignore.inprogress;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -28,19 +28,7 @@ class B_SimpleStreamsTest {
   // predefined collectors on the Collectors class.
   // </editor-fold>
 
-  /**
-   * Given a list of words, create an output list that contains only the odd-length words, converted
-   * to upper case.
-   */
-  @Test
-  @Disabled
-  public void d1_upcaseOddLengthWords() {
-    List<String> input = List.of("alfa", "bravo", "charlie", "delta", "echo", "foxtrot");
 
-    List<String> result = null; // TODO
-
-    Assertions.assertEquals(List.of("BRAVO", "CHARLIE", "DELTA", "FOXTROT"), result);
-  }
 
   // Hint 1:
   // <editor-fold defaultstate="collapsed">

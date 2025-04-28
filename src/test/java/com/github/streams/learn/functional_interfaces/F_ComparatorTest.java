@@ -1,8 +1,8 @@
-package com.github.streams.learn.content.functional_interfaces;
+package com.github.streams.learn.functional_interfaces;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
-import com.github.streams.learn.content.functional_interfaces.ignore.models.Person;
+import com.github.streams.learn.functional_interfaces.ignore.models.Person;
 import java.util.Comparator;
 import java.util.function.IntBinaryOperator;
 import org.junit.jupiter.api.Assertions;

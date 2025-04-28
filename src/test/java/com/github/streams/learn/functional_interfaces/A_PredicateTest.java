@@ -1,4 +1,4 @@
-package com.github.streams.learn.content.functional_interfaces;
+package com.github.streams.learn.functional_interfaces;
 
 import java.util.function.Predicate;
 import org.junit.jupiter.api.Assertions;

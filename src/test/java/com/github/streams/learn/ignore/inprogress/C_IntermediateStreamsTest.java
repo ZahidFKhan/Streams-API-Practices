@@ -1,4 +1,4 @@
-package com.github.streams.learn.content;
+package com.github.streams.learn.ignore.inprogress;
 
 import java.io.BufferedReader;
 import java.io.IOException;

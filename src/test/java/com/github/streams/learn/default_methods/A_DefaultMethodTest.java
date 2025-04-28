@@ -1,4 +1,4 @@
-package com.github.streams.learn.content;
+package com.github.streams.learn.default_methods;
 
 import java.util.ArrayList;
 import java.util.Arrays;

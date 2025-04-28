@@ -3,7 +3,7 @@ package com.github.streams.learn.solutions;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.github.streams.learn.content.functional_interfaces.ignore.models.Person;
+import com.github.streams.learn.functional_interfaces.ignore.models.Person;
 import java.util.Comparator;
 import java.util.function.IntBinaryOperator;
 import org.junit.jupiter.api.Test;

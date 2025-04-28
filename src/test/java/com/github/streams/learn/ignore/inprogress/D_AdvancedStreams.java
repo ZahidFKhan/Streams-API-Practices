@@ -1,4 +1,4 @@
-package com.github.streams.learn.content;
+package com.github.streams.learn.ignore.inprogress;
 
 import static java.util.Map.entry;
 import static org.junit.jupiter.api.Assertions.assertEquals;

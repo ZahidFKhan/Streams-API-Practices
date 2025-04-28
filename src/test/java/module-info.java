@@ -14,9 +14,9 @@ module com.github.streams {
       org.junit.platform.commons;
 
   //  LEARN
-  opens com.github.streams.learn.content to
+  opens com.github.streams.learn.ignore.inprogress to
       org.junit.platform.commons;
-  opens com.github.streams.learn.content.functional_interfaces to
+  opens com.github.streams.learn.functional_interfaces to
       org.junit.platform.commons;
   opens com.github.streams.learn.solutions to
       org.junit.platform.commons;

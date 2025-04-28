@@ -1,4 +1,4 @@
-package com.github.streams.learn.content.functional_interfaces;
+package com.github.streams.learn.functional_interfaces;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
