@@ -31,7 +31,7 @@ class C_SumOfSalaryInEachDept {
   void sumOfSalariesInEachDepartment() {
     final var employees = DummyEmployees.randomEmployees();
     final var mySolution = InterviewProblemSolutions.getSumOfSalariesOnEachDepartment(employees);
-    final var yourSolution = Map.of();
+    final var yourSolution = Map.<String, Long>of();
 
     Assertions.assertEquals(mySolution, yourSolution);
   }

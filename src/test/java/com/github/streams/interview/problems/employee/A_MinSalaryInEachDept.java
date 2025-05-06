@@ -30,7 +30,7 @@ class A_MinSalaryInEachDept {
     final var employees = DummyEmployees.randomEmployees();
 
     final var mySolution = InterviewProblemSolutions.getMinSalaryInEachDepartment(employees);
-    final var yourSolution = Map.of();
+    final var yourSolution = Map.<String, Long>of();
 
     Assertions.assertEquals(mySolution, yourSolution);
   }

@@ -32,7 +32,7 @@ class B_MaxSalaryInEachDept {
     final var employees = DummyEmployees.randomEmployees();
 
     final var mySolution = InterviewProblemSolutions.getHighestSalaryInEachDepartment(employees);
-    final var yourSolution = Map.of();
+    final var yourSolution = Map.<String, Long>of();
 
     Assertions.assertEquals(mySolution, yourSolution);
   }

@@ -35,7 +35,7 @@ class D_NumberOfEmployeeInEachDept {
         employees.stream()
             .collect(Collectors.groupingBy(e -> e.department().name(), Collectors.counting()));
 
-    final var yourSolution = Map.of();
+    final var yourSolution = Map.<String, Long>of();
     Assertions.assertEquals(mySolution, yourSolution);
   }
 }
