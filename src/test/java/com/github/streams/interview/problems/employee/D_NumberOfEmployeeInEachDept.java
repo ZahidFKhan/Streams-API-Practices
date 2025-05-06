@@ -12,15 +12,14 @@ import org.junit.jupiter.api.Test;
  *
  * <pre>
  * Input:
- * Employee("John", "Sales", 50000)
- * Employee("Jane", "Marketing", 60000)
- * Employee("Bob", "Sales", 70000)
+ *    Employee("John", "Sales", 50000)
+ *    Employee("Jane", "Marketing", 60000)
+ *    Employee("Bob", "Sales", 70000)
  *
  * Output:
- * {
- * "Sales": 2,
- * "Marketing": 1
- * }
+ *    "Sales": 2,
+ *    "Marketing": 1
+ *
  * </pre>
  *
  * Explanation: This method takes a list of employees as input, groups them by their department
