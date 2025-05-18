@@ -9,8 +9,23 @@ import org.junit.jupiter.api.Test;
 class F_ManagerWithMaxEmployees {
 
   /**
-   * Step 1: Get familiar with the @see{Employee} class Step 2: Look how I create the employee with
-   * manager. Step 3: Group Managers with employees and find the one with max employees.
+   * Returns the manager with the maximum number of employees.
+   *
+   * <p>This method takes a list of employees as input, groups them by their managers, and returns the
+   * manager with the most employees.
+   *
+   * <p>Example:
+   *
+   * <pre>
+   * Input: [
+   *   Employee("John", "Alice"), // John's manager is Alice
+   *   Employee("Bob", "Alice"), // Bob's manager is Alice
+   *   Employee("Charlie", "David"), // Charlie's manager is David
+   *   Employee("David", null) // David has no manager
+   * ]
+   * <br>
+   * Output: "Alice" (since Alice has 2 employees: John and Bob)
+   * </pre>
    */
   @Test
   @Disabled
