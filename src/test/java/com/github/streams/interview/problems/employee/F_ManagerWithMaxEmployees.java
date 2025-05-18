@@ -11,8 +11,8 @@ class F_ManagerWithMaxEmployees {
   /**
    * Returns the manager with the maximum number of employees.
    *
-   * <p>This method takes a list of employees as input, groups them by their managers, and returns the
-   * manager with the most employees.
+   * <p>This method takes a list of employees as input, groups them by their managers, and returns
+   * the manager with the most employees.
    *
    * <p>Example:
    *
