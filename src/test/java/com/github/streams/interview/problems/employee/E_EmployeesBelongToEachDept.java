@@ -9,27 +9,29 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-/**
- * Returns a map where each department is mapped to a list of employee names belonging to that
- * department.
- *
- * <p>Example:
- *
- * <pre>
- * Input: [
- *   Employee("John", "Sales"),
- *   Employee("Alice", "Marketing"),
- *   Employee("Bob", "Sales"),
- *   Employee("Charlie", "IT")
- * ]
- * <br>
- * Output: {
- *   "Sales"     : "John", "Bob",
- *   "Marketing" : "Alice",
- *   "IT"        : "Charlie"
- * }
- * </pre>
- */
+/// Returns a map where each department is mapped to a list of employee names belonging to that
+/// department.
+///
+/// ### Example:
+///
+/// ### Input:
+/// ```json
+/// [
+///   Employee("John", "Sales"),
+///   Employee("Alice", "Marketing"),
+///   Employee("Bob", "Sales"),
+///   Employee("Charlie", "IT")
+/// ]
+/// ```
+///
+/// ### Output:
+/// ```json
+/// {
+///   "Sales"     : "John", "Bob",
+///   "Marketing" : "Alice",
+///   "IT"        : "Charlie"
+/// }
+/// ```
 class E_EmployeesBelongToEachDept {
   @Test
   @Disabled

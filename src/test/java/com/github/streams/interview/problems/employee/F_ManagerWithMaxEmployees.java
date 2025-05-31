@@ -8,25 +8,27 @@ import org.junit.jupiter.api.Test;
 
 class F_ManagerWithMaxEmployees {
 
-  /**
-   * Returns the manager with the maximum number of employees.
-   *
-   * <p>This method takes a list of employees as input, groups them by their managers, and returns
-   * the manager with the most employees.
-   *
-   * <p>Example:
-   *
-   * <pre>
-   * Input: [
-   *   Employee("John", "Alice"), // John's manager is Alice
-   *   Employee("Bob", "Alice"), // Bob's manager is Alice
-   *   Employee("Charlie", "David"), // Charlie's manager is David
-   *   Employee("David", null) // David has no manager
-   * ]
-   * <br>
-   * Output: "Alice" (since Alice has 2 employees: John and Bob)
-   * </pre>
-   */
+  ///  Returns the manager with the maximum number of employees.
+  ///
+  /// Given a list of employees as input, groups them by their managers, and returns
+  /// the manager with the most employees.
+  ///
+  /// ### Example:
+  ///
+  /// #### Input:
+  /// ```json
+  ///   Employee("John", "Alice"), // John's manager is Alice
+  ///   Employee("Bob", "Alice"), // Bob's manager is Alice
+  ///   Employee("Charlie", "David"), // Charlie's manager is David
+  ///   Employee("David", null) // David has no manager
+  /// ```
+  ///
+  ///
+  /// #### Output:
+  /// ```json
+  /// "Alice"
+  /// ```
+  /// Explanation: (since Alice has 2 employees: John and Bob)
   @Test
   @Disabled
   void findManagerWithMaxEmployeesTest() {
