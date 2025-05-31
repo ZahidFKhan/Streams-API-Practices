@@ -8,37 +8,56 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-/**
- * Finds the employee who has worked on the most projects.
- *
- * <p>If there are multiple employees with the same maximum number of projects, returns the employee
- * with the longest total project duration in months. If there are still ties, returns any one of
- * the tied employees.
- *
- * <p>Example:
- *
- * <pre>
- * Input: [
- *   Employee(1, "John", [
- *     Project("Project A", 3),
- *     Project("Project B", 2)
- *   ]),
- *   Employee(2, "Alice", [
- *     Project("Project C", 4),
- *     Project("Project D", 1)
- *   ]),
- *   Employee(3, "Bob", [
- *     Project("Project E", 2),
- *     Project("Project F", 3),
- *     Project("Project G", 1)
- *   ])
- * ]
- * <br>
- *
- * Output: Employee(3, "Bob") (since Bob has worked on 3 projects with a total duration of 6 months)
- * </pre>
- */
+/// ### Finds the employee who has worked on the most projects.
+///
+/// If there are multiple employees with the same maximum number of projects, returns the employee
+/// with the longest total project duration in months. If there are still ties, returns any one of
+/// the tied employees.
+///
+/// ### Example:
+///
+///
+/// Input:
+/// ```json
+///   Employee(1, "John", [
+///     Project("Project A", 3),
+///     Project("Project B", 2)
+///   ]),
+///   Employee(2, "Alice", [
+///     Project("Project C", 4),
+///     Project("Project D", 1)
+///   ]),
+///   Employee(3, "Bob", [
+///     Project("Project E", 2),
+///     Project("Project F", 3),
+///     Project("Project G", 1)
+///   ])
+///
+/// ```
+///
+///
+/// Output:
+/// ```json
+/// Employee(3, "Bob")
+/// ```
+/// Explanation: Since Bob has worked on 3 projects with a total duration of 6 months.
+///
 class G_EmployeesWhoWorkedOnMostProject {
+  private static void addEmployees(
+      ArrayList<Employee> employees,
+      Identity employee1,
+      Collection<Project> employee1ProjectsHistory,
+      Identity employee2,
+      Collection<Project> employee2ProjectsHistory) {
+    employees.add(
+        new Employee(
+            1, employee1, 10000, Department.ComputerScience, employee1ProjectsHistory, -1));
+
+    employees.add(
+        new Employee(
+            2, employee2, 10000, Department.ComputerScience, employee2ProjectsHistory, -1));
+  }
+
   @Test
   @Disabled()
   public void employeeWorkedOnMostProject() {
@@ -60,20 +79,5 @@ class G_EmployeesWhoWorkedOnMostProject {
     Employee yourSolution = null;
 
     Assertions.assertEquals(mySolution, yourSolution);
-  }
-
-  private static void addEmployees(
-      ArrayList<Employee> employees,
-      Identity employee1,
-      Collection<Project> employee1ProjectsHistory,
-      Identity employee2,
-      Collection<Project> employee2ProjectsHistory) {
-    employees.add(
-        new Employee(
-            1, employee1, 10000, Department.ComputerScience, employee1ProjectsHistory, -1));
-
-    employees.add(
-        new Employee(
-            2, employee2, 10000, Department.ComputerScience, employee2ProjectsHistory, -1));
   }
 }
