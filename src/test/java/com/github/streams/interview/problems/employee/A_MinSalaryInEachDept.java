@@ -19,8 +19,6 @@ import org.junit.jupiter.api.Test;
 ///
 /// - Sales=5000, Marketing=4000
 
-
-
 class A_MinSalaryInEachDept {
   @Test
   @Disabled
