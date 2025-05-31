@@ -14,13 +14,13 @@ import org.junit.jupiter.api.Test;
 /** This set of exercises covers new default methods on the Collections and related APIs. */
 class A_DefaultMethodTest {
 
-  /**
-   * Given a list of StringBuilders, modify each StringBuilder in-place by appending the string
-   * "new" to each one.
-   */
+  ///
+  // Given a list of StringBuilders, modify each StringBuilder in-place by appending the string
+  // "new" to each one.
+  ///
   @Test
   @Disabled
-  public void c01_appendNew() {
+  public void appendNew() {
     List<StringBuilder> sbList =
         List.of(
             new StringBuilder("alfa"), new StringBuilder("bravo"), new StringBuilder("charlie"));
@@ -32,15 +32,10 @@ class A_DefaultMethodTest {
         sbList.stream().map(StringBuilder::toString).collect(Collectors.toList()));
   }
 
-  // Hint:
-  // <editor-fold defaultstate="collapsed">
-  // Use Iterable.forEach().
-  // </editor-fold>
-
   /** Remove the words that have odd lengths from the list. */
   @Test
   @Disabled
-  public void c02_removeOddLengthWords() {
+  public void removeOddLengthWords() {
     List<String> list =
         new ArrayList<>(Arrays.asList("alfa", "bravo", "charlie", "delta", "echo", "foxtrot"));
 
@@ -49,15 +44,12 @@ class A_DefaultMethodTest {
     Assertions.assertEquals(List.of("alfa", "echo"), list);
   }
 
-  // Hint:
-  // <editor-fold defaultstate="collapsed">
-  // Use Collection.removeIf().
-  // </editor-fold>
-
-  /** Replace every word in the list with its upper case equivalent. */
+  ///
+  // Replace every word in the list with its upper case equivalent.
+  ///
   @Test
   @Disabled
-  public void c03_upcaseAllWords() {
+  public void upperCaseAllWords() {
     List<String> list = Arrays.asList("alfa", "bravo", "charlie", "delta", "echo", "foxtrot");
 
     // TODO code to modify list
@@ -65,20 +57,15 @@ class A_DefaultMethodTest {
     Assertions.assertEquals(List.of("ALFA", "BRAVO", "CHARLIE", "DELTA", "ECHO", "FOXTROT"), list);
   }
 
-  // Hint:
-  // <editor-fold defaultstate="collapsed">
-  // Use List.replaceAll().
-  // </editor-fold>
-
-  /**
-   * Given a map whose keys are Integers and whose values are StringBuilders, append to each
-   * StringBuilder the string representation of its corresponding Integer key. This should mutate
-   * each StringBuilder value in-place.
-   */
+  ///
+  // Given a map whose keys are Integers and whose values are StringBuilders, append to each
+  // StringBuilder the string representation of its corresponding Integer key. This should mutate
+  // each StringBuilder value in-place.
+  ///
   @Test
   @Disabled
   public void c04_appendToMapValues() {
-    Map<Integer, StringBuilder> map = new TreeMap<>();
+    final Map<Integer, StringBuilder> map = new TreeMap<>();
     map.put(1, new StringBuilder("alfa"));
     map.put(2, new StringBuilder("bravo"));
     map.put(3, new StringBuilder("charlie"));
