@@ -10,11 +10,11 @@ import org.junit.jupiter.api.Test;
 /// ## Calculates the sum of salaries in each department.
 ///
 /// ### Input:
-///
+/// ```json
 /// - Employee("John", "Sales", 50000)
 /// - Employee("Jane", "Marketing", 60000)
 /// - Employee("Bob", "Sales", 70000)
-///
+/// ```
 /// ### Output:
 ///
 /// ```json
