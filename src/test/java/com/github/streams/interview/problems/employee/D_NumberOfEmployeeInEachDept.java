@@ -7,25 +7,23 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-/**
- * Calculation of the number of employees in each department. <br>
- *
- * <pre>
- * Input:
- *    Employee("John", "Sales", 50000)
- *    Employee("Jane", "Marketing", 60000)
- *    Employee("Bob", "Sales", 70000)
- *
- * Output:
- *    "Sales": 2,
- *    "Marketing": 1
- *
- * </pre>
- *
- * Explanation: This method takes a list of employees as input, groups them by their department
- * names, and returns a map where the keys are the department names and the values are the number of
- * employees in each department.
- */
+/// Calculation of the number of employees in each department.
+///
+/// ### Input:
+///
+///  - Employee("John", "Sales", 50000)
+///  - Employee("Jane", "Marketing", 60000)
+///  - Employee("Bob", "Sales", 70000)
+///
+/// ### Output:
+///  -  "Sales": 2,
+///  -  "Marketing": 1
+///
+/// #### Explanation:
+/// This method takes a list of employees as input, groups them by their department
+/// names, and returns a map where the keys are the department names and the values are the number
+/// of employees in each department.
+
 class D_NumberOfEmployeeInEachDept {
   @Test
   @Disabled
