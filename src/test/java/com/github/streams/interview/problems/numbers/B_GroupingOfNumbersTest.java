@@ -8,13 +8,26 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-/*
-*
-Q12) Given an array of integers (2,34,54,23,33,20,59,11,19,37 )
-* Group the numbers by the range they belong to.
-* Output should be {0=[2], 50=[54,59], 20=[23,20], 10=[11,19], 30=[34,33,37]}
-*
-*/
+/// ### Given an array of integers, group the numbers by the range they belong to.
+///
+/// Each number is grouped into a range starting with the largest multiple of 10 less than or equal
+// to the number.
+///
+/// ### Input:
+/// ```
+/// [2, 34, 54, 23, 33, 20, 59, 11, 19, 37]
+/// ```
+///
+/// ### Output:
+/// ```
+/// {
+///   0=[2],
+///   50=[54, 59],
+///   20=[23, 20],
+///   10=[11, 19],
+///   30=[34, 33, 37]
+/// }
+/// ```
 class B_GroupingOfNumbersTest {
   @Test
   @Disabled
