@@ -1,48 +1,16 @@
 package com.github.streams.learn.default_methods;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
-import java.util.stream.Collectors;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /** This set of exercises covers new default methods on the Collections and related APIs. */
 class A_DefaultMethodTest {
-
-  ///
-  // Given a list of StringBuilders, modify each StringBuilder in-place by appending the string
-  // "new" to each one.
-  ///
-  @Test
-  @Disabled
-  public void appendNew() {
-    List<StringBuilder> sbList =
-        List.of(
-            new StringBuilder("alfa"), new StringBuilder("bravo"), new StringBuilder("charlie"));
-
-    // TODO write code to modify sbList
-
-    Assertions.assertEquals(
-        List.of("alfanew", "bravonew", "charlienew"),
-        sbList.stream().map(StringBuilder::toString).collect(Collectors.toList()));
-  }
-
-  /** Remove the words that have odd lengths from the list. */
-  @Test
-  @Disabled
-  public void removeOddLengthWords() {
-    List<String> list =
-        new ArrayList<>(Arrays.asList("alfa", "bravo", "charlie", "delta", "echo", "foxtrot"));
-
-    // TODO write code to modify list
-
-    Assertions.assertEquals(List.of("alfa", "echo"), list);
-  }
 
   ///
   // Replace every word in the list with its upper case equivalent.
