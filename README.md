@@ -23,6 +23,17 @@ foundational exercises and explanations:
 
 [Beginner's Guide to Java Streams](https://github.com/ZahidFKhan/Streams-API-Practices/tree/main/src/test/java/com/github/streams/learn/basics)
 
+---
+
+### Advance Your Skills: Dedicated Practice Area
+
+Once you've grasped the basics, it's time to solidify your understanding with practical application. This section
+provides a range of hands-on exercises designed to enhance your problem-solving abilities with the Java Stream API:
+
+[**Dive into Stream API Practice Challenges
+**](https://github.com/ZahidFKhan/Streams-API-Practices/tree/main/src/test/java/com/github/streams/practice)
+
+Challenge yourself and refine your functional programming prowess!
 
 ---
 
@@ -32,8 +43,6 @@ Functional Interfaces are a cornerstone of Java's functional programming capabil
 into how they work and their role in the Stream API, visit this dedicated section:
 
 [Explore Java Functional Interfaces](https://github.com/ZahidFKhan/Streams-API-Practices/tree/main/src/test/java/com/github/streams/learn/functional_interfaces)
-
----
 
 ---
 
