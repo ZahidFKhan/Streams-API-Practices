@@ -13,4 +13,9 @@ public class DefaultMethodSolutions {
     input.removeIf(x -> x.length() % 2 == 1);
     return List.copyOf(input);
   }
+
+  public static List<String> upperCaseAllWords(List<String> list) {
+    list.replaceAll(String::toUpperCase);
+    return List.copyOf(list);
+  }
 }

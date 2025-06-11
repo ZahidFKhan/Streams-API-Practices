@@ -12,18 +12,6 @@ import org.junit.jupiter.api.Test;
 /** This set of exercises covers new default methods on the Collections and related APIs. */
 class A_DefaultMethodTest {
 
-  ///
-  // Replace every word in the list with its upper case equivalent.
-  ///
-  @Test
-  @Disabled
-  public void upperCaseAllWords() {
-    List<String> list = Arrays.asList("alfa", "bravo", "charlie", "delta", "echo", "foxtrot");
-
-    // TODO code to modify list
-
-    Assertions.assertEquals(List.of("ALFA", "BRAVO", "CHARLIE", "DELTA", "ECHO", "FOXTROT"), list);
-  }
 
   ///
   // Given a map whose keys are Integers and whose values are StringBuilders, append to each

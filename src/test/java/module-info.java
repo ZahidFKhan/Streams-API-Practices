@@ -2,6 +2,7 @@ module com.github.streams {
   requires org.junit.jupiter;
   requires org.junit.platform.commons;
   requires net.datafaker;
+  requires static lombok;
 
   //  INTERVIEW
   opens com.github.streams.interview.problems.numbers to
