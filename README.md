@@ -21,8 +21,7 @@ ___
 If you're new to the Java Stream API and want to learn the fundamentals, check out our dedicated beginner's section with
 foundational exercises and explanations:
 
-[**Beginner's Guide to Java Streams
-**](https://github.com/ZahidFKhan/Streams-API-Practices/tree/main/src/test/java/com/github/streams/learn/basics)
+[Beginner's Guide to Java Streams](https://github.com/ZahidFKhan/Streams-API-Practices/tree/main/src/test/java/com/github/streams/learn/basics)
 
 
 ---
@@ -32,8 +31,7 @@ foundational exercises and explanations:
 Functional Interfaces are a cornerstone of Java's functional programming capabilities. If you're ready to delve deeper
 into how they work and their role in the Stream API, visit this dedicated section:
 
-[**Explore Java Functional Interfaces
-**](https://github.com/ZahidFKhan/Streams-API-Practices/tree/main/src/test/java/com/github/streams/learn/functional_interfaces)
+[Explore Java Functional Interfaces](https://github.com/ZahidFKhan/Streams-API-Practices/tree/main/src/test/java/com/github/streams/learn/functional_interfaces)
 
 ---
 
@@ -43,8 +41,7 @@ into how they work and their role in the Stream API, visit this dedicated sectio
 
 Preparing for a Java interview? Practice common Stream API questions and scenarios here:
 
-[**Practice Stream API Interview Questions
-**](https://github.com/ZahidFKhan/Streams-API-Practices/tree/main/src/test/java/com/github/streams/interview)
+[Practice Stream API Interview Questions](https://github.com/ZahidFKhan/Streams-API-Practices/tree/main/src/test/java/com/github/streams/interview)
 
 --- 
 
