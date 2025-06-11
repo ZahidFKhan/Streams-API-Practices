@@ -140,3 +140,5 @@ Preparing for a Java interview? Practice common Stream API questions and scenari
 [//]: # (Your support helps others discover and benefit from these resources.)
 
 ## Java Stream API: `Write less, do more with your data`.
+
+> "What needs to be done rather than how it needs to be done."
