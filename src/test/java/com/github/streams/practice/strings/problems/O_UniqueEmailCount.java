@@ -1,6 +1,6 @@
-package com.github.streams.interview.problems.strings;
+package com.github.streams.practice.strings.problems;
 
-import com.github.streams.interview.InterviewProblemSolutions;
+import com.github.streams.practice.ProblemSolutions;
 import com.github.streams.interview.problems.employee.ignore.domain_related.Identity;
 import java.util.List;
 import java.util.Map;
@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
  *
  * Find the list of domains ( gmail.com, yahoo.com..) and the no of occurrences for each domain?
  * */
-class B_UniqueEmailCount {
+class O_UniqueEmailCount {
   @Test
   @Disabled
   void findUniqueDomainsWithCount() {
@@ -33,7 +33,7 @@ class B_UniqueEmailCount {
             new Identity(instance.internet().emailAddress(), ""),
             new Identity(instance.internet().emailAddress(), ""));
 
-    final var mySolution = InterviewProblemSolutions.findUniqueDomainsCount(employees);
+    final var mySolution = ProblemSolutions.findUniqueDomainsCount(employees);
 
     final Map<String, ? extends Number> yourSolution = null;
 

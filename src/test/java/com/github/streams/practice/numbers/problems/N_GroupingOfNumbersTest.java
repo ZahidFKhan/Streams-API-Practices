@@ -1,6 +1,6 @@
-package com.github.streams.interview.problems.numbers;
+package com.github.streams.practice.numbers.problems;
 
-import com.github.streams.interview.InterviewProblemSolutions;
+import com.github.streams.practice.ProblemSolutions;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
@@ -12,6 +12,7 @@ import org.junit.jupiter.api.Test;
 ///
 /// Each number is grouped into a range starting with the largest multiple of 10 less than or equal
 // to the number.
+
 ///
 /// ### Input:
 /// ```
@@ -28,7 +29,7 @@ import org.junit.jupiter.api.Test;
 ///   30=[34, 33, 37]
 /// }
 /// ```
-class B_GroupingOfNumbersTest {
+class N_GroupingOfNumbersTest {
   @Test
   @Disabled
   void testGroupingOfNumbers() {
@@ -56,7 +57,7 @@ class B_GroupingOfNumbersTest {
             new Random().nextInt(100),
             new Random().nextInt(100));
 
-    final var mySolution = InterviewProblemSolutions.groupingOfNumbers(randomIntegers);
+    final var mySolution = ProblemSolutions.groupingOfNumbers(randomIntegers);
     final var yourSolution = Collections.<Integer, List<Integer>>emptyMap();
 
     Assertions.assertEquals(mySolution, yourSolution);

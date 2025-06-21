@@ -1,6 +1,6 @@
-package com.github.streams.interview.problems.numbers;
+package com.github.streams.practice.numbers.problems;
 
-import com.github.streams.interview.InterviewProblemSolutions;
+import com.github.streams.practice.ProblemSolutions;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
@@ -31,12 +31,12 @@ import org.junit.jupiter.api.Test;
 /// ```
 /// Output: 9
 /// ```
-class A_LargestConsecutiveSequence {
+class M_LargestConsecutiveSequence {
   @Test
   @Disabled
   void largestConsecutiveSequence() {
     final var input = List.of(1, 12, 33, 4, 2, 3, 99, 100, 101, 102, 104, 98);
-    final var mySolution = InterviewProblemSolutions.largestConsecutiveSequence(input);
+    final var mySolution = ProblemSolutions.largestConsecutiveSequence(input);
     final var yourSolution = 0;
 
     Assertions.assertEquals(mySolution, yourSolution);

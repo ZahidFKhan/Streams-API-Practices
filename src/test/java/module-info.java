@@ -33,4 +33,5 @@ module com.github.streams {
       org.junit.platform.commons;
   opens com.github.streams.practice.strings.problems to
       org.junit.platform.commons;
+    opens com.github.streams.practice to org.junit.platform.commons;
 }

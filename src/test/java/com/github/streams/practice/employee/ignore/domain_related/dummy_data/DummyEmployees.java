@@ -1,11 +1,11 @@
-package com.github.streams.interview.problems.employee.ignore.domain_related.dummy_data;
+package com.github.streams.practice.employee.ignore.domain_related.dummy_data;
 
 import static com.github.streams.interview.problems.employee.ignore.domain_related.Department.*;
 import static java.util.List.of;
 
-import com.github.streams.interview.problems.employee.ignore.domain_related.Department;
-import com.github.streams.interview.problems.employee.ignore.domain_related.Employee;
-import com.github.streams.interview.problems.employee.ignore.domain_related.Identity;
+import com.github.streams.practice.employee.ignore.domain_related.Department;
+import com.github.streams.practice.employee.ignore.domain_related.Employee;
+import com.github.streams.practice.employee.ignore.domain_related.Identity;
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;

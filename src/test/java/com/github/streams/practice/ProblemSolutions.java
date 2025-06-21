@@ -1,13 +1,14 @@
-package com.github.streams.interview;
+package com.github.streams.practice;
 
-import com.github.streams.interview.problems.employee.ignore.domain_related.Department;
-import com.github.streams.interview.problems.employee.ignore.domain_related.Employee;
-import com.github.streams.interview.problems.employee.ignore.domain_related.Identity;
+import com.github.streams.practice.employee.ignore.domain_related.Department;
+import com.github.streams.practice.employee.ignore.domain_related.Employee;
+import com.github.streams.practice.employee.ignore.domain_related.Identity;
+
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class InterviewProblemSolutions {
+public class ProblemSolutions {
   public static Map<String, ? extends Number> findUniqueDomainsCount(List<Identity> people) {
     return people.stream()
         .filter(x -> x.email().split("@").length == 2)
@@ -64,12 +65,10 @@ public class InterviewProblemSolutions {
   }
 
   public static Map<String, Long> getSumOfSalariesOnEachDepartment(Collection<Employee> employees) {
-    final var collect =
-        employees.stream()
-            .collect(
-                Collectors.groupingBy(
-                    e -> e.department().name(), Collectors.summingLong(e -> e.salary())));
-    return collect;
+      return employees.stream()
+          .collect(
+              Collectors.groupingBy(
+                  e -> e.department().name(), Collectors.summingLong(e -> e.salary())));
   }
 
   public static Map<Department, List<String>> getEmployeesBelongToEachDepartment(

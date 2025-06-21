@@ -1,8 +1,8 @@
-package com.github.streams.interview.problems.employee;
+package com.github.streams.practice.employee;
 
-import com.github.streams.interview.InterviewProblemSolutions;
-import com.github.streams.interview.problems.employee.ignore.domain_related.Department;
-import com.github.streams.interview.problems.employee.ignore.domain_related.dummy_data.DummyEmployees;
+import com.github.streams.practice.ProblemSolutions;
+import com.github.streams.practice.employee.ignore.domain_related.Department;
+import com.github.streams.practice.employee.ignore.domain_related.dummy_data.DummyEmployees;
 import java.util.List;
 import java.util.Map;
 import org.junit.jupiter.api.Assertions;
@@ -37,7 +37,7 @@ class E_EmployeesBelongToEachDept {
   @Disabled
   void employeesBelongToEachDept() {
     final var employees = DummyEmployees.randomEmployees();
-    final var mySolution = InterviewProblemSolutions.getEmployeesBelongToEachDepartment(employees);
+    final var mySolution = ProblemSolutions.getEmployeesBelongToEachDepartment(employees);
     final var yourSolution = Map.<Department, List<String>>of();
 
     Assertions.assertEquals(yourSolution, mySolution);

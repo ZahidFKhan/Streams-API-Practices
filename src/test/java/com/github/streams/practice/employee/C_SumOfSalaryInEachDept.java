@@ -1,7 +1,7 @@
-package com.github.streams.interview.problems.employee;
+package com.github.streams.practice.employee;
 
-import com.github.streams.interview.InterviewProblemSolutions;
-import com.github.streams.interview.problems.employee.ignore.domain_related.dummy_data.DummyEmployees;
+import com.github.streams.practice.ProblemSolutions;
+import com.github.streams.practice.employee.ignore.domain_related.dummy_data.DummyEmployees;
 import java.util.Map;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
@@ -28,7 +28,7 @@ class C_SumOfSalaryInEachDept {
   @Disabled
   void sumOfSalariesInEachDepartment() {
     final var employees = DummyEmployees.randomEmployees();
-    final var mySolution = InterviewProblemSolutions.getSumOfSalariesOnEachDepartment(employees);
+    final var mySolution = ProblemSolutions.getSumOfSalariesOnEachDepartment(employees);
     final var yourSolution = Map.<String, Long>of();
 
     Assertions.assertEquals(mySolution, yourSolution);

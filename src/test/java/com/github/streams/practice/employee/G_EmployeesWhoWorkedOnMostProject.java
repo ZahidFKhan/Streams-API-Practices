@@ -1,8 +1,11 @@
-package com.github.streams.interview.problems.employee;
+package com.github.streams.practice.employee;
 
-import com.github.streams.interview.InterviewProblemSolutions;
-import com.github.streams.interview.problems.employee.ignore.domain_related.*;
-import com.github.streams.interview.problems.employee.ignore.domain_related.dummy_data.DummyProjects;
+import com.github.streams.practice.ProblemSolutions;
+import com.github.streams.practice.employee.ignore.domain_related.Department;
+import com.github.streams.practice.employee.ignore.domain_related.Employee;
+import com.github.streams.practice.employee.ignore.domain_related.Identity;
+import com.github.streams.practice.employee.ignore.domain_related.Project;
+import com.github.streams.practice.employee.ignore.domain_related.dummy_data.DummyProjects;
 import java.util.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
@@ -73,7 +76,7 @@ class G_EmployeesWhoWorkedOnMostProject {
         employees, employee1, employee1ProjectsHistory, employee2, employee2ProjectsHistory);
 
     // When
-    var mySolution = InterviewProblemSolutions.employeesWorkedForMaxProjects(employees);
+    var mySolution = ProblemSolutions.employeesWorkedForMaxProjects(employees);
 
     // Then
     Employee yourSolution = null;
