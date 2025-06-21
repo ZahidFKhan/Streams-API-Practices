@@ -5,17 +5,7 @@ module com.github.streams {
   requires static lombok;
 
   //  INTERVIEW
-  opens com.github.streams.interview.problems.numbers to
-      org.junit.platform.commons;
-  opens com.github.streams.interview.problems.strings to
-      org.junit.platform.commons;
-  opens com.github.streams.interview.problems.employee to
-      org.junit.platform.commons;
-  opens com.github.streams.interview to
-      org.junit.platform.commons;
-
-  //  LEARN
-  opens com.github.streams.learn.ignore.inprogress to
+  opens com.github.streams.practice.employee to
       org.junit.platform.commons;
   opens com.github.streams.learn.functional_interfaces to
       org.junit.platform.commons;
@@ -26,6 +16,8 @@ module com.github.streams {
 
   //  PRACTICE
   opens com.github.streams.practice.strings to
+      org.junit.platform.commons;
+  opens com.github.streams.learn.ignore.inprogress to
       org.junit.platform.commons;
   opens com.github.streams.practice.numbers to
       org.junit.platform.commons;

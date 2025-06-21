@@ -1,7 +1,7 @@
 package com.github.streams.practice.strings.problems;
 
 import com.github.streams.practice.ProblemSolutions;
-import com.github.streams.interview.problems.employee.ignore.domain_related.Identity;
+import com.github.streams.practice.employee.ignore.domain_related.Identity;
 import java.util.List;
 import java.util.Map;
 import net.datafaker.Faker;
