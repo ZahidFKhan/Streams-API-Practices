@@ -17,24 +17,27 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.plugin.validation>BRIEF</maven.plugin.validation>
+        <junit-jupiter.version>5.13.1</junit-jupiter.version>
+        <lombok.version>1.18.38</lombok.version>
+        <datafaker.version>2.4.3</datafaker.version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.12.2</version>
+            <version>${junit-jupiter.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.38</version>
+            <version>${lombok.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>net.datafaker</groupId>
             <artifactId>datafaker</artifactId>
-            <version>2.4.3</version>
+            <version>${datafaker.version}</version>
         </dependency>
     </dependencies>
 
