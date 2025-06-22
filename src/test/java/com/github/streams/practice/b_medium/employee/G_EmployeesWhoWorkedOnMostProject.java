@@ -1,6 +1,6 @@
 package com.github.streams.practice.b_medium.employee;
 
-import com.github.streams.practice.ProblemSolutions;
+import com.github.streams.practice.b_medium.ProblemSolutions;
 import com.github.streams.practice.b_medium.employee.ignore.domain_related.Department;
 import com.github.streams.practice.b_medium.employee.ignore.domain_related.Employee;
 import com.github.streams.practice.b_medium.employee.ignore.domain_related.Identity;

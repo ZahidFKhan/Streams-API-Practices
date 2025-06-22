@@ -1,6 +1,6 @@
 package com.github.streams.practice.a_easy.numbers.problems;
 
-import com.github.streams.practice.a_easy.numbers.NumbersProblemSolution;
+import com.github.streams.practice.a_easy.numbers.EasyNumbersProblemSolution;
 import com.github.streams.practice.a_easy.numbers.problems.ignore.data.DummyData;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
@@ -23,7 +23,7 @@ class C_SumOfDigits {
   @Disabled
   void testSumOfDigits() {
     final var input = DummyData.fakerNumber();
-    var mySolution = NumbersProblemSolution.sumOfDigits(input);
+    var mySolution = EasyNumbersProblemSolution.sumOfDigits(input);
     var yourSolution = 2;
 
     Assertions.assertEquals(mySolution, yourSolution);

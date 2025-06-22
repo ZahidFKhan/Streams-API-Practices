@@ -1,6 +1,6 @@
 package com.github.streams.practice.a_easy.numbers.problems;
 
-import com.github.streams.practice.a_easy.numbers.NumbersProblemSolution;
+import com.github.streams.practice.a_easy.numbers.EasyNumbersProblemSolution;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
@@ -21,7 +21,7 @@ class F_AscendingNumberValue {
   @Disabled
   public void test() {
     var input = List.of(1, 34, 3, 98, 9, 76, 45, 4);
-    var mySolution = NumbersProblemSolution.getSmallestPossibleValue(input);
+    var mySolution = EasyNumbersProblemSolution.getSmallestPossibleValue(input);
     var yourSolution = "";
 
     Assertions.assertEquals(mySolution, yourSolution);

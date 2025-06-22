@@ -1,6 +1,6 @@
 package com.github.streams.practice.a_easy.numbers.problems;
 
-import com.github.streams.practice.a_easy.numbers.NumbersProblemSolution;
+import com.github.streams.practice.a_easy.numbers.EasyNumbersProblemSolution;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
@@ -18,7 +18,7 @@ class B_SumOfUniqueNumbers {
   @Disabled
   void testSumOfUniqueDigitsTest() {
     final var input = List.of(5, 6, 7, 8, 5, 5, 8, 8, 7);
-    var mySolution = NumbersProblemSolution.sumOfUniqueNumbers(input);
+    var mySolution = EasyNumbersProblemSolution.sumOfUniqueNumbers(input);
     var yourSolution = List.of();
 
     Assertions.assertEquals(mySolution, yourSolution);

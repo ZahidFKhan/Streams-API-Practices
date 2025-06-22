@@ -1,6 +1,6 @@
 package com.github.streams.practice.b_medium.numbers.problems;
 
-import com.github.streams.practice.b_medium.numbers.NumbersProblemSolution;
+import com.github.streams.practice.b_medium.numbers.MediumNumbersProblemSolution;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
@@ -20,7 +20,7 @@ class A_SumOfNumbers {
   @Disabled
   void testSumOfUniqueDigitsTest() {
     final var input = List.of(5, 6, 7, 8, 5, 5, 8, 8, 7);
-    var mySolution = NumbersProblemSolution.sumOfNumbers(input);
+    var mySolution = MediumNumbersProblemSolution.sumOfNumbers(input);
     var yourSolution = -1;
 
     Assertions.assertEquals(mySolution, yourSolution);

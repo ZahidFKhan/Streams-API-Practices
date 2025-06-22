@@ -1,6 +1,6 @@
 package com.github.streams.practice.b_medium.numbers.problems;
 
-import com.github.streams.practice.b_medium.numbers.NumbersProblemSolution;
+import com.github.streams.practice.b_medium.numbers.MediumNumbersProblemSolution;
 import com.github.streams.practice.b_medium.numbers.problems.ignore.data.DummyData;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
@@ -18,7 +18,7 @@ class G_DescendingNumberValue {
   @Disabled
   public void test() {
     var input = DummyData.fakeList(7);
-    var mySolution = NumbersProblemSolution.getHighestPossibleValue(input);
+    var mySolution = MediumNumbersProblemSolution.getHighestPossibleValue(input);
     var yourSolution = "";
 
     Assertions.assertEquals(mySolution, yourSolution);

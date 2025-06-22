@@ -1,16 +1,13 @@
 package com.github.streams.practice.b_medium.numbers;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.function.IntPredicate;
 import java.util.function.IntUnaryOperator;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class NumbersProblemSolution {
+public class MediumNumbersProblemSolution {
 
   public static List<String> getNumberOnly(List<String> values) {
     return values.stream()
@@ -91,5 +88,9 @@ public class NumbersProblemSolution {
 
   public static double meanOfNumbers(List<Integer> input) {
     return input.stream().mapToInt(Integer::intValue).average().orElse(0);
+  }
+
+  public static Map<Integer, List<Integer>> groupingOfNumbers(List<Integer> randomIntegers) {
+    return randomIntegers.stream().collect(Collectors.groupingBy(e -> e / 10));
   }
 }

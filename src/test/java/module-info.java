@@ -13,8 +13,6 @@ module com.github.streams {
       org.junit.platform.commons;
 
   // PRACTICE EASY
-  opens com.github.streams.practice to
-      org.junit.platform.commons;
   opens com.github.streams.practice.a_easy.numbers.problems to
       org.junit.platform.commons;
   opens com.github.streams.practice.a_easy.strings.problems to
@@ -36,5 +34,7 @@ module com.github.streams {
   opens com.github.streams.practice.c_hard.numbers to
       org.junit.platform.commons;
   opens com.github.streams.practice.c_hard.numbers.problems to
+      org.junit.platform.commons;
+  opens com.github.streams.practice.b_medium to
       org.junit.platform.commons;
 }

@@ -1,6 +1,6 @@
 package com.github.streams.practice.b_medium.employee;
 
-import com.github.streams.practice.ProblemSolutions;
+import com.github.streams.practice.b_medium.ProblemSolutions;
 import com.github.streams.practice.b_medium.employee.ignore.domain_related.dummy_data.DummyEmployees;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;

@@ -1,6 +1,6 @@
 package com.github.streams.practice.a_easy.strings.problems;
 
-import com.github.streams.practice.ProblemSolutions;
+import com.github.streams.practice.b_medium.ProblemSolutions;
 import net.datafaker.Faker;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;

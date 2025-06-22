@@ -1,4 +1,4 @@
-package com.github.streams.practice;
+package com.github.streams.practice.b_medium;
 
 import com.github.streams.practice.b_medium.employee.ignore.domain_related.Department;
 import com.github.streams.practice.b_medium.employee.ignore.domain_related.Employee;

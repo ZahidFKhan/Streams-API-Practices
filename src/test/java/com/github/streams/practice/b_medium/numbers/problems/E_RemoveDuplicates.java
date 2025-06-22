@@ -1,6 +1,6 @@
 package com.github.streams.practice.b_medium.numbers.problems;
 
-import com.github.streams.practice.b_medium.numbers.NumbersProblemSolution;
+import com.github.streams.practice.b_medium.numbers.MediumNumbersProblemSolution;
 import com.github.streams.practice.b_medium.numbers.problems.ignore.data.DummyData;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
@@ -22,7 +22,7 @@ class E_RemoveDuplicates {
   void testRemoveDuplicationFromListTest() {
     final var input = DummyData.fakeListOfLongNumbers();
     var yourSolution = List.<Long>of();
-    var mySolution = NumbersProblemSolution.getUniqueNumberFromList(input);
+    var mySolution = MediumNumbersProblemSolution.getUniqueNumberFromList(input);
 
     Assertions.assertEquals(mySolution, yourSolution);
   }

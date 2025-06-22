@@ -1,6 +1,6 @@
 package com.github.streams.practice.a_easy.strings.problems;
 
-import com.github.streams.practice.ProblemSolutions;
+import com.github.streams.practice.b_medium.ProblemSolutions;
 import com.github.streams.practice.b_medium.employee.ignore.domain_related.Identity;
 import java.util.List;
 import java.util.Map;

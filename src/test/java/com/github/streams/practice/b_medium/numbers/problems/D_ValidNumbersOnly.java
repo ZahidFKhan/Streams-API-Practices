@@ -1,6 +1,6 @@
 package com.github.streams.practice.b_medium.numbers.problems;
 
-import com.github.streams.practice.b_medium.numbers.NumbersProblemSolution;
+import com.github.streams.practice.b_medium.numbers.MediumNumbersProblemSolution;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
@@ -20,7 +20,7 @@ class D_ValidNumbersOnly {
   void testCheckAllIntegersWithoutAlphabets() {
     final var input = List.of("1", "12", "12a", "a12");
     var yourSolution = List.of();
-    var mySolution = NumbersProblemSolution.getNumberOnly(input);
+    var mySolution = MediumNumbersProblemSolution.getNumberOnly(input);
 
     Assertions.assertEquals(mySolution, yourSolution);
   }

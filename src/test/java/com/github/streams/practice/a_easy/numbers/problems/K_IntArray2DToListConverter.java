@@ -1,6 +1,6 @@
 package com.github.streams.practice.a_easy.numbers.problems;
 
-import com.github.streams.practice.a_easy.numbers.NumbersProblemSolution;
+import com.github.streams.practice.a_easy.numbers.EasyNumbersProblemSolution;
 import com.github.streams.practice.a_easy.numbers.problems.ignore.data.DummyData;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
@@ -13,7 +13,7 @@ public class K_IntArray2DToListConverter {
   void convertInt2DArrayToList() {
     final int[][] input = DummyData.random2DPrimitiveArray();
 
-    var mySolution = NumbersProblemSolution.convertInt2DArrayToList(input);
+    var mySolution = EasyNumbersProblemSolution.convertInt2DArrayToList(input);
     var yourSolution = List.of(List.<Integer>of());
 
     Assertions.assertEquals(mySolution, yourSolution);

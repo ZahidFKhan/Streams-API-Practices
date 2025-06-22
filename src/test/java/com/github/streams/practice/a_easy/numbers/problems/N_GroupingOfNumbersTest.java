@@ -1,6 +1,6 @@
 package com.github.streams.practice.a_easy.numbers.problems;
 
-import com.github.streams.practice.ProblemSolutions;
+import com.github.streams.practice.a_easy.numbers.EasyNumbersProblemSolution;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
@@ -57,7 +57,7 @@ class N_GroupingOfNumbersTest {
             new Random().nextInt(100),
             new Random().nextInt(100));
 
-    final var mySolution = ProblemSolutions.groupingOfNumbers(randomIntegers);
+    final var mySolution = EasyNumbersProblemSolution.groupingOfNumbers(randomIntegers);
     final var yourSolution = Collections.<Integer, List<Integer>>emptyMap();
 
     Assertions.assertEquals(mySolution, yourSolution);
