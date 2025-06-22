@@ -9,7 +9,7 @@ module com.github.streams {
       org.junit.platform.commons;
   opens com.github.streams.learn.functional_interfaces to
       org.junit.platform.commons;
-  opens com.github.streams.learn.solutions to
+  opens com.github.streams.learn.functional_interfaces.solutions to
       org.junit.platform.commons;
 
   // PRACTICE EASY
