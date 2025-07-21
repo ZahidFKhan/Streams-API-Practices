@@ -80,4 +80,28 @@ public class StringProblemsSolution {
   public static String convertListOfCharactersToString(Collection<Character> listOfCharacters) {
     return listOfCharacters.stream().map(Object::toString).reduce("", String::concat);
   }
+  public static int frequentVowelPlusConstant(String s){
+    final var vowels = Set.of('a', 'e', 'i', 'o', 'u');
+    final var vowelsValue = s.chars()
+            .mapToObj(e -> Character.valueOf((char) e))
+            .filter(vowels::contains)
+            .collect(Collectors.toMap(Function.identity(), c -> 1, Integer::sum))
+            .entrySet()
+            .stream()
+            .max(Map.Entry.comparingByValue())
+            .map(Map.Entry::getValue)
+            .orElse(0);
+
+    final var constValue = s.chars()
+            .mapToObj(e -> Character.valueOf((char) e))
+            .filter(e->!vowels.contains(e))
+            .collect(Collectors.toMap(Function.identity(), c -> 1, Integer::sum))
+            .entrySet()
+            .stream()
+            .max(Map.Entry.comparingByValue())
+            .map(Map.Entry::getValue)
+            .orElse(0);
+
+    return vowelsValue + constValue;
+  }
 }
