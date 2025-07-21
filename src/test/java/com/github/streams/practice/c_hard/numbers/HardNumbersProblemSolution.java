@@ -23,10 +23,11 @@ public class HardNumbersProblemSolution {
         .toList();
   }
 
-  public static Integer largestConsecutiveSequence(List<Integer> input) {
+  public static Integer largestConsecutiveSequence(final List<Integer> input) {
     final var set = new HashSet<>(input);
-    return set.stream()
-        .filter(value -> set.contains(value - 1))
+    return input.stream()
+            .distinct()
+        .filter(value -> !set.contains(value - 1))
         .collect(
             Collectors.toMap(
                 Function.identity(),
