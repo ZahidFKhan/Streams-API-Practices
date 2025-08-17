@@ -38,7 +38,7 @@ public class MediumNumbersProblemSolution {
   }
 
   public static long sumOfNumbers(List<Integer> input) {
-    return input.stream().reduce(0, Integer::sum);
+    return input.stream().mapToInt(Integer::intValue).sum();
   }
 
   public static long sumOfUniqueNumbers(List<Integer> input) {
