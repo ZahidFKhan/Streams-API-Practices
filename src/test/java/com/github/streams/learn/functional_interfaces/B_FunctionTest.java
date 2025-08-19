@@ -14,6 +14,7 @@ class B_FunctionTest {
     Function<String, String> func = null; // TODO
 
     assertEquals("(abc)", func.apply("abc"));
+    assertEquals("()", func.apply(""));
   }
 
   /** Write a lambda expression that converts the given string to upper case. */
