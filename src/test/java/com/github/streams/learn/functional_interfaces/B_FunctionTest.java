@@ -10,7 +10,7 @@ class B_FunctionTest {
   /** Write a lambda expression that wraps the given string in parentheses. */
   @Test
   @Disabled
-  public void function1() {
+  void function1() {
     Function<String, String> func = null; // TODO
 
     assertEquals("(abc)", func.apply("abc"));
@@ -20,7 +20,7 @@ class B_FunctionTest {
   /** Write a lambda expression that converts the given string to upper case. */
   @Test
   @Disabled
-  public void function2() {
+  void function2() {
     Function<String, String> func = null; // TODO
 
     assertEquals("ABC", func.apply("abc"));
