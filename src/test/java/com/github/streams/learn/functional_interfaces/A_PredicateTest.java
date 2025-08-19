@@ -17,6 +17,7 @@ class A_PredicateTest {
 
     Assertions.assertTrue(pred.test("abcde"));
     Assertions.assertFalse(pred.test("abcd"));
+    Assertions.assertFalse(pred.test(""));
   }
 
   /** Write a lambda expression that is a predicate that tests whether a string is empty. */
