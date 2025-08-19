@@ -13,18 +13,19 @@ class C_ConsumerTest {
   /** Write a lambda expression that appends the string "abc" to the given StringBuilder. */
   @Test
   @Disabled
-  public void c_consumer1() {
-    Consumer<StringBuilder> cons = null; // TODO
-
+  void c_consumer1() {
     StringBuilder sb = new StringBuilder("xyz");
-    cons.accept(sb);
+    Consumer<StringBuilder> appenderConsumer = null; // TODO
+
+    appenderConsumer.accept(sb);
+
     assertEquals("xyzabc", sb.toString());
   }
 
   /** Write a lambda expression that clears the given list. */
   @Test
   @Disabled
-  public void c_consumer2() {
+  void c_consumer2() {
     Consumer<List<String>> cons = null; // TODO
 
     List<String> list = new ArrayList<>(List.of("a", "b", "c"));
@@ -35,7 +36,7 @@ class C_ConsumerTest {
   /** Write an unbound method reference that clears the given list. */
   @Test
   @Disabled
-  public void c_consumer3() {
+  void c_consumer3() {
     Consumer<List<String>> cons = null; // TODO
 
     List<String> list = new ArrayList<>(List.of("a", "b", "c"));
@@ -49,7 +50,7 @@ class C_ConsumerTest {
    */
   @Test
   @Disabled
-  public void c_consumer4() {
+  void c_consumer4() {
     Consumer<List<String>> c1 = list -> list.add("first");
     Consumer<List<String>> c2 = list -> list.add("second");
 
