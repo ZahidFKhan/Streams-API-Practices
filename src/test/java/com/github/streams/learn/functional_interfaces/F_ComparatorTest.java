@@ -23,8 +23,8 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-  public void comparator01() {
-    java.util.Comparator<String> compareByLength = null; // TODO
+   void comparator01() {
+    Comparator<String> compareByLength = null; // TODO
 
     Assertions.assertTrue(compareByLength.compare("FOUR", "TWO") > 0);
     Assertions.assertTrue(compareByLength.compare("ONE", "SEVEN") < 0);
@@ -44,7 +44,7 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-  public void comparator02() {
+   void comparator02() {
     Comparator<String> compareByLengthThenAlphabetical = null; // TODO
 
     Assertions.assertTrue(compareByLengthThenAlphabetical.compare("FOUR", "TWO") > 0);
@@ -65,7 +65,7 @@ class F_ComparatorTest {
   /** Write a Comparator that compares instances of Person using their lastName. */
   @Test
   @Disabled
-  public void comparator03() {
+   void comparator03() {
     Comparator<Person> comparebyLastName = null; // TODO
 
     Assertions.assertTrue(comparebyLastName.compare(ayman, rod) < 0);
@@ -86,7 +86,7 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-  public void comparator04() {
+   void comparator04() {
     Comparator<Person> comparebyLastNameThenFirstName = null; // TODO
 
     Assertions.assertTrue(comparebyLastNameThenFirstName.compare(ayman, rod) < 0);
@@ -107,7 +107,7 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-  public void comparator05() {
+   void comparator05() {
     Comparator<Person> comparebyLastNameThenFirstNameReversed = null; // TODO
 
     assertFalse(comparebyLastNameThenFirstNameReversed.compare(ayman, rod) < 0);
@@ -127,7 +127,7 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-  public void comparator06() {
+   void comparator06() {
     Comparator<Person> comparebyLastNameThenFirstNameWithNull = null; // TODO
 
     Assertions.assertTrue(comparebyLastNameThenFirstNameWithNull.compare(ayman, rod) < 0);
@@ -148,7 +148,7 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-  public void comparator07() {
+   void comparator07() {
     Comparator<Person> comparebyAge = null; // TODO
 
     Assertions.assertTrue(comparebyAge.compare(ayman, rod) < 0);
@@ -170,7 +170,7 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-  public void comparator08() {
+   void comparator08() {
     IntBinaryOperator intCompare = null; // TODO
 
     Assertions.assertTrue(intCompare.applyAsInt(0, 1) < 0);
@@ -191,7 +191,7 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-  public void comparator09() {
+   void comparator09() {
     IntBinaryOperator intCompare = null; // TODO
 
     Assertions.assertTrue(intCompare.applyAsInt(0, 1) < 0);
@@ -215,7 +215,7 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-  public void comparator10() {
+   void comparator10() {
     DoubleToIntBiFunction doubleCompare = null; // TODO
 
     Assertions.assertTrue(doubleCompare.applyAsInt(0.0, 1.0) < 0);
