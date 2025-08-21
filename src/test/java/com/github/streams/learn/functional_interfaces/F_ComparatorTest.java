@@ -1,14 +1,13 @@
 package com.github.streams.learn.functional_interfaces;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
 import com.github.streams.learn.functional_interfaces.ignore.models.Person;
+import java.util.Comparator;
+import java.util.function.IntBinaryOperator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-
-import java.util.Comparator;
-import java.util.function.IntBinaryOperator;
-
-import static org.junit.jupiter.api.Assertions.assertFalse;
 
 class F_ComparatorTest {
 
@@ -24,12 +23,12 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-   void comparator01() {
+  void comparator01() {
     Comparator<String> compareByLength = null; // TODO
 
     Assertions.assertTrue(compareByLength.compare("FOUR", "TWO") > 0);
     Assertions.assertTrue(compareByLength.compare("ONE", "SEVEN") < 0);
-    Assertions.assertTrue(compareByLength.compare("ONE", "TWO") == 0);
+    Assertions.assertEquals(0, compareByLength.compare("ONE", "TWO"));
   }
 
   // Hint:
@@ -45,14 +44,14 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-   void comparator02() {
+  void comparator02() {
     Comparator<String> compareByLengthThenAlphabetical = null; // TODO
 
     Assertions.assertTrue(compareByLengthThenAlphabetical.compare("FOUR", "TWO") > 0);
     Assertions.assertTrue(compareByLengthThenAlphabetical.compare("ONE", "SEVEN") < 0);
     Assertions.assertTrue(compareByLengthThenAlphabetical.compare("ONE", "TWO") < 0);
     Assertions.assertTrue(compareByLengthThenAlphabetical.compare("FOUR", "FIVE") > 0);
-    Assertions.assertTrue(compareByLengthThenAlphabetical.compare("EIGHT", "EIGHT") == 0);
+    Assertions.assertEquals(0, compareByLengthThenAlphabetical.compare("EIGHT", "EIGHT"));
   }
 
   // Hint:
@@ -66,12 +65,12 @@ class F_ComparatorTest {
   /** Write a Comparator that compares instances of Person using their lastName. */
   @Test
   @Disabled
-   void comparator03() {
+  void comparator03() {
     Comparator<Person> comparebyLastName = null; // TODO
 
     Assertions.assertTrue(comparebyLastName.compare(ayman, rod) < 0);
-    Assertions.assertTrue(comparebyLastName.compare(paul, paul) == 0);
     Assertions.assertTrue(comparebyLastName.compare(ayman, jermaine) > 0);
+    Assertions.assertEquals(0, comparebyLastName.compare(paul, paul));
   }
 
   // Hint:
@@ -87,12 +86,12 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-   void comparator04() {
+  void comparator04() {
     Comparator<Person> comparebyLastNameThenFirstName = null; // TODO
 
     Assertions.assertTrue(comparebyLastNameThenFirstName.compare(ayman, rod) < 0);
-    Assertions.assertTrue(comparebyLastNameThenFirstName.compare(paul, paul) == 0);
     Assertions.assertTrue(comparebyLastNameThenFirstName.compare(ayman, jermaine) > 0);
+    Assertions.assertEquals(0, comparebyLastNameThenFirstName.compare(paul, paul));
   }
 
   // Hint:
@@ -108,12 +107,12 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-   void comparator05() {
+  void comparator05() {
     Comparator<Person> comparebyLastNameThenFirstNameReversed = null; // TODO
 
     assertFalse(comparebyLastNameThenFirstNameReversed.compare(ayman, rod) < 0);
-    Assertions.assertTrue(comparebyLastNameThenFirstNameReversed.compare(paul, paul) == 0);
     assertFalse(comparebyLastNameThenFirstNameReversed.compare(ayman, jermaine) > 0);
+    Assertions.assertEquals(0, comparebyLastNameThenFirstNameReversed.compare(paul, paul));
   }
 
   // Hint:
@@ -128,14 +127,14 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-   void comparator06() {
+  void comparator06() {
     Comparator<Person> comparebyLastNameThenFirstNameWithNull = null; // TODO
 
     Assertions.assertTrue(comparebyLastNameThenFirstNameWithNull.compare(ayman, rod) < 0);
-    Assertions.assertTrue(comparebyLastNameThenFirstNameWithNull.compare(paul, paul) == 0);
     Assertions.assertTrue(comparebyLastNameThenFirstNameWithNull.compare(ayman, jermaine) > 0);
     Assertions.assertTrue(comparebyLastNameThenFirstNameWithNull.compare(mick, null) < 0);
     Assertions.assertTrue(comparebyLastNameThenFirstNameWithNull.compare(null, mick) > 0);
+    Assertions.assertEquals(0, comparebyLastNameThenFirstNameWithNull.compare(paul, paul));
   }
 
   // Hint:
@@ -149,12 +148,12 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-   void comparator07() {
+  void comparator07() {
     Comparator<Person> comparebyAge = null; // TODO
 
     Assertions.assertTrue(comparebyAge.compare(ayman, rod) < 0);
-    Assertions.assertTrue(comparebyAge.compare(paul, paul) == 0);
     Assertions.assertTrue(comparebyAge.compare(mick, jermaine) > 0);
+    Assertions.assertEquals(0, comparebyAge.compare(paul, paul));
   }
 
   // Hint:
@@ -171,14 +170,14 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-   void comparator08() {
+  void comparator08() {
     IntBinaryOperator intCompare = null; // TODO
 
     Assertions.assertTrue(intCompare.applyAsInt(0, 1) < 0);
-    Assertions.assertTrue(intCompare.applyAsInt(1, 1) == 0);
     Assertions.assertTrue(intCompare.applyAsInt(2, 1) > 0);
     Assertions.assertTrue(intCompare.applyAsInt(Integer.MIN_VALUE, Integer.MAX_VALUE) < 0);
     Assertions.assertTrue(intCompare.applyAsInt(Integer.MAX_VALUE, Integer.MIN_VALUE) > 0);
+    Assertions.assertEquals(0, intCompare.applyAsInt(1, 1));
   }
 
   // Hint:
@@ -192,7 +191,7 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-   void comparator09() {
+  void comparator09() {
     IntBinaryOperator intCompare = null; // TODO
 
     Assertions.assertTrue(intCompare.applyAsInt(0, 1) < 0);
@@ -216,15 +215,16 @@ class F_ComparatorTest {
    */
   @Test
   @Disabled
-   void comparator10() {
+  void comparator10() {
     DoubleToIntBiFunction doubleCompare = null; // TODO
 
     Assertions.assertTrue(doubleCompare.applyAsInt(0.0, 1.0) < 0);
-    Assertions.assertTrue(doubleCompare.applyAsInt(1.0, 1.0) == 0);
     Assertions.assertTrue(doubleCompare.applyAsInt(2.0, 1.0) > 0);
-    Assertions.assertTrue(doubleCompare.applyAsInt(Double.NaN, Double.NaN) == 0);
     Assertions.assertTrue(doubleCompare.applyAsInt(Double.NaN, 0.0) > 0);
     Assertions.assertTrue(doubleCompare.applyAsInt(0.0, Double.NaN) < 0);
+
+    Assertions.assertEquals(0, doubleCompare.applyAsInt(Double.NaN, Double.NaN));
+    Assertions.assertEquals(0, doubleCompare.applyAsInt(1.0, 1.0));
   }
 
   interface DoubleToIntBiFunction {
