@@ -91,6 +91,6 @@ public class MediumNumbersProblemSolution {
   }
 
   public static Map<Integer, List<Integer>> groupingOfNumbers(List<Integer> randomIntegers) {
-    return randomIntegers.stream().collect(Collectors.groupingBy(e -> e / 10));
+    return randomIntegers.stream().collect(Collectors.groupingBy(e -> (e / 10) * 10));
   }
 }
