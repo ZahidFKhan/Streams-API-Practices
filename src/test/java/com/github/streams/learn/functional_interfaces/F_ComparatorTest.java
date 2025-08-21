@@ -1,13 +1,14 @@
 package com.github.streams.learn.functional_interfaces;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-
 import com.github.streams.learn.functional_interfaces.ignore.models.Person;
-import java.util.Comparator;
-import java.util.function.IntBinaryOperator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+
+import java.util.Comparator;
+import java.util.function.IntBinaryOperator;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 class F_ComparatorTest {
 
@@ -70,7 +71,7 @@ class F_ComparatorTest {
 
     Assertions.assertTrue(comparebyLastName.compare(ayman, rod) < 0);
     Assertions.assertTrue(comparebyLastName.compare(paul, paul) == 0);
-    Assertions.assertTrue(comparebyLastName.compare(ayman, jermaine) == 0);
+    Assertions.assertTrue(comparebyLastName.compare(ayman, jermaine) > 0);
   }
 
   // Hint:
