@@ -93,4 +93,8 @@ public class EasyNumbersProblemSolution {
   public static Map<Integer, List<Integer>> groupingOfNumbers(List<Integer> randomIntegers) {
     return randomIntegers.stream().collect(Collectors.groupingBy(e -> e / 10));
   }
+
+  public static long countNumberOfEvenNumbers(final List<Integer> input) {
+    return input.stream().filter(x->x%2 ==0).count();
+  }
 }

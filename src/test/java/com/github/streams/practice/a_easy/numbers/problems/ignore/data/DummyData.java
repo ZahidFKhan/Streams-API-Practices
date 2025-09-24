@@ -39,7 +39,7 @@ public class DummyData {
         instance.number().randomNumber());
   }
 
-  public static List<Integer> fakeList(final int size) {
+  public static List<Integer> fakeListOfSize(final int size) {
     final var instance = new Faker();
     return IntStream.range(1, size)
         .mapToObj(x -> instance.number().numberBetween(1, 99))
