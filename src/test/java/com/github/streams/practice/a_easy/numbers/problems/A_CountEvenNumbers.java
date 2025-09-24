@@ -10,7 +10,6 @@ import org.junit.jupiter.api.Test;
  * Count even numbers:
  *
  * <p>Example: <br>
- *
  * Input = [1,2,3,4,5,6]<br>
  * Output = 3 <br>
  * Explanation: (1, 2, 3) are even numbers.
@@ -25,6 +24,9 @@ class A_CountEvenNumbers {
     final var mySolution = EasyNumbersProblemSolution.countNumberOfEvenNumbers(input);
     final var yourSolution = -1L; // WRITE YOUR IMPLEMENTATION HERE//
 
-    Assertions.assertEquals(mySolution, yourSolution);
+    Assertions.assertEquals(
+        mySolution,
+        yourSolution,
+        "Your solution is incorrect - you can refer to mySolution above to check, how I have done the same problem.");
   }
 }
