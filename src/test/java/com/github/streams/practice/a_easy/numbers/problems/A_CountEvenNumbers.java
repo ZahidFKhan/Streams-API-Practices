@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
  * Output = 3 <br>
  * Explanation: (1, 2, 3) are even numbers.
  */
-class A_FilterCountEvenNumbers {
+class A_CountEvenNumbers {
 
   @Test
   @Disabled
