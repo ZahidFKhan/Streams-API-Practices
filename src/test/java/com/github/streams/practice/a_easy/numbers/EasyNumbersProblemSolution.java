@@ -95,6 +95,10 @@ public class EasyNumbersProblemSolution {
   }
 
   public static long countNumberOfEvenNumbers(final List<Integer> input) {
-    return input.stream().filter(x->x%2 ==0).count();
+    return input.stream().filter(x -> x % 2 == 0).count();
+  }
+
+  public static List<Double> convertCelsiusToFahrenheit(final List<Integer> input) {
+    return input.stream().map(value -> (value * 9.0 / 5.0) + 32).toList();
   }
 }
