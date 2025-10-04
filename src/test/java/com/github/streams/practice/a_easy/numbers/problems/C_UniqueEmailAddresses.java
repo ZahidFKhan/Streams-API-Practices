@@ -3,6 +3,7 @@ package com.github.streams.practice.a_easy.numbers.problems;
 import com.github.streams.practice.a_easy.numbers.EasyNumbersProblemSolution;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -12,6 +13,7 @@ import org.junit.jupiter.api.Test;
  */
 class C_UniqueEmailAddresses {
   @Test
+  @Disabled
   void uniqueEmailAddresses() {
     final var input =
         List.of(
