@@ -2,7 +2,6 @@ package com.github.streams.learn.functional_interfaces;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
-import com.github.streams.learn.functional_interfaces.ignore.models.Person;
 import java.util.Comparator;
 import java.util.function.IntBinaryOperator;
 import org.junit.jupiter.api.Assertions;
@@ -10,6 +9,8 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 class F_ComparatorTest {
+
+  public record Person(String name, String lastName, int age) {}
 
   final Person ayman = new Person("Ayman", "Khan", 51);
   final Person rod = new Person("Rod", "Stewart", 71);

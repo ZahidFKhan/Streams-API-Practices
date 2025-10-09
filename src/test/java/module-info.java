@@ -5,8 +5,6 @@ module com.github.streams {
   requires static lombok;
 
   // LEARN
-  opens com.github.streams.learn.ignore.inprogress to
-      org.junit.platform.commons;
   opens com.github.streams.learn.functional_interfaces to
       org.junit.platform.commons;
   opens com.github.streams.learn.functional_interfaces.solutions to

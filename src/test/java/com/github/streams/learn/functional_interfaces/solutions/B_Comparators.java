@@ -3,7 +3,6 @@ package com.github.streams.learn.functional_interfaces.solutions;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.github.streams.learn.functional_interfaces.ignore.models.Person;
 import java.util.Comparator;
 import java.util.function.IntBinaryOperator;
 import org.junit.jupiter.api.Test;
@@ -13,7 +12,9 @@ import org.junit.jupiter.api.Test;
  * Some of the exercises use a Person class, which is a simple POJO containing a last projectName,
  * first projectName, and age, with the obvious constructors and getters.
  */
-public class B_Comparators {
+class B_Comparators {
+
+  public record Person(String name, String lastName, int age) {}
 
   final Person michael = new Person("Michael", "Jackson", 51);
   final Person rod = new Person("Rod", "Stewart", 71);
@@ -26,7 +27,7 @@ public class B_Comparators {
    * letters) is greater than TWO (three letters)
    */
   @Test
-  public void comparator01() {
+  void comparator01() {
     // TODO//Comparator<String> compareByLength = null;
     // BEGINREMOVE
     Comparator<String> compareByLength = Comparator.comparing(String::length);
@@ -49,7 +50,7 @@ public class B_Comparators {
    * same, then use the alphabetical order.
    */
   @Test
-  public void comparator02() {
+  void comparator02() {
     // TODO//Comparator<String> compareByLengthThenAlphabetical = null;
     // BEGINREMOVE
     Comparator<String> compareByLengthThenAlphabetical =
@@ -73,7 +74,7 @@ public class B_Comparators {
 
   /** Write a Comparator that compares instances of Person using their lastName. */
   @Test
-  public void comparator03() {
+  void comparator03() {
     // TODO//Comparator<Person> comparebyLastName = null;
     // BEGINREMOVE
     Comparator<Person> comparebyLastName = Comparator.comparing(Person::lastName);
