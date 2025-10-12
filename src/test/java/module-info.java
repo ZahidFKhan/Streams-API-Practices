@@ -5,34 +5,30 @@ module com.github.streams {
   requires static lombok;
 
   // LEARN
-  opens com.github.streams.learn.functional_interfaces to
+  opens com.github.streams.practice.functional_interfaces to
       org.junit.platform.commons;
-  opens com.github.streams.learn.functional_interfaces.solutions to
+  opens com.github.streams.practice.functional_interfaces.solutions to
       org.junit.platform.commons;
 
   // PRACTICE EASY
-  opens com.github.streams.practice.a_easy.numbers.problems to
+  opens com.github.streams.practice.a_easy_problems.numbers to
       org.junit.platform.commons;
-  opens com.github.streams.practice.a_easy.strings.problems to
+  opens com.github.streams.practice.a_easy_problems.strings to
       org.junit.platform.commons;
-  opens com.github.streams.practice.b_medium.employee to
+  opens com.github.streams.practice.b_medium_problems.employee to
       org.junit.platform.commons;
 
   //  PRACTICE MEDIUM
-  opens com.github.streams.practice.b_medium.strings to
+  opens com.github.streams.practice.b_medium_problems.strings to
       org.junit.platform.commons;
-  opens com.github.streams.practice.b_medium.numbers to
+  opens com.github.streams.practice.b_medium_problems.numbers to
       org.junit.platform.commons;
-  opens com.github.streams.practice.b_medium.numbers.problems to
+  opens com.github.streams.practice.b_medium_problems.numbers.data to
       org.junit.platform.commons;
-  opens com.github.streams.practice.b_medium.strings.problems to
+  opens com.github.streams.practice.b_medium_problems to
       org.junit.platform.commons;
 
   // PRACTICE HARD
-  opens com.github.streams.practice.c_hard.numbers to
-      org.junit.platform.commons;
-  opens com.github.streams.practice.c_hard.numbers.problems to
-      org.junit.platform.commons;
-  opens com.github.streams.practice.b_medium to
+  opens com.github.streams.practice.c_hard_problems.numbers to
       org.junit.platform.commons;
 }
