@@ -11,14 +11,14 @@ import org.junit.jupiter.api.Test;
  * <p>Example: <br>
  * Input = [1,2,3,4,5,6]<br>
  * Output = 3 <br>
- * Explanation: (1, 2, 3) are even numbers.
+ * Explanation: (2, 4, 6) are even numbers.
  */
 class A_CountEvenNumbers {
 
   @Test
   @Disabled
   void countEvenNumbers() {
-    final var input = List.of(1, 2, 3, 4, 5, 6, 7, 8);
+    final var input = List.of(1, 2, 3, 4, 5, 6, 7);
 
     final var mySolution = EasyNumbersProblemSolution.countNumberOfEvenNumbers(input);
     final var yourSolution = -1L; // WRITE YOUR IMPLEMENTATION HERE//
