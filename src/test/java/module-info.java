@@ -4,6 +4,7 @@ module com.github.streams {
   requires net.datafaker;
   requires static lombok;
 
+
   // LEARN
   opens com.github.streams.practice.functional_interfaces to
       org.junit.platform.commons;
