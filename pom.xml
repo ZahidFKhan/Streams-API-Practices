@@ -62,29 +62,29 @@
     <profiles>
         <profile>
             <!-- TO DISABLE, GATHERER TEST CASES IN JDK 17. -->
-            <id>skip-jdk25-tests</id>
+            <id>enable-upto-jdk17-testcases</id>
             <activation>
                 <jdk>[1.6, 25)</jdk>
             </activation>
             <build>
                 <plugins>
-                <plugin>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <executions>
-                        <execution>
-                            <id>default-testCompile</id>
-                            <phase>test-compile</phase>
-                            <goals>
-                                <goal>testCompile</goal>
-                            </goals>
-                            <configuration>
-                                <testExcludes>
-                                    <testExclude>**/gatherers/*.java</testExclude>
-                                </testExcludes>
-                            </configuration>
-                        </execution>
-                    </executions>
-                </plugin>
+                    <plugin>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>default-testCompile</id>
+                                <phase>test-compile</phase>
+                                <goals>
+                                    <goal>testCompile</goal>
+                                </goals>
+                                <configuration>
+                                    <testExcludes>
+                                        <testExclude>**/gatherers/*.java</testExclude>
+                                    </testExcludes>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
                 </plugins>
             </build>
         </profile>

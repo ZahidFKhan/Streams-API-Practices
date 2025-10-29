@@ -1,3 +1,4 @@
+/*
 module com.github.streams {
   requires org.junit.jupiter;
   requires org.junit.platform.commons;
@@ -17,8 +18,8 @@ module com.github.streams {
       org.junit.platform.commons;
   opens com.github.streams.practice.b_medium_problems.employee to
       org.junit.platform.commons;
-//  opens com.github.streams.practice.gatherers to
-//      org.junit.platform.commons;
+  opens com.github.streams.practice. to
+      org.junit.platform.commons;
 
   //  PRACTICE MEDIUM
   opens com.github.streams.practice.b_medium_problems.strings to
@@ -34,3 +35,4 @@ module com.github.streams {
   opens com.github.streams.practice.c_hard_problems.numbers to
       org.junit.platform.commons;
 }
+*/
