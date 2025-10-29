@@ -4,7 +4,6 @@ module com.github.streams {
   requires net.datafaker;
   requires static lombok;
 
-
   // LEARN
   opens com.github.streams.practice.functional_interfaces to
       org.junit.platform.commons;
@@ -18,6 +17,8 @@ module com.github.streams {
       org.junit.platform.commons;
   opens com.github.streams.practice.b_medium_problems.employee to
       org.junit.platform.commons;
+//  opens com.github.streams.practice.gatherers to
+//      org.junit.platform.commons;
 
   //  PRACTICE MEDIUM
   opens com.github.streams.practice.b_medium_problems.strings to
