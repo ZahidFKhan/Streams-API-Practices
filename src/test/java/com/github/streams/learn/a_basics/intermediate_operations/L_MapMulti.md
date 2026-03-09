@@ -1,6 +1,8 @@
 ## MapMulti:
 Instead of creating a new stream for each element, it directly sends the generated values to the next step in the stream. 
-This makes it simpler and sometimes more efficient when you want to expand or flatten data.
+This makes it simpler and sometimes more efficient when you want to expand or flatten data. 
+Often, you can achieve the same result using filter and map. But the problem with that is we have to use 2 different streams
+and do the operations twice. MultiMap allows us to do the both operation of filter and map in one stream thus makes it efficient.
 
 
 ### Example 1:
