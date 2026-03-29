@@ -18,3 +18,12 @@ Tiny examples:
 - Emit only when value changes: `[A,A,B,B,B,C] -> [A,B,C]`
 
 In short, use `Gatherer` for custom intermediate steps that are stateful and hard to express cleanly with regular operations.
+
+---
+
+<div align="right">
+
+[What is `Gatherer`?](./B_What%20is%20gatherer.md) →
+
+</div>
+

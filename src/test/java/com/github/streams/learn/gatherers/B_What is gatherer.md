@@ -1,6 +1,40 @@
-# Java Stream API: The Gatherer
+<div align="left">
 
-- The **Gatherer** is a new **intermediate operation** introduced to  the `java.util.stream.Stream` API in **Java 22**. 
+← [Why `Gatherer`?](./A_Why%20gatherer.md)
 
-- It's designed to solve problems that were previously cumbersome or awkward to handle with the existing API by allowing the operation to maintain **internal state** and inspect **multiple upstream elements** before producing an output.
-- 
+</div>
+
+# What is a `Gatherer`?
+
+A `Gatherer` is a reusable **intermediate stream operation** (added in Java 22) that lets you write custom transformations with memory.
+
+## How does it work?
+
+A `Gatherer` has four main parts:
+
+1. **Initializer**: Creates the initial state (e.g., a list to hold elements)
+2. **Integrator**: Processes each incoming element and updates state
+3. **Combiner**: (Optional) Merges states from parallel streams
+4. **Finisher**: (Optional) Produces final output from the state
+
+## Key Benefit
+
+`Gatherer` lets you write clean, reusable intermediate operations that maintain state across multiple elements—without awkward external variables.
+
+---
+
+<table>
+<tr>
+<td align="left">
+
+← [Why `Gatherer`?](./A_Why%20gatherer.md)
+
+</td>
+<td align="right">
+
+[When to use `Gatherer`?](./C_When%20to%20use%20Custom%20gatherer.md) →
+
+</td>
+</tr>
+</table>
+

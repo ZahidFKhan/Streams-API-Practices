@@ -1,8 +1,32 @@
-## When to use Custom Gatherers?
+<div align="left">
 
-You should avoid using custom gatherers unless you're required to do so.
+← [What is `Gatherer`?](./B_What%20is%20gatherer.md)
 
-1. When you're not able to solve the problem using filter, map or flatMap.
-2. When there exists no solution in the Gatherers even in latest JDK.
-3. When you're sure that's what you need. 
+</div>
 
+# When Should You Use Custom `Gatherer`?
+
+Avoid custom `Gatherer` unless necessary—prefer built-in operations first.
+
+Use a custom `Gatherer` when:
+
+1. `map`, `filter`, or `flatMap` don't fit your logic
+2. Built-in `Gatherer`s (like `scan` or `windowFixed`) don't solve it
+3. You need stateful, cross-element logic that's hard to express otherwise
+
+---
+
+<table>
+<tr>
+<td align="left">
+
+← [What is `Gatherer`?](./B_What%20is%20gatherer.md)
+
+</td>
+<td align="right">
+
+[Inbuilt `Gatherer`s](./D_Inbuilt_Gatherers.md) →
+
+</td>
+</tr>
+</table>
