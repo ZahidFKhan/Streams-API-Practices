@@ -36,3 +36,20 @@ the data structure to simplify further operations.
 ```
 allPositionsOfMaleLessThan30y = CF,CAM,LF,CM,CAM,GK,CM,CDM
 ```
+
+---
+
+<table>
+<tr>
+<td align="left">
+
+<- [Map](./B_Map.md)
+
+</td>
+<td align="right">
+
+[Distinct](./D_Distinct.md) ->
+
+</td>
+</tr>
+</table>

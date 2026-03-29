@@ -16,4 +16,19 @@ System.out.println(result);
 [1, 2, 3, 4, 5]
 ```
 
+---
 
+<table>
+<tr>
+<td align="left">
+
+<- [Distinct](./D_Distinct.md)
+
+</td>
+<td align="right">
+
+[Peek](./F_Peek.md) ->
+
+</td>
+</tr>
+</table>

@@ -14,3 +14,11 @@ Output
 ```java
 [2, 4]
 ```
+
+---
+
+<div align="right">
+
+[Map](./B_Map.md) ->
+
+</div>

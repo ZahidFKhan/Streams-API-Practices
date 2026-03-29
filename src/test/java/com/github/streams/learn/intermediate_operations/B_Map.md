@@ -17,3 +17,20 @@ Output
 ```java
 [2, 4, 6, 8]
 ```
+
+---
+
+<table>
+<tr>
+<td align="left">
+
+<- [Filter](./A_Filter.md)
+
+</td>
+<td align="right">
+
+[FlatMap](./C_FlatMap.md) ->
+
+</td>
+</tr>
+</table>

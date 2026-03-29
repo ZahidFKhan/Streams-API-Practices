@@ -17,3 +17,20 @@ Output:
 ```java
 [1, 2, 3]
 ```
+
+---
+
+<table>
+<tr>
+<td align="left">
+
+<- [Skip](./H_Skip.md)
+
+</td>
+<td align="right">
+
+[DropWhile](./J_DropWhile.md) ->
+
+</td>
+</tr>
+</table>

@@ -14,3 +14,20 @@ Output:
 ```java
 [3, 4, 5]
 ```
+
+---
+
+<table>
+<tr>
+<td align="left">
+
+<- [Limit](./G_Limit.md)
+
+</td>
+<td align="right">
+
+[TakeWhile](./I_TakeWhile.md) ->
+
+</td>
+</tr>
+</table>

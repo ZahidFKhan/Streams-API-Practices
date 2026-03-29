@@ -13,3 +13,20 @@ Output:
 ```java
 [9, 10, 11, 12]
 ```
+
+---
+
+<table>
+<tr>
+<td align="left">
+
+<- [TakeWhile](./I_TakeWhile.md)
+
+</td>
+<td align="right">
+
+[MapMulti](./L_MapMulti.md) ->
+
+</td>
+</tr>
+</table>

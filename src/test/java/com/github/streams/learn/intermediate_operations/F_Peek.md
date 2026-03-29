@@ -18,3 +18,20 @@ Processing: 3
 Processing: 4
 [2, 4, 6, 8]
 ```
+
+---
+
+<table>
+<tr>
+<td align="left">
+
+<- [Sorted](./E_Sorted.md)
+
+</td>
+<td align="right">
+
+[Limit](./G_Limit.md) ->
+
+</td>
+</tr>
+</table>

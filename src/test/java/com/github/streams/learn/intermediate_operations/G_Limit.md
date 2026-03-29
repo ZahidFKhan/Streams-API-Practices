@@ -15,3 +15,20 @@ Output:
 ```java
 [1, 2, 3]
 ```
+
+---
+
+<table>
+<tr>
+<td align="left">
+
+<- [Peek](./F_Peek.md)
+
+</td>
+<td align="right">
+
+[Skip](./H_Skip.md) ->
+
+</td>
+</tr>
+</table>

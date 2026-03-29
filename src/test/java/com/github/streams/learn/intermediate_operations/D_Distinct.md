@@ -38,4 +38,19 @@ whether two elements are equal or not.
 allUniquePositionsOfMaleLessThan30y = CF,CAM,LF,CM,GK,CDM
 ```
 
+---
 
+<table>
+<tr>
+<td align="left">
+
+<- [FlatMap](./C_FlatMap.md)
+
+</td>
+<td align="right">
+
+[Sorted](./E_Sorted.md) ->
+
+</td>
+</tr>
+</table>
