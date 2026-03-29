@@ -51,6 +51,7 @@ src/test/java/com/github/streams/
 - Use the **Java Stream API** for all solutions — avoid imperative loops where a stream equivalent exists.
 - Prefer **`toList()`** (Java 16+) over `Collectors.toList()`.
 - Use **`var`** for local variables where the type is obvious.
+- Keep comments sparse; only add them for complex or non-obvious logic.
 - Tests use `Assertions.assertEquals(mySolution, yourSolution, message)` — keep the argument order.
 - Lombok annotations (`@Data`, `@Builder`, `@AllArgsConstructor`, etc.) are available for model/data classes.
 - DataFaker is available for generating realistic fake test data.
