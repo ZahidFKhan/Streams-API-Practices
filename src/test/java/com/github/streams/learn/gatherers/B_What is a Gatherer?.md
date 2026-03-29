@@ -1,9 +1,3 @@
-<div align="left">
-
-← [Why `Gatherer`?](./A_Why%20gatherer.md)
-
-</div>
-
 # What is a `Gatherer`?
 
 A `Gatherer` is a reusable **intermediate stream operation** (added in Java 22) that lets you write custom transformations with memory.

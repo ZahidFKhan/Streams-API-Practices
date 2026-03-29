@@ -1,9 +1,3 @@
-<div align="left">
-
-← [What is `Gatherer`?](./B_What%20is%20gatherer.md)
-
-</div>
-
 # When Should You Use Custom `Gatherer`?
 
 Avoid custom `Gatherer` unless necessary—prefer built-in operations first.
