@@ -26,7 +26,7 @@ A `Gatherer` has four main parts:
 </td>
 <td align="right">
 
-[When to use `Gatherer`?](./C_When%20to%20use%20Custom%20Gatherer%3F.md) →
+[When to use Custom `Gatherer`?](./C_When%20to%20use%20Custom%20Gatherer%3F.md) →
 
 </td>
 </tr>
