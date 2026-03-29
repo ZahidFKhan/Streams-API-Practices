@@ -1,17 +1,34 @@
-# 💡 Why the Gatherer? (The Problem it Solves)
+# Why `Gatherer`? (The Problem It Solves)
 
-Prior to the **Gatherer**, the Java **Stream API** offered a fixed set of intermediate transformations:
+Before `Gatherer`, Stream intermediate operations were great for single-element transformations, but limited for stateful, cross-element logic.
 
-| Operation | Transformation Type | Example |
+## Transformation Shapes in Stream API
+
+| Operation | Shape | Typical Use |
 | :--- | :--- | :--- |
-| `map` | One-to-One | $1 \rightarrow 1$ (e.g., squaring a number) |
-| `filter` | One-to-Zero/One | $1 \rightarrow 0$ or $1$ (e.g., removing a number) |
-| `flatMap` | One-to-Many | $1 \rightarrow \text{Many}$ (e.g., splitting a string into words) |
+| `map` | `1 -> 1` | Transform each element independently |
+| `filter` | `1 -> 0/1` | Keep or drop each element |
+| `flatMap` | `1 -> many` | Expand one element into multiple elements |
+| **`Gatherer`** | **`many -> many`** | Use multiple upstream elements to decide output |
 
----
+## What Was Hard Without `Gatherer`?
 
-Many common stream processing tasks require operations that inspect **multiple upstream elements** to produce a result—a pattern often referred to as a **"many-to-many" transformation** ($\text{Many} \rightarrow \text{Many}$).
+Some tasks need context from previous or upcoming elements, not just the current one.
 
-Implementing these many-to-many operations was previously **cumbersome or awkward**, often requiring the use of the `reduce` terminal operation or relying on **mutable state** defined outside of a clean, dedicated intermediate operation.
+Examples:
+- fixed-size windows
+- running groups/chunks
+- stateful event processing
 
-The **Gatherer** solves this by providing a standardized, clean way to implement these complex intermediate transformations.
+Without `Gatherer`, these often became awkward by:
+- forcing logic into `reduce` (a terminal operation), or
+- using external mutable state outside the stream pipeline.
+
+## Why `Gatherer` Helps
+
+`Gatherer` adds a clean, reusable way to write custom **intermediate** operations that can:
+- maintain internal state,
+- inspect multiple upstream elements,
+- emit zero, one, or many downstream elements.
+
+In short, `Gatherer` fills the gap between simple per-element transformations and complex stateful stream processing.
