@@ -1,6 +1,6 @@
 ### Why to use `Gatherer` in Streams API?
 
-Use `Gatherer` when the logic of the Stream Operation depends on multiple elements, not just one. 
+Use `Gatherer` when the logic of the Stream Operation depends on multiple elements, not just one.
 where the logic doesn't depend on not just current element but also on the previous elements and next elements.
 
 Visually:
@@ -23,7 +23,6 @@ In short, use `Gatherer` for custom intermediate steps that are stateful and har
 
 <div align="right">
 
-[What is `Gatherer`?](./B_What%20is%20gatherer.md) →
+[What is Gatherer?](B_What%20is%20a%20Gatherer%3F.md) →
 
 </div>
-

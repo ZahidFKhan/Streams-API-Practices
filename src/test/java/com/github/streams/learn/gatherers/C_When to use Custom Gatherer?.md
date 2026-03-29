@@ -20,12 +20,12 @@ Use a custom `Gatherer` when:
 <tr>
 <td align="left">
 
-← [What is `Gatherer`?](./B_What%20is%20gatherer.md)
+← [What is a `Gatherer`?](./B_What%20is%20a%20Gatherer%3F.md)
 
 </td>
 <td align="right">
 
-[Inbuilt `Gatherer`s](./D_Inbuilt_Gatherers.md) →
+[Inbuilt `Gatherer`s](./D_Inbuilt_Gatherers.md)→
 
 </td>
 </tr>
