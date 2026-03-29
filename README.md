@@ -13,8 +13,27 @@ ___
 3. Solve the Problem.
 
 ##### NOTE: Don't forget to rate this to bookmark.
-
----
+ 
+## Repository Structure
+```
+src/test/java/com/github/streams/
+├── learn/
+│   ├── gatherers/
+│   ├── intermediate_operations/
+│   └── terminal_operations/
+└── practice/
+    ├── a_easy_problems/
+    │   ├── numbers/
+    │   └── strings/
+    ├── b_medium_problems/
+    │   ├── employee/
+    │   ├── numbers/
+    │   └── strings/
+    ├── c_hard_problems/
+    │   └── numbers/
+    ├── functional_interfaces/
+    └── gatherers/
+```
 
 ### Basic Streams Operations
 
