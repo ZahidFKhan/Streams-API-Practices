@@ -35,7 +35,7 @@ System.out.println(list); // [1, 2, 3, 4, 5]
 <tr>
 <td align="left">
 
-← [How to Create a Stream](./B. How to Create a Stream.md)
+← [How to Create a Stream](./B. How to Create a Stream?.md)
 
 </td>
 <td align="right">
