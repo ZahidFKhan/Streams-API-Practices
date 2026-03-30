@@ -5,8 +5,16 @@
     <groupId>com.github.streams</groupId>
     <artifactId>stream-problems</artifactId>
     <version>1.0.0</version>
-    <name>Stream Problems</name>
-    <description>Stream Problems</description>
+    <name>Java Stream API Practice Exercises</name>
+    <description>Java 17 Maven project with JUnit-based Java Stream API exercises, examples, notes, and practice problems.</description>
+    <url>https://github.com/ZahidFKhan/Streams-API-Practices</url>
+    <licenses>
+        <license>
+            <name>Apache License 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
     <contributors>
         <contributor>
             <name>Zahid Khan</name>

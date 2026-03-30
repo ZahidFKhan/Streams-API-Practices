@@ -1,10 +1,13 @@
-# Java Stream API Exercises and Practices
+# Java Stream API Practice Exercises for Java 8 and Onwards.
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![GitHub forks](https://img.shields.io/github/forks/ZahidFKhan/Streams-API-Practices?logo=github)](https://github.com/ZahidFKhan/Streams-API-Practices)
 [![GitHub stars](https://img.shields.io/github/stars/ZahidFKhan/Streams-API-Practices?logo=github)](https://github.com/ZahidFKhan/Streams-API-Practices)
+![Java 17](https://img.shields.io/badge/Java-17-orange)
+![Maven](https://img.shields.io/badge/Build-Maven-C71A36)
+![JUnit 5](https://img.shields.io/badge/Tested%20with-JUnit%205-25A162)
 
-___
+---
 
 ## How to use? 🛠️
 
@@ -13,9 +16,35 @@ ___
 3. Solve the Problem.
 
 ##### NOTE: Don't forget to rate this to bookmark.
- 
-## Repository Structure
-```
+
+--- 
+This repository is a **Java Stream API practice project** built with **Java 17**, **Maven**, and **JUnit 5**. It helps developers learn Java streams through **step-by-step notes**, **intermediate and terminal operation examples**, and **hands-on coding exercises** across easy, medium, and hard difficulty levels.
+
+If you are searching for **Java Stream API exercises**, **Java stream interview-style practice**, **functional programming examples in Java**, or **Stream API problems with solutions**, this project is designed to be a practical learning resource.
+
+### Why this repository is useful
+
+- Learn the Java Stream API from core concepts to advanced problem solving.
+- Practice `filter`, `map`, `flatMap`, `distinct`, `sorted`, `reduce`, `collect`, and more.
+- Solve JUnit-based exercises where your answer is compared against a reference solution.
+- Explore related topics like functional interfaces and stream gatherers.
+- Use a repository layout that is easy to study, fork, and extend.
+
+### Learning path
+
+1. Start with [`learn/concepts`](./src/test/java/com/github/streams/learn/concepts/)
+2. Review [`learn/intermediate_operations`](./src/test/java/com/github/streams/learn/intermediate_operations/)
+3. Review [`learn/terminal_operations`](./src/test/java/com/github/streams/learn/terminal_operations/)
+4. Solve [`practice/a_easy_problems`](./src/test/java/com/github/streams/practice/a_easy_problems/)
+5. Move to [`practice/b_medium_problems`](./src/test/java/com/github/streams/practice/b_medium_problems/)
+6. Finish with [`practice/c_hard_problems`](./src/test/java/com/github/streams/practice/c_hard_problems/)
+7. Explore [`practice/functional_interfaces`](./src/test/java/com/github/streams/practice/functional_interfaces/)
+8. Explore gatherer notes in [`learn/gatherers`](./src/test/java/com/github/streams/learn/gatherers/) and gatherer exercises in [`practice/gatherers`](./src/test/java/com/github/streams/practice/gatherers/)
+
+For a topic-by-topic index, open [`TOPICS.md`](./TOPICS.md).
+
+#### Repository structure
+```text
 src/test/java/com/github/streams/
 ├── learn/
 │   ├── concepts/
@@ -35,129 +64,68 @@ src/test/java/com/github/streams/
     ├── functional_interfaces/
     └── gatherers/
 ```
+Each exercise follows the same pattern:
 
-### Core Stream API Concepts
+1. Open a test class under `src/test/java/com/github/streams/practice/...`
+2. Remove the `@Disabled` annotation
+3. Write your Stream API solution in the `yourSolution` variable
+4. Run the test and compare your implementation against mine.
 
-If you're new to the Java Stream API and want a beginner-friendly starting point, start with the core concepts section:
 
-[Learn the Core Concepts of Java Streams](https://github.com/ZahidFKhan/Streams-API-Practices/tree/main/src/test/java/com/github/streams/learn/concepts)
 
----
 
-### Advance Your Skills: Dedicated Practice Area
+## What you will find inside
 
-Once you've grasped the basics, it's time to solidify your understanding with practical application. This section
-provides a range of hands-on exercises designed to enhance your problem-solving abilities with the Java Stream API:
+### Java Stream API concept notes
 
-[Dive into Stream API Practice Challenges](https://github.com/ZahidFKhan/Streams-API-Practices/tree/main/src/test/java/com/github/streams/practice)
+- Beginner-friendly stream fundamentals
+- Stream vs collection differences
+- Lazy evaluation
+- Optional results
+- When not to use the Streams API
 
-Challenge yourself and refine your functional programming prowess!
+### Intermediate operation guides
 
----
+- `filter`
+- `map`
+- `flatMap`
+- `distinct`
+- `sorted`
+- `peek`
+- `limit`
+- `skip`
+- `takeWhile`
+- `dropWhile`
+- `mapMulti`
 
-### Understanding Functional Interfaces
+### Terminal operation guides
 
-Functional Interfaces are a cornerstone of Java's functional programming capabilities. If you're ready to delve deeper
-into how they work and their role in the Stream API, visit this dedicated section:
+- `count`
+- `forEach`
+- `forEachOrdered`
+- `toArray`
+- `min` / `max`
+- `anyMatch` / `allMatch` / `noneMatch`
+- `findFirst` / `findAny`
+- `reduce`
+- `collect`
 
-[Explore Java Functional Interfaces](https://github.com/ZahidFKhan/Streams-API-Practices/tree/main/src/test/java/com/github/streams/learn/functional_interfaces)
+### Practice tracks
 
----
+- Easy number and string problems
+- Medium number, string, and employee aggregation problems
+- Hard number challenges such as prime streams and consecutive sequence problems
+- Functional interface exercises with `Predicate`, `Function`, `Consumer`, `Supplier`, and more
+- Gatherer practice for modern stream processing patterns
 
-### Interview Preparation: Stream API Questions
+## Who this repository is for
 
-Preparing for a Java interview? Practice common Stream API questions and scenarios here:
+- Java beginners learning the Stream API
+- Intermediate Java developers looking to solidify their stream knowledge
+- Experienced Java engineers preparing for coding interviews that involve stream-based problems
+- Developers preparing for coding interviews involving streams
+- Engineers who want Java functional programming examples
+- Students looking for JUnit-based practice problems with solutions
 
-[Practice Stream API Interview Questions](https://github.com/ZahidFKhan/Streams-API-Practices/tree/main/src/test/java/com/github/streams/interview)
-
---- 
-
-[//]: # (### Master the Java Stream API: Exercises, Tutorials, and Practical Examples)
-
-[//]: # ()
-
-[//]: # (This repository offers a comprehensive collection of functional programming exercises and practical examples designed to)
-
-[//]: # (help you master the Java Stream API and write cleaner, more efficient code.)
-
-[//]: # ()
-
-[//]: # (---)
-
-[//]: # ()
-
-[//]: # (### Learn and Practice the Java Stream API: From Basics to Advanced)
-
-[//]: # ()
-
-[//]: # (This repository serves as your ultimate guide to understanding and effectively utilizing the Java Stream API. Whether)
-
-[//]: # (you're a beginner looking to grasp the fundamentals or an experienced developer aiming to deepen your knowledge, you'll)
-
-[//]: # (find valuable resources here. Dive into practical exercises that cover a wide range of Stream API operations and)
-
-[//]: # (real-world scenarios.)
-
-[//]: # ()
-
-[//]: # (### What you'll find:)
-
-[//]: # ()
-
-[//]: # (* **Targeted Exercises:** Hands-on problems designed to reinforce your understanding of key Stream API concepts)
-
-[//]: # (  like `map`, `filter`, `reduce`, `collect`, and more.)
-
-[//]: # (* **Practical Examples:** Learn how to apply the Stream API to solve common programming tasks, making your code more)
-
-[//]: # (  concise and readable.)
-
-[//]: # (* **Beginner-Friendly Approach:** Clear instructions and progressively challenging exercises cater to developers of all)
-
-[//]: # (  skill levels.)
-
-[//]: # (* **Focus on Modern Java:** Examples are relevant for Java 8, Java 11, and later versions, showcasing the power of)
-
-[//]: # (  functional programming.)
-
-[//]: # ()
-
-[//]: # (___)
-
-[//]: # ()
-
-[//]: # (##### Keywords for Java Stream API Learning)
-
-[//]: # ()
-
-[//]: # (<a name="keywords-for-java-stream-api-learning"></a>)
-
-[//]: # ()
-
-[//]: # (1. [x] Java Stream API Tutorial)
-
-[//]: # (2. [x] Java 8 Streams)
-
-[//]: # (3. [x] Java 11 Streams)
-
-[//]: # (4. [x] Functional Programming in Java)
-
-[//]: # (5. [x] Java Stream API Exercises)
-
-[//]: # (6. [x] Java Stream API Practices)
-
-[//]: # (7. [x] Java Code Examples)
-
-[//]: # (8. [x] Learn Java Streams)
-
-[//]: # (9. [x] Master Java Stream API)
-
-[//]: # (10. [x] Java Programming Skills)
-
-[//]: # ()
-
-[//]: # (Your support helps others discover and benefit from these resources.)
-
-## Java Stream API: `Write less, do more with your data`.
-
-> "What needs to be done rather than how it needs to be done."
+##### Support the project
+If this repository helps you learn Java streams, consider starring it so more developers can discover it.
