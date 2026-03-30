@@ -19,7 +19,7 @@ Use a custom `Gatherer` when:
 </td>
 <td align="right">
 
-[Inbuilt `Gatherers`](./D_Inbuilt_Gatherers.md)→
+[Inbuilt `Gatherers`](D. Inbuilt Gatherers.md)→
 
 </td>
 </tr>

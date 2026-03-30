@@ -18,6 +18,7 @@ ___
 ```
 src/test/java/com/github/streams/
 ├── learn/
+│   ├── concepts/
 │   ├── gatherers/
 │   ├── intermediate_operations/
 │   └── terminal_operations/
@@ -35,12 +36,11 @@ src/test/java/com/github/streams/
     └── gatherers/
 ```
 
-### Basic Streams Operations
+### Core Stream API Concepts
 
-If you're new to the Java Stream API and want to learn the fundamentals, check out our dedicated beginner's section with
-foundational exercises and explanations:
+If you're new to the Java Stream API and want a beginner-friendly starting point, start with the core concepts section:
 
-[Beginner's Guide to Java Streams](https://github.com/ZahidFKhan/Streams-API-Practices/tree/main/src/test/java/com/github/streams/learn/basics)
+[Learn the Core Concepts of Java Streams](https://github.com/ZahidFKhan/Streams-API-Practices/tree/main/src/test/java/com/github/streams/learn/concepts)
 
 ---
 
