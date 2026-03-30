@@ -42,12 +42,12 @@ Output
 <tr>
 <td align="left">
 
-← [Stream Pipeline](./C_Stream_Pipeline.md)
+← [Stream vs Collection](./D. Stream vs Collection.md)
 
 </td>
 <td align="right">
 
-[Lazy Evaluation](./E_Lazy_Evaluation.md) →
+[Lazy Evaluation](./F. Lazy Evaluation.md) →
 
 </td>
 </tr>

@@ -7,12 +7,12 @@ Streams are lazy. Most operations do not run when you write them. They run only 
 <tr>
 <td align="left">
 
-← [Intermediate vs Terminal Operations](./D_Intermediate_vs_Terminal_Operations.md)
+← [Intermediate vs Terminal Operations](./E. Intermediate vs Terminal Operations.md)
 
 </td>
 <td text-align="right">
 
-[Single-Use Streams](./F_Single_Use_Streams.md) →
+[Single-Use Streams](./G. Single-Use Streams.md) →
 
 </td>
 </tr>

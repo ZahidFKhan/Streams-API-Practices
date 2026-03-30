@@ -1,4 +1,4 @@
-### Stream vs Collection
+# Stream vs Collection
 
 A `Collection` stores data. A `Stream` processes data.
 
@@ -30,12 +30,12 @@ Output
 <tr>
 <td align="left">
 
-← [What is a Stream?](A. What is a Stream.md)
+← [Primitive Streams](./C. Primitive Streams.md)
 
 </td>
 <td align="right">
 
-[Stream Pipeline](./C_Stream_Pipeline.md) →
+[Intermediate vs Terminal Operations](./E. Intermediate vs Terminal Operations.md) →
 
 </td>
 </tr>

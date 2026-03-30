@@ -1,4 +1,4 @@
-## Primitive Streams
+# Primitive Streams
 
 Boxing `int` into `Integer` for every element is expensive. Java provides three **specialised primitive streams** that avoid this overhead:
 
@@ -30,3 +30,19 @@ System.out.println(list); // [1, 2, 3, 4, 5]
 ```
 
 ---
+
+<table>
+<tr>
+<td align="left">
+
+← [How to Create a Stream](./B. How to Create a Stream.md)
+
+</td>
+<td align="right">
+
+[Stream vs Collection](./D. Stream vs Collection.md) →
+
+</td>
+</tr>
+</table>
+

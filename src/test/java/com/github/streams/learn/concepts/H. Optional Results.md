@@ -30,12 +30,12 @@ Using `Optional` makes missing values explicit and safer to handle.
 <tr>
 <td align="left">
 
-← [Single-Use Streams](./F_Single_Use_Streams.md)
+← [Single-Use Streams](./G. Single-Use Streams.md)
 
 </td>
 <td align="right">
 
-[Start with Filter](../intermediate_operations/A_Filter.md) →
+[When NOT to Use Streams API?](./I. When NOT to Use Streams API?.md) →
 
 </td>
 </tr>

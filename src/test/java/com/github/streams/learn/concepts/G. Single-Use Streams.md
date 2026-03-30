@@ -31,12 +31,12 @@ System.out.println(count);
 <tr>
 <td align="left">
 
-← [Lazy Evaluation](./E_Lazy_Evaluation.md)
+← [Lazy Evaluation](./F. Lazy Evaluation.md)
 
 </td>
 <td align="right">
 
-[Optional Results](./G_Optional_Results.md) →
+[Optional Results](./H. Optional Results.md) →
 
 </td>
 </tr>
