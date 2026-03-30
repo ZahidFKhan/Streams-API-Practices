@@ -1,4 +1,4 @@
-# Java Stream API Practice Exercises for Java 8 and Onwards.
+# Java Stream API Practice Exercises for Java 17+
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![GitHub forks](https://img.shields.io/github/forks/ZahidFKhan/Streams-API-Practices?logo=github)](https://github.com/ZahidFKhan/Streams-API-Practices)
