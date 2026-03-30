@@ -19,12 +19,12 @@ Output:
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
 <- [Limit](./G_Limit.md)
 
 </td>
-<td align="right">
+<td style="text-align: right;">
 
 [TakeWhile](./I_TakeWhile.md) ->
 

@@ -33,14 +33,14 @@ System.out.println(list); // [1, 2, 3, 4, 5]
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
-← [How to Create a Stream](./B. How to Create a Stream?.md)
+← [How to Create a Stream](./B.%20How%20to%20Create%20a%20Stream%3F.md)
 
 </td>
-<td align="right">
+<td style="text-align: right;">
 
-[Stream vs Collection](./D. Stream vs Collection.md) →
+[Stream vs Collection](./D.%20Stream%20vs%20Collection.md) →
 
 </td>
 </tr>

@@ -29,14 +29,14 @@ System.out.println(count);
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
-← [Lazy Evaluation](./F. Lazy Evaluation.md)
+← [Lazy Evaluation](./F.%20Lazy%20Evaluation.md)
 
 </td>
-<td align="right">
+<td style="text-align: right;">
 
-[Optional Results](./H. Optional Results.md) →
+[Optional Results](./H.%20Optional%20Results.md) →
 
 </td>
 </tr>

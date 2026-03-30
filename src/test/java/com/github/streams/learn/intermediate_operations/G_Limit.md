@@ -20,12 +20,12 @@ Output:
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
 <- [Peek](./F_Peek.md)
 
 </td>
-<td align="right">
+<td style="text-align: right;">
 
 [Skip](./H_Skip.md) ->
 

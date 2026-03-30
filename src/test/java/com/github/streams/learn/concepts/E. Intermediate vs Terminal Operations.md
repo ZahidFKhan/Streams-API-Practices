@@ -40,14 +40,14 @@ Output
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
-← [Stream vs Collection](./D. Stream vs Collection.md)
+← [Stream vs Collection](./D.%20Stream%20vs%20Collection.md)
 
 </td>
-<td align="right">
+<td style="text-align: right;">
 
-[Lazy Evaluation](./F. Lazy Evaluation.md) →
+[Lazy Evaluation](./F.%20Lazy%20Evaluation.md) →
 
 </td>
 </tr>

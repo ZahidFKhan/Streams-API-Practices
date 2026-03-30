@@ -18,12 +18,12 @@ Output:
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
 <- [TakeWhile](./I_TakeWhile.md)
 
 </td>
-<td align="right">
+<td style="text-align: right;">
 
 [MapMulti](./L_MapMulti.md) ->
 

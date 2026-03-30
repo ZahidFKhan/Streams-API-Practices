@@ -41,12 +41,12 @@ allPositionsOfMaleLessThan30y = CF,CAM,LF,CM,CAM,GK,CM,CDM
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
 <- [Map](./B_Map.md)
 
 </td>
-<td align="right">
+<td style="text-align: right;">
 
 [Distinct](./D_Distinct.md) ->
 

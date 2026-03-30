@@ -20,12 +20,12 @@ System.out.println(result);
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
 <- [Distinct](./D_Distinct.md)
 
 </td>
-<td align="right">
+<td style="text-align: right;">
 
 [Peek](./F_Peek.md) ->
 

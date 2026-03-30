@@ -42,12 +42,12 @@ allUniquePositionsOfMaleLessThan30y = CF,CAM,LF,CM,GK,CDM
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
 <- [FlatMap](./C_FlatMap.md)
 
 </td>
-<td align="right">
+<td style="text-align: right;">
 
 [Sorted](./E_Sorted.md) ->
 

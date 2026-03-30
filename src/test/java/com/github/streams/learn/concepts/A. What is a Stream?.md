@@ -58,12 +58,12 @@ Output
 [5, 8, 9]
 ```
 
-> Pipeline execution is covered further in [Intermediate vs Terminal Operations](./E. Intermediate vs Terminal Operations.md).
+> Pipeline execution is covered further in [Intermediate vs Terminal Operations](./E.%20Intermediate%20vs%20Terminal%20Operations.md).
 
 ---
 
 <div align="right">
 
-[How to Create a Stream](./B. How to Create a Stream?.md) →
+[How to Create a Stream](./B.%20How%20to%20Create%20a%20Stream%3F.md) →
 
 </div>

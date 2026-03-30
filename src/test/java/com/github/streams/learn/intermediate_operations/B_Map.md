@@ -22,12 +22,12 @@ Output
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
 <- [Filter](./A_Filter.md)
 
 </td>
-<td align="right">
+<td style="text-align: right;">
 
 [FlatMap](./C_FlatMap.md) ->
 

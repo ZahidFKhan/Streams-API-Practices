@@ -23,12 +23,12 @@ Processing: 4
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
 <- [Sorted](./E_Sorted.md)
 
 </td>
-<td align="right">
+<td style="text-align: right;">
 
 [Limit](./G_Limit.md) ->
 

@@ -28,14 +28,14 @@ Output
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
-← [Primitive Streams](./C. Primitive Streams.md)
+← [Primitive Streams](./C.%20Primitive%20Streams.md)
 
 </td>
-<td align="right">
+<td style="text-align: right;">
 
-[Intermediate vs Terminal Operations](./E. Intermediate vs Terminal Operations.md) →
+[Intermediate vs Terminal Operations](./E.%20Intermediate%20vs%20Terminal%20Operations.md) →
 
 </td>
 </tr>

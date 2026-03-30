@@ -12,12 +12,12 @@ Use a custom `Gatherer` when:
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
 ← [What is a `Gatherer`?](./B_What%20is%20a%20Gatherer%3F.md)
 
 </td>
-<td align="right">
+<td style="text-align: right;">
 
 [Inbuilt `Gatherers`](D. Inbuilt Gatherers.md)→
 

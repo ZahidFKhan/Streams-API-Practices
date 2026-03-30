@@ -28,14 +28,14 @@ Using `Optional` makes missing values explicit and safer to handle.
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
-← [Single-Use Streams](./G. Single-Use Streams.md)
+← [Single-Use Streams](./G.%20Single-Use%20Streams.md)
 
 </td>
-<td align="right">
+<td style="text-align: right;">
 
-[When NOT to Use Streams API?](./I. When NOT to Use Streams API?.md) →
+[When NOT to Use Streams API?](./I.%20When%20NOT%20to%20Use%20Streams%20API%3F.md) →
 
 </td>
 </tr>

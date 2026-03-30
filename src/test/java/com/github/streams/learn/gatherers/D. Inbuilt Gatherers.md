@@ -60,7 +60,7 @@ Output: [1,2], [2,3], [3,4]
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
 ← [When Should You Use Custom `Gatherer`?](./C_When%20to%20use%20Custom%20Gatherer%3F.md)
 

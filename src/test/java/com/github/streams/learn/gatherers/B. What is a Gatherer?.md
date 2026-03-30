@@ -19,12 +19,12 @@ A `Gatherer` has four main parts:
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
 ← [Why to use `Gatherer`?](./A_Why%20to%20use%20Gatherer%3F.md)
 
 </td>
-<td align="right">
+<td style="text-align: right;">
 
 [When to use Custom `Gatherer`?](./C_When%20to%20use%20Custom%20Gatherer%3F.md) →
 

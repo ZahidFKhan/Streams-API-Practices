@@ -22,12 +22,12 @@ Output:
 
 <table>
 <tr>
-<td align="left">
+<td style="text-align: left;">
 
 <- [Skip](./H_Skip.md)
 
 </td>
-<td align="right">
+<td style="text-align: right;">
 
 [DropWhile](./J_DropWhile.md) ->
 
