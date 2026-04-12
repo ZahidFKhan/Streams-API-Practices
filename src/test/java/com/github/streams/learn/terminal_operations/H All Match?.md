@@ -15,16 +15,19 @@
     }
 ```
 
-# Min:
+# All Match:
 
-Returns the minimum element in the stream.
+allMatch() checks if the predicate is true for all the elements in the stream.
 
 ```java
-        Integer minAge = footballerList.stream()
-                .min(Comparator.comparing(Footballer::getAge))
-                .map(Footballer::getAge)
-                .get();
-
-        System.out.println("min age = " + minAge);
-        //prints min age = 17
+        boolean allMatch = footballerList.stream()
+                .allMatch(footballer -> footballer.getAge() > 25);
+        System.out.println("allMatch = " + allMatch);
+        
+        //prints allMatch = false
 ```
+
+| | |
+|---|---|
+|<a href="G Any Match?.md">◀ Previous: G Any Match?.md</a>|<a href="I None Match?.md">Next: I None Match?.md ▶</a>|
+

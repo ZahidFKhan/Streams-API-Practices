@@ -15,16 +15,20 @@
     }
 ```
 
-# Reduce:
+# Find Any:
 
 ```java
-        Optional<String> longestName = footballerList.stream()
-                .map(Footballer::getName)
-                .reduce((name1, name2)
-                        -> name1.length() > name2.length()
-                        ? name1 : name2);
+        Integer findAny = List.of(4, 1, 3, 7, 5, 6, 2, 28, 15, 29)
+                .parallelStream()
+                .filter(number -> number > 5)
+                .findAny()
+                .get();
 
-        longestName.ifPresent(System.out::println);
-        //prints Cristiano Ronaldo
+        System.out.println("findAny = " + findAny);
+        //prints findAny = 28
 ```
+
+| | |
+|---|---|
+|<a href="J Find First?.md">◀ Previous: J Find First?.md</a>|<a href="L Reduce.md">Next: L Reduce.md ▶</a>|
 

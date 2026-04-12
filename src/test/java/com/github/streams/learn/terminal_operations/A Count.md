@@ -15,19 +15,20 @@
     }
 ```
 
-# Find First:
-
-findFirst() returns an Optional for the first entry in the stream; the Optional can, of course, be empty.
+# Count:
 
 ```java
-        Integer findFirst = List.of(4, 1, 3, 7, 5, 6, 2, 28, 15, 29)
-        .parallelStream()
-        .filter(number -> number > 5)
-        .findFirst()
-        .get();
+        long femalesMoreThan24y= footballerList.stream()
+                .filter(footballer -> footballer.getGender().equals(Gender.FEMALE))
+                .map(Footballer::getAge)
+                .filter(age -> age > 24)
+                .count();
 
-        System.out.
-
-println("findFirst = "+findFirst);
-//prints findFirst = 7
+        System.out.println("femalesMoreThan24y = " + femalesMoreThan24y);
+        //prints femalesMoreThan24y = 2
 ```
+
+| | |
+|---|---|
+|<span></span>|<a href="B For Each.md">Next: B For Each.md ▶</a>|
+

@@ -15,16 +15,20 @@
     }
 ```
 
-# To Array:
-
-If we need to get an array out of the stream, we can simply use toArray().
+# Collect:
 
 ```java
-        Footballer[] femaleFootballers = footballerList.stream()
-                .filter(footballer -> footballer.getGender().equals(Gender.FEMALE))
-                .toArray(Footballer[]::new);
+        List<Footballer> collect = footballerList.stream()
+        .filter(footballer -> footballer.getGender().equals(Gender.FEMALE))
+        .filter(footballer -> footballer.getAge() > 23)
+        .collect(Collectors.toList());
 
-        System.out.println("femaleFootballers = " + Arrays.asList(femaleFootballers));
-        //prints To Array femaleFootballers = [Footballer{name='Jennifer', age=29, gender=FEMALE, positions=[CF, CAM]}, Footballer{name='Jana', age=17, gender=FEMALE, positions=[CB]}, Footballer{name='Alexia', age=25, gender=FEMALE, positions=[CAM, RF, LF]}]
-
+//List collect contains -
+//{name='Jennifer', age=29, gender=FEMALE, positions=[CF, CAM]} &
+//{name='Alexia', age=25, gender=FEMALE, positions=[CAM, RF, LF]}
 ```
+
+| | |
+|---|---|
+|<a href="L Reduce.md">◀ Previous: L Reduce.md</a>|<span></span>|
+

@@ -15,17 +15,20 @@
     }
 ```
 
-# Find Any:
+# Any Match:
+
+anyMatch() checks if the predicate is true for any one element in the stream.
 
 ```java
-        Integer findAny = List.of(4, 1, 3, 7, 5, 6, 2, 28, 15, 29)
-                .parallelStream()
-                .filter(number -> number > 5)
-                .findAny()
-                .get();
-
-        System.out.println("findAny = " + findAny);
-        //prints findAny = 28
+        boolean anyMatch = footballerList
+                .stream()
+                .anyMatch(footballer -> footballer.getAge() > 25);
+        System.out.println("anyMatch = " + anyMatch);
+        
+        //prints anyMatch = true
 ```
 
+| | |
+|---|---|
+|<a href="F Max.md">◀ Previous: F Max.md</a>|<a href="H All Match?.md">Next: H All Match?.md ▶</a>|
 

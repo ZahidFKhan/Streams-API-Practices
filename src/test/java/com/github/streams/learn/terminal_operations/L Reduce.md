@@ -15,23 +15,20 @@
     }
 ```
 
-# For Each Ordered:
+# Reduce:
 
 ```java
-List.of(4,1,6,7,19,2,3,81,64).stream()
-                .parallel()
-                .filter(number -> number<65)
-                .forEachOrdered(number -> System.out.println("number = " + number));
-                //prints
-                //forEach
-                //number = 4
-                //number = 1
-                //number = 6
-                //number = 7
-                //number = 19
-                //number = 2
-                //number = 3
-                //number = 64
+        Optional<String> longestName = footballerList.stream()
+                .map(Footballer::getName)
+                .reduce((name1, name2)
+                        -> name1.length() > name2.length()
+                        ? name1 : name2);
+
+        longestName.ifPresent(System.out::println);
+        //prints Cristiano Ronaldo
 ```
 
+| | |
+|---|---|
+|<a href="K Find Any?.md">◀ Previous: K Find Any?.md</a>|<a href="M Collect.md">Next: M Collect.md ▶</a>|
 

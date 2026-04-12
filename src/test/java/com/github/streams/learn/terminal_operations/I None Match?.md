@@ -15,24 +15,18 @@
     }
 ```
 
-# For Each:
+# None Match:
 
-It loops over the stream elements, calling the supplied function on each element.
+noneMatch() checks if there are no elements matching the predicate.
 
 ```java
-        List.of(4,1,6,7,19,2,3,81,64).stream()
-                .parallel()
-                .filter(number -> number<65)
-                .forEach(number -> System.out.println("number = " + number));
-                //prints
-                //forEach
-                //number = 2
-                //number = 19
-                //number = 3
-                //number = 4
-                //number = 6
-                //number = 7
-                //number = 1
-                //number = 64
+        boolean noneMatch = footballerList.stream()
+                .noneMatch(footballer -> footballer.getAge() > 100);
+        System.out.println("noneMatch = " + noneMatch);
+        //prints noneMatch = true
 ```
+
+| | |
+|---|---|
+|<a href="H All Match?.md">◀ Previous: H All Match?.md</a>|<a href="J Find First?.md">Next: J Find First?.md ▶</a>|
 

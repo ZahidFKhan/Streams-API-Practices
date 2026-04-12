@@ -15,17 +15,21 @@
     }
 ```
 
-# Count:
+# To Array:
+
+If we need to get an array out of the stream, we can simply use toArray().
 
 ```java
-        long femalesMoreThan24y= footballerList.stream()
+        Footballer[] femaleFootballers = footballerList.stream()
                 .filter(footballer -> footballer.getGender().equals(Gender.FEMALE))
-                .map(Footballer::getAge)
-                .filter(age -> age > 24)
-                .count();
+                .toArray(Footballer[]::new);
 
-        System.out.println("femalesMoreThan24y = " + femalesMoreThan24y);
-        //prints femalesMoreThan24y = 2
+        System.out.println("femaleFootballers = " + Arrays.asList(femaleFootballers));
+        //prints To Array femaleFootballers = [Footballer{name='Jennifer', age=29, gender=FEMALE, positions=[CF, CAM]}, Footballer{name='Jana', age=17, gender=FEMALE, positions=[CB]}, Footballer{name='Alexia', age=25, gender=FEMALE, positions=[CAM, RF, LF]}]
+
 ```
 
+| | |
+|---|---|
+|<a href="C For Each Ordered.md">◀ Previous: C For Each Ordered.md</a>|<a href="E Min.md">Next: E Min.md ▶</a>|
 

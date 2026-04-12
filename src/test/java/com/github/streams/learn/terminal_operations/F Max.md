@@ -15,15 +15,21 @@
     }
 ```
 
-# All Match:
+# Max:
 
-allMatch() checks if the predicate is true for all the elements in the stream.
+Returns the maximum element in the stream.
 
 ```java
-        boolean allMatch = footballerList.stream()
-                .allMatch(footballer -> footballer.getAge() > 25);
-        System.out.println("allMatch = " + allMatch);
-        
-        //prints allMatch = false
+        Integer maxAge = footballerList.stream()
+                .max(Comparator.comparing(Footballer::getAge))
+                .map(Footballer::getAge)
+                .get();
+
+        System.out.println("max age = " + maxAge);
+        //prints max age = 32
 ```
+
+| | |
+|---|---|
+|<a href="E Min.md">◀ Previous: E Min.md</a>|<a href="G Any Match?.md">Next: G Any Match?.md ▶</a>|
 

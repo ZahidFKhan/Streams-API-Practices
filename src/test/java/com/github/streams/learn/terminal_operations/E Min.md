@@ -15,13 +15,21 @@
     }
 ```
 
-# None Match:
+# Min:
 
-noneMatch() checks if there are no elements matching the predicate.
+Returns the minimum element in the stream.
 
 ```java
-        boolean noneMatch = footballerList.stream()
-                .noneMatch(footballer -> footballer.getAge() > 100);
-        System.out.println("noneMatch = " + noneMatch);
-        //prints noneMatch = true
+        Integer minAge = footballerList.stream()
+                .min(Comparator.comparing(Footballer::getAge))
+                .map(Footballer::getAge)
+                .get();
+
+        System.out.println("min age = " + minAge);
+        //prints min age = 17
 ```
+
+| | |
+|---|---|
+|<a href="D To Array.md">◀ Previous: D To Array.md</a>|<a href="F Max.md">Next: F Max.md ▶</a>|
+

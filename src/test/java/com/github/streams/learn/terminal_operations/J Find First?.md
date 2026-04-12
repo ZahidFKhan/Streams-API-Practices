@@ -15,16 +15,24 @@
     }
 ```
 
-# Max:
+# Find First:
 
-Returns the maximum element in the stream.
+findFirst() returns an Optional for the first entry in the stream; the Optional can, of course, be empty.
 
 ```java
-        Integer maxAge = footballerList.stream()
-                .max(Comparator.comparing(Footballer::getAge))
-                .map(Footballer::getAge)
-                .get();
+        Integer findFirst = List.of(4, 1, 3, 7, 5, 6, 2, 28, 15, 29)
+        .parallelStream()
+        .filter(number -> number > 5)
+        .findFirst()
+        .get();
 
-        System.out.println("max age = " + maxAge);
-        //prints max age = 32
+        System.out.
+
+println("findFirst = "+findFirst);
+//prints findFirst = 7
 ```
+
+| | |
+|---|---|
+|<a href="I None Match?.md">◀ Previous: I None Match?.md</a>|<a href="K Find Any?.md">Next: K Find Any?.md ▶</a>|
+

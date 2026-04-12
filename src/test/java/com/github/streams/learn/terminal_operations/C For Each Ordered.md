@@ -15,17 +15,26 @@
     }
 ```
 
-# Any Match:
-
-anyMatch() checks if the predicate is true for any one element in the stream.
+# For Each Ordered:
 
 ```java
-        boolean anyMatch = footballerList
-                .stream()
-                .anyMatch(footballer -> footballer.getAge() > 25);
-        System.out.println("anyMatch = " + anyMatch);
-        
-        //prints anyMatch = true
+List.of(4,1,6,7,19,2,3,81,64).stream()
+                .parallel()
+                .filter(number -> number<65)
+                .forEachOrdered(number -> System.out.println("number = " + number));
+                //prints
+                //forEach
+                //number = 4
+                //number = 1
+                //number = 6
+                //number = 7
+                //number = 19
+                //number = 2
+                //number = 3
+                //number = 64
 ```
 
+| | |
+|---|---|
+|<a href="B For Each.md">◀ Previous: B For Each.md</a>|<a href="D To Array.md">Next: D To Array.md ▶</a>|
 

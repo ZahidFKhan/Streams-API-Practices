@@ -15,15 +15,28 @@
     }
 ```
 
-# Collect:
+# For Each:
+
+It loops over the stream elements, calling the supplied function on each element.
 
 ```java
-        List<Footballer> collect = footballerList.stream()
-        .filter(footballer -> footballer.getGender().equals(Gender.FEMALE))
-        .filter(footballer -> footballer.getAge() > 23)
-        .collect(Collectors.toList());
-
-//List collect contains -
-//{name='Jennifer', age=29, gender=FEMALE, positions=[CF, CAM]} &
-//{name='Alexia', age=25, gender=FEMALE, positions=[CAM, RF, LF]}
+        List.of(4,1,6,7,19,2,3,81,64).stream()
+                .parallel()
+                .filter(number -> number<65)
+                .forEach(number -> System.out.println("number = " + number));
+                //prints
+                //forEach
+                //number = 2
+                //number = 19
+                //number = 3
+                //number = 4
+                //number = 6
+                //number = 7
+                //number = 1
+                //number = 64
 ```
+
+| | |
+|---|---|
+|<a href="A Count.md">◀ Previous: A Count.md</a>|<a href="C For Each Ordered.md">Next: C For Each Ordered.md ▶</a>|
+
