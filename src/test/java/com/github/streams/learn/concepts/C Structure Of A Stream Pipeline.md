@@ -21,7 +21,6 @@ Output
 [5, 8, 9]
 ```
 
-> Pipeline execution is covered further in [Intermediate vs Terminal Operations](./G%20Intermediate%20Vs%20Terminal%20Operations.md).
 
 ---
 <table>
