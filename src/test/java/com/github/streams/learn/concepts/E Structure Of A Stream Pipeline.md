@@ -24,5 +24,13 @@ Output
 > Pipeline execution is covered further in [Intermediate vs Terminal Operations](./G%20Intermediate%20Vs%20Terminal%20Operations.md).
 
 ---
-[Previous: D Primitive Streams.md](./D%20Primitive%20Streams.md)
-[Next: F Stream Vs Collection.md](./F%20Stream%20Vs%20Collection.md)
+<table>
+<tr>
+<td style="text-align: left;">
+<a href="./D%20Primitive%20Streams.md">Previous: D Primitive Streams.md</a>
+</td>
+<td style="text-align: right;">
+<a href="./F%20Stream%20Vs%20Collection.md">Next: F Stream Vs Collection.md</a>
+</td>
+</tr>
+</table>

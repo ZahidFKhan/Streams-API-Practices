@@ -37,5 +37,13 @@ Output
 ```
 
 ---
-[Previous: F Stream Vs Collection.md](./F%20Stream%20Vs%20Collection.md)
-[Next: H Lazy Evaluation.md](./H%20Lazy%20Evaluation.md)
+<table>
+<tr>
+<td style="text-align: left;">
+<a href="./F%20Stream%20Vs%20Collection.md">Previous: F Stream Vs Collection.md</a>
+</td>
+<td style="text-align: right;">
+<a href="./H%20Lazy%20Evaluation.md">Next: H Lazy Evaluation.md</a>
+</td>
+</tr>
+</table>

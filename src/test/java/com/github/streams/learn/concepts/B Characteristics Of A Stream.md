@@ -35,5 +35,13 @@ Output
 > Pipeline execution is covered further in [Intermediate vs Terminal Operations](./G%20Intermediate%20Vs%20Terminal%20Operations.md).
 
 ---
-[Previous: A What Is A Stream?.md](./A%20What%20Is%20A%20Stream%3F.md)
-[Next: C How To Create A Stream?.md](./C%20How%20To%20Create%20A%20Stream%3F.md)
+<table>
+<tr>
+<td style="text-align: left;">
+<a href="./A%20What%20Is%20A%20Stream%3F.md">Previous: A What Is A Stream?.md</a>
+</td>
+<td style="text-align: right;">
+<a href="./C%20How%20To%20Create%20A%20Stream%3F.md">Next: C How To Create A Stream?.md</a>
+</td>
+</tr>
+</table>

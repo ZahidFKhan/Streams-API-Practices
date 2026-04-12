@@ -25,5 +25,13 @@ Output
 ```
 
 ---
-[Previous: E Structure Of A Stream Pipeline.md](./E%20Structure%20Of%20A%20Stream%20Pipeline.md)
-[Next: G Intermediate Vs Terminal Operations.md](./G%20Intermediate%20Vs%20Terminal%20Operations.md)
+<table>
+<tr>
+<td style="text-align: left;">
+<a href="./E%20Structure%20Of%20A%20Stream%20Pipeline.md">Previous: E Structure Of A Stream Pipeline.md</a>
+</td>
+<td style="text-align: right;">
+<a href="./G%20Intermediate%20Vs%20Terminal%20Operations.md">Next: G Intermediate Vs Terminal Operations.md</a>
+</td>
+</tr>
+</table>

@@ -61,4 +61,13 @@ Output
 > Pipeline execution is covered further in [Intermediate vs Terminal Operations](./G%20Intermediate%20Vs%20Terminal%20Operations.md).
 
 ---
-[Next: B Characteristics Of A Stream.md](./B%20Characteristics%20Of%20A%20Stream.md)
+<table>
+<tr>
+<td style="text-align: left;">
+
+</td>
+<td style="text-align: right;">
+<a href="./B%20Characteristics%20Of%20A%20Stream.md">Next: B Characteristics Of A Stream.md</a>
+</td>
+</tr>
+</table>
