@@ -25,19 +25,5 @@ Output
 Using `Optional` makes missing values explicit and safer to handle.
 
 ---
-
-<table>
-<tr>
-<td style="text-align: left;">
-
-← [Single-Use Streams](./I%20Single%20Use%20Streams.md)
-
-</td>
-<td style="text-align: right;">
-
-[When NOT to Use Streams API?](./K%20When%20Not%20To%20Use%20Streams%20API.md) →
-
-</td>
-</tr>
-</table>
-
+[Previous: I Single Use Streams.md](./I%20Single%20Use%20Streams.md)
+[Next: K When NOT To Use Streams API?.md](./K%20When%20NOT%20To%20Use%20Streams%20API%3F.md)

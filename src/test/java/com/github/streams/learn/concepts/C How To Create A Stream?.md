@@ -68,18 +68,5 @@ try (var lines = Files.lines(Path.of("src/test/resources/SonnetI.txt"))) {
 > The stream returned by `Files.lines()` must be closed after use. Use try-with-resources.
 
 ---
-
-<table>
-<tr>
-<td style="text-align: left;">
-
-← [What is a Stream?](./A%20What%20Is%20A%20Stream.md)
-
-</td>
-<td style="text-align: right;">
-
-[Primitive Streams](./D%20Primitive%20Streams.md) →
-
-</td>
-</tr>
-</table>
+[Previous: B Characteristics Of A Stream.md](./B%20Characteristics%20Of%20A%20Stream.md)
+[Next: D Primitive Streams.md](./D%20Primitive%20Streams.md)

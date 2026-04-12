@@ -25,19 +25,5 @@ Output
 ```
 
 ---
-
-<table>
-<tr>
-<td style="text-align: left;">
-
-← [Primitive Streams](./D%20Primitive%20Streams.md)
-
-</td>
-<td style="text-align: right;">
-
-[Intermediate vs Terminal Operations](./G%20Intermediate%20Vs%20Terminal%20Operations.md) →
-
-</td>
-</tr>
-</table>
-
+[Previous: E Structure Of A Stream Pipeline.md](./E%20Structure%20Of%20A%20Stream%20Pipeline.md)
+[Next: G Intermediate Vs Terminal Operations.md](./G%20Intermediate%20Vs%20Terminal%20Operations.md)

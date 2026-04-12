@@ -26,19 +26,5 @@ System.out.println(count);
 ```
 
 ---
-
-<table>
-<tr>
-<td style="text-align: left;">
-
-← [Lazy Evaluation](./H%20Lazy%20Evaluation.md)
-
-</td>
-<td style="text-align: right;">
-
-[Optional Results](./J%20Optional%20Results.md) →
-
-</td>
-</tr>
-</table>
-
+[Previous: H Lazy Evaluation.md](./H%20Lazy%20Evaluation.md)
+[Next: J Optional Results.md](./J%20Optional%20Results.md)

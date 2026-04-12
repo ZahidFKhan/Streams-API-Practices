@@ -1,4 +1,30 @@
-# Characteristics of a Stream
+# What is a Stream?
+
+## Basic Definition
+
+A `Stream<T>` is a **sequence of elements** that supports a chain of operations to produce a result or a side effect.
+
+It does **not store** data. It carries data from a source through a pipeline of steps.
+
+---
+
+## The `Stream<T>` Interface
+
+`Stream<T>` lives in the `java.util.stream` package and was introduced in **Java 8**.
+
+```java
+import java.util.stream.Stream;
+```
+
+It is a **generic interface**. The type parameter `T` is the type of each element flowing through the pipeline.
+
+```java
+Stream<String>  // a stream of strings
+Stream<Integer> // a stream of integers
+Stream<Employee>// a stream of objects
+```
+
+## Key Characteristics
 
 | Characteristic    | What it means                                                |
 |-------------------|--------------------------------------------------------------|
@@ -35,9 +61,4 @@ Output
 > Pipeline execution is covered further in [Intermediate vs Terminal Operations](./G%20Intermediate%20Vs%20Terminal%20Operations.md).
 
 ---
-
-<div align="right">
-
-[How to Create a Stream](./C%20How%20To%20Create%20A%20Stream.md) →
-
-</div>
+[Next: B Characteristics Of A Stream.md](./B%20Characteristics%20Of%20A%20Stream.md)

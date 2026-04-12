@@ -18,3 +18,6 @@ Streams are lazy. Most operations do not run when you write them. They run only 
 </tr>
 </table>
 
+---
+[Previous: G Intermediate Vs Terminal Operations.md](./G%20Intermediate%20Vs%20Terminal%20Operations.md)
+[Next: I Single Use Streams.md](./I%20Single%20Use%20Streams.md)

@@ -30,19 +30,5 @@ System.out.println(list); // [1, 2, 3, 4, 5]
 ```
 
 ---
-
-<table>
-<tr>
-<td style="text-align: left;">
-
-← [How to Create a Stream](./C%20How%20To%20Create%20A%20Stream.md)
-
-</td>
-<td style="text-align: right;">
-
-[Stream vs Collection](./F%20Stream%20Vs%20Collection.md) →
-
-</td>
-</tr>
-</table>
-
+[Previous: C How To Create A Stream?.md](./C%20How%20To%20Create%20A%20Stream%3F.md)
+[Next: E Structure Of A Stream Pipeline.md](./E%20Structure%20Of%20A%20Stream%20Pipeline.md)

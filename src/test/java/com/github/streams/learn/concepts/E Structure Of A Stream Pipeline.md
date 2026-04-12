@@ -24,9 +24,5 @@ Output
 > Pipeline execution is covered further in [Intermediate vs Terminal Operations](./G%20Intermediate%20Vs%20Terminal%20Operations.md).
 
 ---
-
-<div align="right">
-
-[How to Create a Stream](./C%20How%20To%20Create%20A%20Stream.md) →
-
-</div>
+[Previous: D Primitive Streams.md](./D%20Primitive%20Streams.md)
+[Next: F Stream Vs Collection.md](./F%20Stream%20Vs%20Collection.md)
