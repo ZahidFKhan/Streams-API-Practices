@@ -30,12 +30,12 @@ Output
 <tr>
 <td style="text-align: left;">
 
-← [Primitive Streams](./C.%20Primitive%20Streams.md)
+← [Primitive Streams](./D%20Primitive%20Streams.md)
 
 </td>
 <td style="text-align: right;">
 
-[Intermediate vs Terminal Operations](./E.%20Intermediate%20vs%20Terminal%20Operations.md) →
+[Intermediate vs Terminal Operations](./G%20Intermediate%20Vs%20Terminal%20Operations.md) →
 
 </td>
 </tr>

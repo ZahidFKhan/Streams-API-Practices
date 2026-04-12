@@ -73,12 +73,12 @@ try (var lines = Files.lines(Path.of("src/test/resources/SonnetI.txt"))) {
 <tr>
 <td style="text-align: left;">
 
-← [What is a Stream?](./A.%20What%20is%20a%20Stream%3F.md)
+← [What is a Stream?](./A%20What%20Is%20A%20Stream.md)
 
 </td>
 <td style="text-align: right;">
 
-[Primitive Streams](./C.%20Primitive%20Streams.md) →
+[Primitive Streams](./D%20Primitive%20Streams.md) →
 
 </td>
 </tr>

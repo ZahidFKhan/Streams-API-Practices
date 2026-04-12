@@ -30,12 +30,12 @@ Using `Optional` makes missing values explicit and safer to handle.
 <tr>
 <td style="text-align: left;">
 
-← [Single-Use Streams](./G.%20Single-Use%20Streams.md)
+← [Single-Use Streams](./I%20Single%20Use%20Streams.md)
 
 </td>
 <td style="text-align: right;">
 
-[When NOT to Use Streams API?](./I.%20When%20NOT%20to%20Use%20Streams%20API%3F.md) →
+[When NOT to Use Streams API?](./K%20When%20Not%20To%20Use%20Streams%20API.md) →
 
 </td>
 </tr>
