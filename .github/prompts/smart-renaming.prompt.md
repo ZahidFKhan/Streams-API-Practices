@@ -7,7 +7,9 @@ You are working on a codebase where files inside the folder $ARGUMENT need to be
 
 3. If multiple files currently share the same starting alphabet, rename them so that each file gets a unique sequential alphabet.
 4. If the descriptive part of the filename is a interrogative add a "?" at the end of the description.
-5. If the descriptive part of the filename is a statement, ensure it ends with a "." at the end of the description.
+5. If the descriptive part of the filename is a statement, just enhance the description without adding any punctuation.
+6. Ensure the links of the file at the end of the file is correctly pointing the next file in the sequence and the previous file in the sequence and not randomly to any files.
+7. Ensure the links description is correctly describing the file it is pointing to. For example, if the next file is "B Stream Characteristics.md" then the link description should be "Next: B Stream Characteristics.md" and not just "Next: SomeName.m
 
 ### Example:
 Current:
