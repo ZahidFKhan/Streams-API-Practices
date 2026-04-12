@@ -22,12 +22,12 @@ System.out.println(result);
 <tr>
 <td style="text-align: left;">
 
-<- [Distinct](./D_Distinct.md)
+← [Previous: D Distinct](./D%20Distinct.md)
 
 </td>
 <td style="text-align: right;">
 
-[Peek](./F_Peek.md) ->
+[Next: F Peek](./F%20Peek.md) →
 
 </td>
 </tr>

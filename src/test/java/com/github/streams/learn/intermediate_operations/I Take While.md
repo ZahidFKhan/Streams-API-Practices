@@ -24,12 +24,12 @@ Output:
 <tr>
 <td style="text-align: left;">
 
-<- [Skip](./H_Skip.md)
+← [Previous: H Skip](./H%20Skip.md)
 
 </td>
 <td style="text-align: right;">
 
-[DropWhile](./J_DropWhile.md) ->
+[Next: J Drop While](./J%20Drop%20While.md) →
 
 </td>
 </tr>

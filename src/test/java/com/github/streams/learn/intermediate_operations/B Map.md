@@ -24,12 +24,12 @@ Output
 <tr>
 <td style="text-align: left;">
 
-<- [Filter](./A_Filter.md)
+← [Previous: A Filter](./A%20Filter.md)
 
 </td>
 <td style="text-align: right;">
 
-[FlatMap](./C_FlatMap.md) ->
+[Next: C Flat Map](./C%20Flat%20Map.md) →
 
 </td>
 </tr>

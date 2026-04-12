@@ -22,12 +22,12 @@ Output:
 <tr>
 <td style="text-align: left;">
 
-<- [Peek](./F_Peek.md)
+← [Previous: F Peek](./F%20Peek.md)
 
 </td>
 <td style="text-align: right;">
 
-[Skip](./H_Skip.md) ->
+[Next: H Skip](./H%20Skip.md) →
 
 </td>
 </tr>

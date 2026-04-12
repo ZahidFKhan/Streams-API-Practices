@@ -15,26 +15,27 @@
     }
 ```
 
-# FlatMap:
+# Distinct:
 
-A stream can hold complex data structures like Stream<List<String>>. In cases like this, `flatMap()` helps us to flatten
-the data structure to simplify further operations.
+Returns distinct elements in the stream, eliminating duplicates. It uses the equals() method of the elements to decide
+whether two elements are equal or not.
 
-#### Example: Get all positions of male footballers less than 30 years old.
+#### Example: Find all unique positions of male footballers less than 30 years old.
 
 ```java
-        String allPositionsOfMaleLessThan30y = footballerList.stream()
+        String allUniquePositionsOfMaleLessThan30y = footballerList.stream()
         .filter(footballer -> footballer.getGender().equals(Gender.MALE))
         .filter(footballer -> footballer.getAge() < 30)
         .map(Footballer::getPositions)
         .flatMap(Collection::stream)
+        .distinct()
         .collect(Collectors.joining(","));
 ```
 
 #### Output:
 
 ```
-allPositionsOfMaleLessThan30y = CF,CAM,LF,CM,CAM,GK,CM,CDM
+allUniquePositionsOfMaleLessThan30y = CF,CAM,LF,CM,GK,CDM
 ```
 
 ---
@@ -43,12 +44,16 @@ allPositionsOfMaleLessThan30y = CF,CAM,LF,CM,CAM,GK,CM,CDM
 <tr>
 <td style="text-align: left;">
 
-<- [Map](./B_Map.md)
+← [Previous: C Flat Map](./C%20Flat%20Map.md)
 
 </td>
 <td style="text-align: right;">
 
-[Distinct](./D_Distinct.md) ->
+[Next: E Sorted](./E%20Sorted.md) →
+
+</td>
+</tr>
+</table>[Sorted](./E_Sorted.md) ->
 
 </td>
 </tr>

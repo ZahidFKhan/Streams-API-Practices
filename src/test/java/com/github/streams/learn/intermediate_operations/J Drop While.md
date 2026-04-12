@@ -20,12 +20,12 @@ Output:
 <tr>
 <td style="text-align: left;">
 
-<- [TakeWhile](./I_TakeWhile.md)
+← [Previous: I Take While](./I%20Take%20While.md)
 
 </td>
 <td style="text-align: right;">
 
-[MapMulti](./L_MapMulti.md) ->
+[Next: K Map Multi](./K%20Map%20Multi.md) →
 
 </td>
 </tr>

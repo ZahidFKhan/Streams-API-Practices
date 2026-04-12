@@ -25,12 +25,12 @@ Processing: 4
 <tr>
 <td style="text-align: left;">
 
-<- [Sorted](./E_Sorted.md)
+← [Previous: E Sorted](./E%20Sorted.md)
 
 </td>
 <td style="text-align: right;">
 
-[Limit](./G_Limit.md) ->
+[Next: G Limit](./G%20Limit.md) →
 
 </td>
 </tr>

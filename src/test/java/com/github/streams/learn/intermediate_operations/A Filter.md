@@ -17,8 +17,14 @@ Output
 
 ---
 
-<div align="right">
+<table>
+<tr>
+<td style="text-align: left;">
+</td>
+<td style="text-align: right;">
 
-[Map](./B_Map.md) ->
+[Next: B Map](./B%20Map.md) →
 
-</div>
+</td>
+</tr>
+</table>

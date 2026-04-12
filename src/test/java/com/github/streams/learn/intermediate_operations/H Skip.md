@@ -21,12 +21,12 @@ Output:
 <tr>
 <td style="text-align: left;">
 
-<- [Limit](./G_Limit.md)
+← [Previous: G Limit](./G%20Limit.md)
 
 </td>
 <td style="text-align: right;">
 
-[TakeWhile](./I_TakeWhile.md) ->
+[Next: I Take While](./I%20Take%20While.md) →
 
 </td>
 </tr>

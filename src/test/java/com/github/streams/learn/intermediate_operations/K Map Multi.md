@@ -45,8 +45,14 @@ Output:
 
 ---
 
-<div align="left">
+<table>
+<tr>
+<td style="text-align: left;">
 
-<- [DropWhile](./J_DropWhile.md)
+← [Previous: J Drop While](./J%20Drop%20While.md)
 
-</div>
+</td>
+<td style="text-align: right;">
+</td>
+</tr>
+</table></div>
