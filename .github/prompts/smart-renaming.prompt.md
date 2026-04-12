@@ -2,10 +2,12 @@ You are working on a codebase where files inside the folder $ARGUMENT need to be
 
 ### Goal:
 1. Ensure all files in the folder are ordered in ascending alphabetical sequence based on their filename prefix.
-2. Each file must start with a single uppercase alphabet prefix followed by an underscore:
-   Format: <ALPHABET> <Descriptive-name>.md
+2. Each file must start with a single uppercase alphabet prefix followed by an space and a descriptive name.:
+   Format: <ALPHABET> <Descriptive Name>.md
 
 3. If multiple files currently share the same starting alphabet, rename them so that each file gets a unique sequential alphabet.
+4. If the descriptive part of the filename is a interrogative add a "?" at the end of the description.
+5. If the descriptive part of the filename is a statement, ensure it ends with a "." at the end of the description.
 
 ### Example:
 Current:
