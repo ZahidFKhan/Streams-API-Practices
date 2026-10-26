@@ -23,6 +23,6 @@ In short, use `Gatherer` for custom intermediate steps that are stateful and har
 
 <div align="right">
 
-[What is Gatherer?](B_What%20is%20a%20Gatherer%3F.md) →
+[What is Gatherer?](B.%20What%20is%20a%20Gatherer.md) →
 
 </div>

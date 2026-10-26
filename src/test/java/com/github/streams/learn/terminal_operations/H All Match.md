@@ -29,5 +29,5 @@ allMatch() checks if the predicate is true for all the elements in the stream.
 
 | | |
 |---|---|
-|<a href="G Any Match?.md">◀ Previous: G Any Match?.md</a>|<a href="I None Match?.md">Next: I None Match?.md ▶</a>|
+|<a href="G Any Match.md">◀ Previous: G Any Match?.md</a>|<a href="I None Match.md">Next: I None Match?.md ▶</a>|
 

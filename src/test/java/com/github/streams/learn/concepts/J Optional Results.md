@@ -31,7 +31,7 @@ Using `Optional` makes missing values explicit and safer to handle.
 <a href="./I%20Single%20Use%20Streams.md">Previous: I Single Use Streams.md</a>
 </td>
 <td style="text-align: right;">
-<a href="./K%20When%20NOT%20To%20Use%20Streams%20API%3F.md">Next: K When NOT To Use Streams API?.md</a>
+<a href="./K%20When%20NOT%20To%20Use%20Streams%20API.md">Next: K When NOT To Use Streams API?.md</a>
 </td>
 </tr>
 </table>

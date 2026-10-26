@@ -31,5 +31,5 @@ Returns the maximum element in the stream.
 
 | | |
 |---|---|
-|<a href="E Min.md">◀ Previous: E Min.md</a>|<a href="G Any Match?.md">Next: G Any Match?.md ▶</a>|
+|<a href="E Min.md">◀ Previous: E Min.md</a>|<a href="G Any Match.md">Next: G Any Match?.md ▶</a>|
 

@@ -14,12 +14,12 @@ Use a custom `Gatherer` when:
 <tr>
 <td style="text-align: left;">
 
-← [What is a `Gatherer`?](./B_What%20is%20a%20Gatherer%3F.md)
+← [What is a `Gatherer`?](./B.%20What%20is%20a%20Gatherer.md)
 
 </td>
 <td style="text-align: right;">
 
-[Inbuilt `Gatherers`](D. Inbuilt Gatherers.md)→
+[Inbuilt `Gatherers`](D.%20Inbuilt%20Gatherers.md)→
 
 </td>
 </tr>

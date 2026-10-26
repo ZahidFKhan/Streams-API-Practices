@@ -81,7 +81,7 @@ var avgSalaryByDept = employees.stream()
 <table>
 <tr>
 <td style="text-align: left;">
-<a href="./K%20When%20NOT%20To%20Use%20Streams%20API%3F.md">Previous: K When NOT To Use Streams API?.md</a>
+<a href="./K%20When%20NOT%20To%20Use%20Streams%20API.md">Previous: K When NOT To Use Streams API?.md</a>
 </td>
 <td style="text-align: right;">
 

@@ -29,7 +29,7 @@ Output
 <a href="./B%20Characteristics%20Of%20A%20Stream.md">Previous: B Characteristics Of A Stream.md</a>
 </td>
 <td style="text-align: right;">
-<a href="./D%20How%20To%20Create%20A%20Stream%3F.md">Next: D How To Create A Stream?.md</a>
+<a href="./D%20How%20To%20Create%20A%20Stream.md">Next: D How To Create A Stream?.md</a>
 </td>
 </tr>
 </table>

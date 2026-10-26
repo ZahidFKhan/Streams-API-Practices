@@ -18,7 +18,7 @@ Choose the approach that keeps the code clearest for the problem at hand.
 <a href="./J%20Optional%20Results.md">Previous: J Optional Results.md</a>
 </td>
 <td style="text-align: right;">
-<a href="./L%20What%20is%20a%20downstream%3F.md">Next: L What is a downstream?.md</a>
+<a href="./L%20What%20is%20a%20downstream.md">Next: L What is a downstream?.md</a>
 </td>
 </tr>
 </table>
