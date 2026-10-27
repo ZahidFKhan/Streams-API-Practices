@@ -21,12 +21,12 @@ A `Gatherer` has four main parts:
 <tr>
 <td style="text-align: left;">
 
-← [Why to use `Gatherer`?](./A_Why%20to%20use%20Gatherer%3F.md)
+← [Why to use `Gatherer`?](./A.%20Why%20to%20use%20Gatherer.md)
 
 </td>
 <td style="text-align: right;">
 
-[When to use Custom `Gatherer`?](./C_When%20to%20use%20Custom%20Gatherer%3F.md) →
+[When to use Custom `Gatherer`?](./C.%20When%20to%20use%20Custom%20Gatherer.md) →
 
 </td>
 </tr>

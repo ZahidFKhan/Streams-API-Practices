@@ -30,5 +30,5 @@ anyMatch() checks if the predicate is true for any one element in the stream.
 
 | | |
 |---|---|
-|<a href="F Max.md">◀ Previous: F Max.md</a>|<a href="H All Match?.md">Next: H All Match?.md ▶</a>|
+|<a href="F Max.md">◀ Previous: F Max.md</a>|<a href="H All Match.md">Next: H All Match?.md ▶</a>|
 

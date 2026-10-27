@@ -30,5 +30,5 @@
 
 | | |
 |---|---|
-|<a href="K Find Any?.md">◀ Previous: K Find Any?.md</a>|<a href="M Collect.md">Next: M Collect.md ▶</a>|
+|<a href="K Find Any.md">◀ Previous: K Find Any?.md</a>|<a href="M Collect.md">Next: M Collect.md ▶</a>|
 

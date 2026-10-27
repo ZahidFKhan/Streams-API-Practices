@@ -62,7 +62,7 @@ Output: [1,2], [2,3], [3,4]
 <tr>
 <td style="text-align: left;">
 
-← [When Should You Use Custom `Gatherer`?](./C_When%20to%20use%20Custom%20Gatherer%3F.md)
+← [When Should You Use Custom `Gatherer`?](./C.%20When%20to%20use%20Custom%20Gatherer.md)
 
 </td>
 </tr>

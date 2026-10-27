@@ -15,18 +15,24 @@
     }
 ```
 
-# None Match:
+# Find First:
 
-noneMatch() checks if there are no elements matching the predicate.
+findFirst() returns an Optional for the first entry in the stream; the Optional can, of course, be empty.
 
 ```java
-        boolean noneMatch = footballerList.stream()
-                .noneMatch(footballer -> footballer.getAge() > 100);
-        System.out.println("noneMatch = " + noneMatch);
-        //prints noneMatch = true
+        Integer findFirst = List.of(4, 1, 3, 7, 5, 6, 2, 28, 15, 29)
+        .parallelStream()
+        .filter(number -> number > 5)
+        .findFirst()
+        .get();
+
+        System.out.
+
+println("findFirst = "+findFirst);
+//prints findFirst = 7
 ```
 
 | | |
 |---|---|
-|<a href="H All Match?.md">◀ Previous: H All Match?.md</a>|<a href="J Find First?.md">Next: J Find First?.md ▶</a>|
+|<a href="I None Match.md">◀ Previous: I None Match?.md</a>|<a href="K Find Any.md">Next: K Find Any?.md ▶</a>|
 

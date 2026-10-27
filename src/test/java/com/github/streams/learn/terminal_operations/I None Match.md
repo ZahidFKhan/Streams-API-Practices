@@ -15,20 +15,18 @@
     }
 ```
 
-# Find Any:
+# None Match:
+
+noneMatch() checks if there are no elements matching the predicate.
 
 ```java
-        Integer findAny = List.of(4, 1, 3, 7, 5, 6, 2, 28, 15, 29)
-                .parallelStream()
-                .filter(number -> number > 5)
-                .findAny()
-                .get();
-
-        System.out.println("findAny = " + findAny);
-        //prints findAny = 28
+        boolean noneMatch = footballerList.stream()
+                .noneMatch(footballer -> footballer.getAge() > 100);
+        System.out.println("noneMatch = " + noneMatch);
+        //prints noneMatch = true
 ```
 
 | | |
 |---|---|
-|<a href="J Find First?.md">◀ Previous: J Find First?.md</a>|<a href="L Reduce.md">Next: L Reduce.md ▶</a>|
+|<a href="H All Match.md">◀ Previous: H All Match?.md</a>|<a href="J Find First.md">Next: J Find First?.md ▶</a>|
 

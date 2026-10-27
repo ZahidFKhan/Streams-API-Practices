@@ -12,7 +12,7 @@
 <table>
 <tr>
 <td style="text-align: left;">
-<a href="./A%20What%20Is%20A%20Stream%3F.md">Previous: A What Is A Stream?.md</a>
+<a href="./A%20What%20Is%20A%20Stream.md">Previous: A What Is A Stream?.md</a>
 </td>
 <td style="text-align: right;">
 <a href="./C%20Structure%20Of%20A%20Stream%20Pipeline.md">Next: C Structure Of A Stream Pipeline.md</a>
