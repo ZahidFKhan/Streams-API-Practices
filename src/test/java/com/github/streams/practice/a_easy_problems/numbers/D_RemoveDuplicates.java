@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
  *
  * <p><b>Explanation:</b> Removes duplicate integers from a list.
  */
-class E_RemoveDuplicates {
+class D_RemoveDuplicates {
 
   @Test
   @Disabled

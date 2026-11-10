@@ -13,12 +13,19 @@ import org.junit.jupiter.api.Test;
  * Output: [123, 32]<br>
  * Explanation: Parses strings as integers and returns a list of valid integers.
  */
-class D_ValidNumbersOnly {
+class E_ValidNumbersOnly {
   @Test
   @Disabled
   void testCheckAllIntegersWithoutAlphabets() {
     final var input = List.of("1", "12", "12a", "a12");
-    var yourSolution = List.of();
+    var yourSolution = input.stream().mapMulti((val, stream)->{
+      try{
+        Integer.parseInt(val);
+        stream.accept(val);
+      }catch (Exception ignored){
+
+      }
+    });// List.of();
     var mySolution = EasyNumbersProblemSolution.getNumberOnly(input);
 
     Assertions.assertEquals(mySolution, yourSolution);

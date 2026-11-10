@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 /**
  * Imagine you’re building a registration system for a website. Sometimes, due to user error or
- * system retries, duplicate emails get stored in your list. You want to keep only unique email
+ * system retries, duplicate emails get stored in your list. You want to get only unique email
  * addresses before sending a newsletter.
  *
  * <p>Example: <br>
