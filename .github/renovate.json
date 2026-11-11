@@ -2,5 +2,16 @@
   "$schema": "https://renovatebot.com",
   "extends": [
     "config:recommended"
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "java-version"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "enabled": false
+    }
   ]
 }
